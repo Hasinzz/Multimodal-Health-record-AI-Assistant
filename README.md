@@ -40,6 +40,16 @@ python -m src.run_main_batch
 - Generated outputs are written under `outputs/`.
 - Model-1 checkpoints are expected under `checkpoints/model1/` unless you pass explicit paths.
 
+## Keep In Sync
+
+Use the sync script to fetch and rebase the latest changes from GitHub onto your local branch:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/sync_repo.ps1
+```
+
+Run it whenever another device has pushed updates, before you start working, or after you finish a session.
+
 ## Repository hygiene
 
 Keep the virtual environment, Python cache files, notebook checkpoints, and generated run outputs out of Git. Large model artifacts should be committed only if you intentionally want them tracked, otherwise prefer Git LFS or external storage.
