@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Train Brain MRI Model",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"src.model1.train_brain_mri",
+				"--epochs",
+				"15",
+				"--batch-size",
+				"16",
+				"--learning-rate",
+				"0.0001",
+				"--image-size",
+				"224"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		}
+	]
+}
