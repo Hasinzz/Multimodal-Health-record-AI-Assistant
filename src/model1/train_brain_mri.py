@@ -3,11 +3,12 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import os
 import random
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Callable, Dict, List, Optional, Sequence, TextIO, Tuple
 
 import matplotlib
 
@@ -105,7 +106,39 @@ def parse_args() -> argparse.Namespace:
         default=str(PROJECT_ROOT / "checkpoints" / "model1" / "brain_best_model_retrained.pt"),
         help="Path where the best retrained checkpoint will be saved.",
     )
+    parser.add_argument(
+        "--progress-interval",
+        type=int,
+        default=5,
+        help="Approximate number of batch progress updates to print per epoch.",
+    )
+    parser.add_argument(
+        "--log-file",
+        type=str,
+        default=None,
+        help="Optional file path for duplicating important training logs.",
+    )
     return parser.parse_args()
+
+
+def make_logger(log_file: Optional[str | Path]) -> tuple[Callable[[str], None], Optional[TextIO]]:
+    log_handle: Optional[TextIO] = None
+    if log_file is not None:
+        log_path = Path(log_file)
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        log_handle = open(log_path, "w", encoding="utf-8")
+
+    def log(message: str) -> None:
+        print(message, flush=True)
+        if log_handle is not None:
+            print(message, file=log_handle, flush=True)
+
+    return log, log_handle
+
+
+def close_logger(log_handle: Optional[TextIO]) -> None:
+    if log_handle is not None:
+        log_handle.close()
 
 
 def set_seed(seed: int) -> None:
@@ -391,7 +424,7 @@ def evaluate(
             images = images.to(device, non_blocking=True)
             targets = targets.to(device, non_blocking=True)
 
-            with torch.cuda.amp.autocast(enabled=use_amp):
+            with torch.amp.autocast("cuda", enabled=use_amp):
                 logits, _ = model(images)
                 loss = criterion(logits, targets)
 
@@ -424,18 +457,21 @@ def train_one_epoch(
     criterion: nn.Module,
     optimizer: torch.optim.Optimizer,
     device: torch.device,
-    scaler: torch.cuda.amp.GradScaler,
+    scaler: torch.amp.GradScaler,
     use_amp: bool,
     epoch_index: int,
     total_epochs: int,
+    progress_interval: int,
+    log: Callable[[str], None],
 ) -> Dict[str, float]:
     model.train()
     running_loss = 0.0
     running_correct = 0
     running_total = 0
-    progress_interval = max(1, len(data_loader) // 5)
+    total_batches = len(data_loader)
+    progress_interval = max(1, math.ceil(total_batches / max(1, progress_interval)))
 
-    print(f"[Train] Epoch {epoch_index}/{total_epochs}")
+    log(f"[Train] Epoch {epoch_index}/{total_epochs}")
 
     for batch_index, (images, targets) in enumerate(data_loader, start=1):
         images = images.to(device, non_blocking=True)
@@ -443,7 +479,7 @@ def train_one_epoch(
 
         optimizer.zero_grad(set_to_none=True)
 
-        with torch.cuda.amp.autocast(enabled=use_amp):
+        with torch.amp.autocast("cuda", enabled=use_amp):
             logits, _ = model(images)
             loss = criterion(logits, targets)
 
@@ -461,11 +497,11 @@ def train_one_epoch(
         running_correct += (predictions == targets).sum().item()
         running_total += batch_size
 
-        if batch_index % progress_interval == 0 or batch_index == len(data_loader):
+        if batch_index % progress_interval == 0 or batch_index == total_batches:
             batch_accuracy = running_correct / max(1, running_total)
             batch_loss = running_loss / max(1, running_total)
-            print(
-                f"  Batch {batch_index:>4}/{len(data_loader)} | loss={batch_loss:.4f} | acc={batch_accuracy:.4f}"
+            log(
+                f"  Batch {batch_index:>4}/{total_batches} | loss={batch_loss:.4f} | acc={batch_accuracy:.4f}"
             )
 
     average_loss = running_loss / max(1, running_total)
@@ -503,176 +539,188 @@ def save_checkpoint(
 def main() -> None:
     args = parse_args()
     set_seed(args.seed)
-
-    output_dir = make_output_dir(args.output_dir)
-    checkpoint_path = Path(args.checkpoint_path)
-
-    data_dir = Path(args.data_dir)
-    if not data_dir.exists():
-        raise FileNotFoundError(f"Dataset directory not found: {data_dir}")
-
-    train_transform, val_transform = build_transforms(args.image_size)
-    train_dataset, val_dataset, class_names = build_datasets(
-        data_dir=data_dir,
-        train_transform=train_transform,
-        val_transform=val_transform,
-        seed=args.seed,
-    )
-
-    print("[Data] Training samples:", len(train_dataset))
-    print("[Data] Validation samples:", len(val_dataset))
-    print("[Data] Classes:", ", ".join(class_names))
-
-    train_loader, val_loader = build_dataloaders(
-        train_dataset=train_dataset,
-        val_dataset=val_dataset,
-        batch_size=args.batch_size,
-    )
-
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    use_amp = device.type == "cuda"
-    if use_amp:
-        torch.backends.cudnn.benchmark = True
-
-    print(f"[Device] Using {device}")
-    print(f"[AMP] {'Enabled' if use_amp else 'Disabled'}")
-
-    model = TimmWithFeatures(backbone_name=args.backbone, num_classes=len(class_names))
-    model.to(device)
-
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.AdamW(
-        model.parameters(),
-        lr=args.learning_rate,
-        weight_decay=1e-4,
-    )
-    scaler = torch.cuda.amp.GradScaler(enabled=use_amp)
-
-    history: List[Dict[str, float]] = []
-    best_val_accuracy = -1.0
-    best_epoch = -1
-    best_metrics: Dict[str, object] = {}
-    best_predictions: List[int] = []
-    best_targets: List[int] = []
-    best_val_loss = float("inf")
-
-    for epoch in range(1, args.epochs + 1):
-        train_result = train_one_epoch(
-            model=model,
-            data_loader=train_loader,
-            criterion=criterion,
-            optimizer=optimizer,
-            device=device,
-            scaler=scaler,
-            use_amp=use_amp,
-            epoch_index=epoch,
-            total_epochs=args.epochs,
-        )
-
-        val_result = evaluate(
-            model=model,
-            data_loader=val_loader,
-            criterion=criterion,
-            device=device,
-            class_names=class_names,
-            use_amp=use_amp,
-        )
-
-        train_loss = train_result["train_loss"]
-        train_accuracy = train_result["train_accuracy"]
-        val_loss = val_result["loss"]
-        val_accuracy = val_result["accuracy"]
-
-        current_lr = optimizer.param_groups[0]["lr"]
-        history.append(
-            {
-                "epoch": float(epoch),
-                "train_loss": train_loss,
-                "val_loss": val_loss,
-                "train_accuracy": train_accuracy,
-                "val_accuracy": val_accuracy,
-                "learning_rate": current_lr,
-            }
-        )
-
-        print(
-            f"[Epoch {epoch}/{args.epochs}] train_loss={train_loss:.4f} train_acc={train_accuracy:.4f} "
-            f"val_loss={val_loss:.4f} val_acc={val_accuracy:.4f}"
-        )
-
-        improved = val_accuracy > best_val_accuracy or (
-            np.isclose(val_accuracy, best_val_accuracy) and val_loss < best_val_loss
-        )
-
-        if improved:
-            best_val_accuracy = val_accuracy
-            best_val_loss = val_loss
-            best_epoch = epoch
-            best_metrics = val_result["metrics"]
-            best_predictions = list(val_result["predictions"])
-            best_targets = list(val_result["targets"])
-            save_checkpoint(
-                model=model,
-                checkpoint_path=checkpoint_path,
-                epoch=epoch,
-                class_names=class_names,
-                backbone=args.backbone,
-                image_size=args.image_size,
-                best_metrics=best_metrics,
+    log, log_handle = make_logger(args.log_file)
+    try:
+        if os.environ.get("CONDA_PREFIX") or os.environ.get("CONDA_DEFAULT_ENV"):
+            log(
+                "[Startup] Conda environment detected. For live terminal output under conda run, prefer: "
+                "conda run --no-capture-output -n thesis_gpu python -m src.model1.train_brain_mri ... "
+                "or activate first with: conda activate thesis_gpu"
             )
-            print(f"[Checkpoint] Saved best model to {checkpoint_path}")
 
-    history_csv_path = save_history_csv(history, output_dir)
-    save_curve_plot(
-        history=history,
-        train_key="train_loss",
-        val_key="val_loss",
-        title="Brain MRI Loss Curve",
-        ylabel="Loss",
-        output_path=output_dir / "brain_loss_curve.png",
-    )
-    save_curve_plot(
-        history=history,
-        train_key="train_accuracy",
-        val_key="val_accuracy",
-        title="Brain MRI Accuracy Curve",
-        ylabel="Accuracy",
-        output_path=output_dir / "brain_accuracy_curve.png",
-    )
+        output_dir = make_output_dir(args.output_dir)
+        checkpoint_path = Path(args.checkpoint_path)
 
-    cm = np.asarray(best_metrics.get("confusion_matrix", []), dtype=np.int64)
-    if cm.size == 0:
-        cm = confusion_matrix(
-            best_targets,
-            best_predictions,
-            labels=list(range(len(class_names))),
+        data_dir = Path(args.data_dir)
+        if not data_dir.exists():
+            raise FileNotFoundError(f"Dataset directory not found: {data_dir}")
+
+        train_transform, val_transform = build_transforms(args.image_size)
+        train_dataset, val_dataset, class_names = build_datasets(
+            data_dir=data_dir,
+            train_transform=train_transform,
+            val_transform=val_transform,
+            seed=args.seed,
         )
 
-    save_confusion_matrix_plot(
-        cm=cm,
-        class_names=class_names,
-        output_path=output_dir / "brain_confusion_matrix.png",
-    )
+        log(f"[Data] Training samples: {len(train_dataset)}")
+        log(f"[Data] Validation samples: {len(val_dataset)}")
+        log(f"[Data] Classes: {', '.join(class_names)}")
 
-    metrics_output = {
-        "best_epoch": best_epoch,
-        "best_val_accuracy": float(best_val_accuracy),
-        "best_val_loss": float(best_val_loss),
-        "class_names": list(class_names),
-        "checkpoint_path": str(checkpoint_path),
-        "history_csv": str(history_csv_path),
-        "metrics": best_metrics,
-    }
-    save_json(metrics_output, output_dir / "brain_metrics.json")
+        train_loader, val_loader = build_dataloaders(
+            train_dataset=train_dataset,
+            val_dataset=val_dataset,
+            batch_size=args.batch_size,
+        )
 
-    print("[Done] Training complete")
-    print(f"[Done] Best epoch: {best_epoch}")
-    print(f"[Done] Best validation accuracy: {best_val_accuracy:.4f}")
-    print(f"[Done] History CSV: {history_csv_path}")
-    print(f"[Done] Metrics JSON: {output_dir / 'brain_metrics.json'}")
-    print(f"[Done] Confusion matrix: {output_dir / 'brain_confusion_matrix.png'}")
-    print(f"[Done] Loss curve: {output_dir / 'brain_loss_curve.png'}")
-    print(f"[Done] Accuracy curve: {output_dir / 'brain_accuracy_curve.png'}")
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        use_amp = device.type == "cuda"
+        if use_amp:
+            torch.backends.cudnn.benchmark = True
+
+        log(f"[Device] Using {device}")
+        log(f"[AMP] {'Enabled' if use_amp else 'Disabled'}")
+
+        model = TimmWithFeatures(backbone_name=args.backbone, num_classes=len(class_names))
+        model.to(device)
+
+        criterion = nn.CrossEntropyLoss()
+        optimizer = torch.optim.AdamW(
+            model.parameters(),
+            lr=args.learning_rate,
+            weight_decay=1e-4,
+        )
+        scaler = torch.amp.GradScaler("cuda", enabled=use_amp)
+
+        history: List[Dict[str, float]] = []
+        best_val_accuracy = -1.0
+        best_epoch = -1
+        best_metrics: Dict[str, object] = {}
+        best_predictions: List[int] = []
+        best_targets: List[int] = []
+        best_val_loss = float("inf")
+
+        for epoch in range(1, args.epochs + 1):
+            train_result = train_one_epoch(
+                model=model,
+                data_loader=train_loader,
+                criterion=criterion,
+                optimizer=optimizer,
+                device=device,
+                scaler=scaler,
+                use_amp=use_amp,
+                epoch_index=epoch,
+                total_epochs=args.epochs,
+                progress_interval=args.progress_interval,
+                log=log,
+            )
+
+            val_result = evaluate(
+                model=model,
+                data_loader=val_loader,
+                criterion=criterion,
+                device=device,
+                class_names=class_names,
+                use_amp=use_amp,
+            )
+
+            train_loss = train_result["train_loss"]
+            train_accuracy = train_result["train_accuracy"]
+            val_loss = val_result["loss"]
+            val_accuracy = val_result["accuracy"]
+
+            current_lr = optimizer.param_groups[0]["lr"]
+            history.append(
+                {
+                    "epoch": float(epoch),
+                    "train_loss": train_loss,
+                    "val_loss": val_loss,
+                    "train_accuracy": train_accuracy,
+                    "val_accuracy": val_accuracy,
+                    "learning_rate": current_lr,
+                }
+            )
+
+            log(
+                f"[Epoch {epoch}/{args.epochs}] train_loss={train_loss:.4f} train_acc={train_accuracy:.4f} "
+                f"val_loss={val_loss:.4f} val_acc={val_accuracy:.4f}"
+            )
+
+            improved = val_accuracy > best_val_accuracy or (
+                np.isclose(val_accuracy, best_val_accuracy) and val_loss < best_val_loss
+            )
+
+            if improved:
+                best_val_accuracy = val_accuracy
+                best_val_loss = val_loss
+                best_epoch = epoch
+                best_metrics = val_result["metrics"]
+                best_predictions = list(val_result["predictions"])
+                best_targets = list(val_result["targets"])
+                save_checkpoint(
+                    model=model,
+                    checkpoint_path=checkpoint_path,
+                    epoch=epoch,
+                    class_names=class_names,
+                    backbone=args.backbone,
+                    image_size=args.image_size,
+                    best_metrics=best_metrics,
+                )
+                log(f"[Checkpoint] Saved best model to {checkpoint_path}")
+
+        history_csv_path = save_history_csv(history, output_dir)
+        save_curve_plot(
+            history=history,
+            train_key="train_loss",
+            val_key="val_loss",
+            title="Brain MRI Loss Curve",
+            ylabel="Loss",
+            output_path=output_dir / "brain_loss_curve.png",
+        )
+        save_curve_plot(
+            history=history,
+            train_key="train_accuracy",
+            val_key="val_accuracy",
+            title="Brain MRI Accuracy Curve",
+            ylabel="Accuracy",
+            output_path=output_dir / "brain_accuracy_curve.png",
+        )
+
+        cm = np.asarray(best_metrics.get("confusion_matrix", []), dtype=np.int64)
+        if cm.size == 0:
+            cm = confusion_matrix(
+                best_targets,
+                best_predictions,
+                labels=list(range(len(class_names))),
+            )
+
+        save_confusion_matrix_plot(
+            cm=cm,
+            class_names=class_names,
+            output_path=output_dir / "brain_confusion_matrix.png",
+        )
+
+        metrics_output = {
+            "best_epoch": best_epoch,
+            "best_val_accuracy": float(best_val_accuracy),
+            "best_val_loss": float(best_val_loss),
+            "class_names": list(class_names),
+            "checkpoint_path": str(checkpoint_path),
+            "history_csv": str(history_csv_path),
+            "metrics": best_metrics,
+        }
+        save_json(metrics_output, output_dir / "brain_metrics.json")
+
+        log("[Done] Training complete")
+        log(f"[Done] Best epoch: {best_epoch}")
+        log(f"[Done] Best validation accuracy: {best_val_accuracy:.4f}")
+        log(f"[Done] History CSV: {history_csv_path}")
+        log(f"[Done] Metrics JSON: {output_dir / 'brain_metrics.json'}")
+        log(f"[Done] Confusion matrix: {output_dir / 'brain_confusion_matrix.png'}")
+        log(f"[Done] Loss curve: {output_dir / 'brain_loss_curve.png'}")
+        log(f"[Done] Accuracy curve: {output_dir / 'brain_accuracy_curve.png'}")
+    finally:
+        close_logger(log_handle)
 
 
 if __name__ == "__main__":
