@@ -11,6 +11,13 @@ def build_fused_query(
         query_parts.append("Image findings:")
         query_parts.append(model1_output.get("patient_summary_text", ""))
 
+        positive_labels = model1_output.get("xray_positive_labels")
+        if positive_labels:
+            query_parts.append("Positive X-ray labels:")
+            query_parts.append(", ".join(str(label) for label in positive_labels))
+        else:
+            query_parts.append("Positive X-ray labels: none")
+
         top_predictions = model1_output.get("top_predictions", [])
 
         for item in top_predictions[:5]:

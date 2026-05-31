@@ -7,7 +7,13 @@ from collections import Counter
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
 
-from src.config import PROJECT_ROOT, create_required_folders
+from src.config import (
+    DEFAULT_BRAIN_CHECKPOINT,
+    DEFAULT_XRAY_CHECKPOINT,
+    DEFAULT_XRAY_THRESHOLDS,
+    PROJECT_ROOT,
+    create_required_folders,
+)
 from src.model1.infer import predict_image
 from src.model2.pipeline import run_document_pipeline
 from src.model3.pipeline import run_fusion_pipeline
@@ -29,6 +35,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--xray-fusion-count", type=int, default=3)
     parser.add_argument("--output-dir", type=str, default="outputs/main_run")
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--brain-checkpoint", type=str, default=str(DEFAULT_BRAIN_CHECKPOINT))
+    parser.add_argument("--xray-checkpoint", type=str, default=str(DEFAULT_XRAY_CHECKPOINT))
+    parser.add_argument("--xray-thresholds", type=str, default=str(DEFAULT_XRAY_THRESHOLDS))
     return parser.parse_args()
 
 
@@ -100,6 +109,9 @@ def run_case(
     image_path: Optional[Path] = None,
     image_modality: Optional[str] = None,
     document_path: Optional[Path] = None,
+    brain_checkpoint: Optional[str] = None,
+    xray_checkpoint: Optional[str] = None,
+    xray_thresholds: Optional[str] = None,
 ) -> Dict[str, object]:
     case_output_dir = output_dir / case_id
     case_output_dir.mkdir(parents=True, exist_ok=True)
@@ -119,11 +131,13 @@ def run_case(
             if image_modality not in {"brain_mri", "xray"}:
                 raise ValueError(f"Invalid image modality for {case_id}: {image_modality}")
 
-            checkpoint_name = (
-                "xray_best_model.pt" if image_modality == "xray" else "brain_best_model.pt"
-            )
-            checkpoint_path = PROJECT_ROOT / "checkpoints" / "model1" / checkpoint_name
+            if image_modality == "xray":
+                checkpoint_path = Path(xray_checkpoint) if xray_checkpoint else Path(DEFAULT_XRAY_CHECKPOINT)
+            else:
+                checkpoint_path = Path(brain_checkpoint) if brain_checkpoint else Path(DEFAULT_BRAIN_CHECKPOINT)
+
             embedding_output_path = case_output_dir / f"{case_id}_{image_modality}_embedding.npy"
+            thresholds_path = xray_thresholds if image_modality == "xray" else None
 
             model1_output = predict_image(
                 image_path=str(image_path),
@@ -132,6 +146,7 @@ def run_case(
                 backbone_name="densenet121",
                 case_id=case_id,
                 embedding_output_path=str(embedding_output_path),
+                thresholds_path=thresholds_path,
             )
 
             model1_output_path = str(case_output_dir / "model1_output.json")
@@ -355,6 +370,10 @@ def main() -> None:
     output_dir = resolve_output_dir(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    brain_checkpoint = str(Path(args.brain_checkpoint))
+    xray_checkpoint = str(Path(args.xray_checkpoint))
+    xray_thresholds = str(Path(args.xray_thresholds))
+
     case_plan = build_case_plan(args, rng)
     total_requested = len(case_plan)
     rows: List[Dict[str, object]] = []
@@ -368,6 +387,9 @@ def main() -> None:
             image_path=image_path,
             image_modality=image_modality,
             document_path=document_path,
+            brain_checkpoint=brain_checkpoint,
+            xray_checkpoint=xray_checkpoint,
+            xray_thresholds=xray_thresholds,
         )
         rows.append(row)
 

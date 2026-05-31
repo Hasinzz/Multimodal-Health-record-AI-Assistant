@@ -1,6 +1,6 @@
+import json
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-import json
 
 import cv2
 import numpy as np
@@ -134,7 +134,12 @@ def load_thresholds(thresholds_path: str) -> Dict[str, float]:
     with path.open("r", encoding="utf-8") as fh:
         data = json.load(fh)
 
-    # Ensure keys are strings and values are floats
+    if isinstance(data, dict) and isinstance(data.get("thresholds"), dict):
+        data = data["thresholds"]
+
+    if not isinstance(data, dict):
+        raise ValueError(f"Unsupported threshold file format: {path}")
+
     cleaned: Dict[str, float] = {}
     for k, v in data.items():
         try:
@@ -143,6 +148,30 @@ def load_thresholds(thresholds_path: str) -> Dict[str, float]:
             continue
 
     return cleaned
+
+
+def build_xray_thresholds(
+    class_names: List[str],
+    thresholds_path: Optional[str],
+) -> Tuple[Dict[str, float], str]:
+    default_thresholds = {class_name: 0.5 for class_name in class_names}
+    if thresholds_path is None:
+        return default_thresholds, "default_0.5"
+
+    try:
+        loaded_thresholds = load_thresholds(thresholds_path)
+    except Exception:
+        return default_thresholds, "default_0.5"
+
+    if not loaded_thresholds:
+        return default_thresholds, "default_0.5"
+
+    thresholds_used = {
+        class_name: float(loaded_thresholds.get(class_name, 0.5))
+        for class_name in class_names
+    }
+
+    return thresholds_used, "tuned"
 
 
 def apply_clahe_rgb(image: Image.Image) -> Image.Image:
@@ -189,16 +218,24 @@ def preprocess_image(image_path: str, modality: str) -> torch.Tensor:
 def format_prediction_summary(
     modality: str,
     top_predictions: List[Dict[str, float]],
+    positive_labels: Optional[List[str]] = None,
+    probabilities: Optional[Dict[str, float]] = None,
 ) -> str:
     if not top_predictions:
         return "No image prediction was generated."
 
     if modality == "xray":
-        selected = top_predictions[:3]
-        findings = ", ".join(
-            [f"{item['label']} ({item['probability']:.2f})" for item in selected]
-        )
-        return f"Chest X-ray suggests possible findings: {findings}."
+        if positive_labels:
+            selected = positive_labels
+            if probabilities:
+                findings = ", ".join(
+                    [f"{label} ({probabilities.get(label, 0.0):.2f})" for label in selected]
+                )
+            else:
+                findings = ", ".join(selected)
+            return f"Chest X-ray suggests possible findings: {findings}."
+
+        return "No X-ray disease label exceeded the tuned decision threshold."
 
     if modality == "brain_mri":
         top = top_predictions[0]
@@ -244,29 +281,30 @@ def predict_image(
         else:
             raise ValueError("modality must be either 'xray' or 'brain_mri'")
 
-    probabilities = {
+    xray_probabilities = {
         class_names[i]: float(probs[i])
         for i in range(len(class_names))
     }
 
-    thresholds_used: Optional[Dict[str, float]] = None
-    predicted_labels: List[str] = []
+    xray_thresholds_used: Dict[str, float] = {}
+    xray_positive_labels: List[str] = []
+    xray_binary_predictions: Dict[str, int] = {}
+    xray_threshold_mode = "default_0.5"
 
     if modality == "xray":
-        if thresholds_path is not None:
-            try:
-                thresholds_used = load_thresholds(thresholds_path)
-            except Exception:
-                thresholds_used = None
+        xray_thresholds_used, xray_threshold_mode = build_xray_thresholds(
+            class_names=list(class_names),
+            thresholds_path=thresholds_path,
+        )
 
-        # Apply thresholds (default 0.5 when threshold for a class is missing)
         for i, name in enumerate(class_names):
-            thr = 0.5
-            if thresholds_used and name in thresholds_used:
-                thr = float(thresholds_used[name])
+            thr = float(xray_thresholds_used.get(name, 0.5))
+            is_positive = float(probs[i]) >= thr
+            xray_binary_predictions[name] = int(is_positive)
+            if is_positive:
+                xray_positive_labels.append(name)
 
-            if float(probs[i]) >= thr:
-                predicted_labels.append(name)
+    predicted_labels = list(xray_positive_labels)
 
     top_predictions = [
         {
@@ -290,6 +328,8 @@ def predict_image(
     patient_summary_text = format_prediction_summary(
         modality=modality,
         top_predictions=top_predictions,
+        positive_labels=xray_positive_labels if modality == "xray" else None,
+        probabilities=xray_probabilities if modality == "xray" else None,
     )
 
     return {
@@ -297,9 +337,16 @@ def predict_image(
         "modality": modality,
         "image_path": str(image_path),
         "top_predictions": top_predictions,
-        "probabilities": probabilities,
+        "probabilities": xray_probabilities if modality == "xray" else {
+            class_names[i]: float(probs[i]) for i in range(len(class_names))
+        },
         "embedding_path": embedding_path_value,
         "patient_summary_text": patient_summary_text,
         "predicted_labels": predicted_labels,
-        "thresholds_used": thresholds_used,
+        "thresholds_used": xray_thresholds_used if modality == "xray" else None,
+        "xray_threshold_mode": xray_threshold_mode if modality == "xray" else None,
+        "xray_thresholds_used": xray_thresholds_used if modality == "xray" else None,
+        "xray_positive_labels": xray_positive_labels if modality == "xray" else None,
+        "xray_probabilities": xray_probabilities if modality == "xray" else None,
+        "xray_binary_predictions": xray_binary_predictions if modality == "xray" else None,
     }
