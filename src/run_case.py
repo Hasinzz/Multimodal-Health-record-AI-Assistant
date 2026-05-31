@@ -91,6 +91,13 @@ def parse_args():
     )
 
     parser.add_argument(
+        "--xray_thresholds",
+        type=str,
+        default=None,
+        help="Path to JSON file with per-class X-ray thresholds (optional).",
+    )
+
+    parser.add_argument(
         "--brain_checkpoint",
         type=str,
         default=str(DEFAULT_BRAIN_CHECKPOINT),
@@ -147,6 +154,7 @@ def main():
             backbone_name=args.backbone,
             case_id=args.case_id,
             embedding_output_path=str(embedding_output_path),
+            thresholds_path=args.xray_thresholds,
         )
 
         save_json(

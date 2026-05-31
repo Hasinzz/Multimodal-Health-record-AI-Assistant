@@ -53,3 +53,23 @@ Run it whenever another device has pushed updates, before you start working, or 
 ## Repository hygiene
 
 Keep the virtual environment, Python cache files, notebook checkpoints, and generated run outputs out of Git. Large model artifacts should be committed only if you intentionally want them tracked, otherwise prefer Git LFS or external storage.
+
+## Using Tuned X-ray Thresholds
+
+- **Purpose:** Apply per-class tuned decision thresholds (found by `src.model1.tune_xray_thresholds`) during inference so binary decisions match the tuned operating point.
+- **Threshold file:** The tuning script writes a JSON file, for example [outputs/training/xray_gpu_full_threshold_tuning/xray_tuned_thresholds.json](outputs/training/xray_gpu_full_threshold_tuning/xray_tuned_thresholds.json).
+- **Run a single-case inference with thresholds:** pass the `--xray_thresholds` flag to the `src.run_case` entrypoint which forwards it into the inference path in [src/run_case.py](src/run_case.py#L1).
+
+Example (use your GPU Python environment):
+
+```powershell
+C:\Users\T2520824\Miniconda3\envs\thesis_gpu\python.exe -m src.run_case \
+	--case_id case_001 \
+	--image images/xray/example.jpg \
+	--image_modality xray \
+	--xray_checkpoint checkpoints/model1/xray_best_model_gpu_full.pt \
+	--xray_thresholds outputs/training/xray_gpu_full_threshold_tuning/xray_tuned_thresholds.json
+```
+
+- **Batch/eval:** To re-run validation evaluation with the tuned thresholds use the provided helper `src/model1/eval_xray_with_thresholds.py` which writes `xray_tuned_eval_metrics.json` and per-class CSVs under the output folder you pass.
+

@@ -1,5 +1,6 @@
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+import json
 
 import cv2
 import numpy as np
@@ -124,6 +125,26 @@ def load_image_model(
     return model, device
 
 
+def load_thresholds(thresholds_path: str) -> Dict[str, float]:
+    path = Path(thresholds_path)
+
+    if not path.exists():
+        raise FileNotFoundError(f"Thresholds file not found: {path}")
+
+    with path.open("r", encoding="utf-8") as fh:
+        data = json.load(fh)
+
+    # Ensure keys are strings and values are floats
+    cleaned: Dict[str, float] = {}
+    for k, v in data.items():
+        try:
+            cleaned[str(k)] = float(v)
+        except Exception:
+            continue
+
+    return cleaned
+
+
 def apply_clahe_rgb(image: Image.Image) -> Image.Image:
     image_np = np.array(image.convert("RGB"))
     lab = cv2.cvtColor(image_np, cv2.COLOR_RGB2LAB)
@@ -196,6 +217,7 @@ def predict_image(
     backbone_name: str = "densenet121",
     case_id: str = "case_001",
     embedding_output_path: Optional[str] = None,
+    thresholds_path: Optional[str] = None,
 ) -> Dict:
     model, device = load_image_model(
         checkpoint_path=checkpoint_path,
@@ -226,6 +248,25 @@ def predict_image(
         class_names[i]: float(probs[i])
         for i in range(len(class_names))
     }
+
+    thresholds_used: Optional[Dict[str, float]] = None
+    predicted_labels: List[str] = []
+
+    if modality == "xray":
+        if thresholds_path is not None:
+            try:
+                thresholds_used = load_thresholds(thresholds_path)
+            except Exception:
+                thresholds_used = None
+
+        # Apply thresholds (default 0.5 when threshold for a class is missing)
+        for i, name in enumerate(class_names):
+            thr = 0.5
+            if thresholds_used and name in thresholds_used:
+                thr = float(thresholds_used[name])
+
+            if float(probs[i]) >= thr:
+                predicted_labels.append(name)
 
     top_predictions = [
         {
@@ -259,4 +300,6 @@ def predict_image(
         "probabilities": probabilities,
         "embedding_path": embedding_path_value,
         "patient_summary_text": patient_summary_text,
+        "predicted_labels": predicted_labels,
+        "thresholds_used": thresholds_used,
     }
