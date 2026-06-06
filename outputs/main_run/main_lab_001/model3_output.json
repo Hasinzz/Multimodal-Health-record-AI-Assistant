@@ -1,0 +1,16 @@
+{
+  "case_id": "main_lab_001",
+  "image_findings": null,
+  "text_findings": "2 medication or dosage-related line(s) were detected. Clinical keywords found: pain.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.2760367802073407,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    }
+  ],
+  "final_summary": "Case ID: main_lab_001\n\nImage findings: No image input was provided.\n\nDocument findings: 2 medication or dosage-related line(s) were detected. Clinical keywords found: pain.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.276. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\n2 medication or dosage-related line(s) were detected. Clinical keywords found: pain.\n— 7 — ISOZIS001-2008')\n(8) DaemOSuie POUT Painctasy iat\nTAGMOSUTE POWAE ratnciasr iz\n- (gp Wile ten S IAOUWOUL Patinolasy lads\neaten EQUIPPED WITH COMPUTERISED AUTO CHEMISTRY, BLOOD GAS_& HAEMATOLOGY, ANALYSERS}\n01%1027107A108X109.\\1 ef Floor, Agarwal, Tower, Pkt, O & BMktDilshad.G\nSARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path\nKJ-7, Kavi Nagar, Ghaziabad (U:P.) I. No, MCI 3458\n[v | a | SriNo. 1019 . . RECEIPT 1D104194\nJ oo +o fa... -..\ncz CHyerna 0223/391503 [===JNosp-25 : “\nSs | a | 16:13:21\nine\nTest} | oO —=\n: oo HAEMATOLOGY a .\n_x.. PERIPHERAL SMEAR oO re ,\n- RBC'S:- Mild Anisocytosis Mild hypochromia, few micro and macrocytes\nno nucleated RBCs.No target cells seen.\nW.B.C'S:- .No immature cells seen. .\n_ ‘PLATELETS:- platelets are adequate. ‘ . . . . :\n* End Of Report ****\no...\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'eaten EQUIPPED WITH COMPUTERISED AUTO CHEMISTRY, BLOOD GAS_& HAEMATOLOGY, ANALYSERS}'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'SARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path'}\n{'type': 'CLINICAL_KEYWORD', 'text': 'pain'}"
+}

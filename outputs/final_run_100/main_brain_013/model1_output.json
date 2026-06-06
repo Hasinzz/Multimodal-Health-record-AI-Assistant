@@ -1,0 +1,31 @@
+{
+  "case_id": "main_brain_013",
+  "modality": "brain_mri",
+  "image_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\images\\brain_mri\\Training\\notumor\\Tr-no_1059.jpg",
+  "top_predictions": [
+    {
+      "label": "no_tumor",
+      "probability": 0.8739118576049805
+    },
+    {
+      "label": "pituitary_tumor",
+      "probability": 0.06545624881982803
+    },
+    {
+      "label": "meningioma_tumor",
+      "probability": 0.060246583074331284
+    },
+    {
+      "label": "glioma_tumor",
+      "probability": 0.0003853695816360414
+    }
+  ],
+  "probabilities": {
+    "glioma_tumor": 0.0003853695816360414,
+    "meningioma_tumor": 0.060246583074331284,
+    "no_tumor": 0.8739118576049805,
+    "pituitary_tumor": 0.06545624881982803
+  },
+  "embedding_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\outputs\\final_run_100\\main_brain_013\\main_brain_013_brain_mri_embedding.npy",
+  "patient_summary_text": "Brain MRI suggests: no_tumor with confidence 0.87."
+}

@@ -1,0 +1,106 @@
+{
+  "case_id": "main_lab_016",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0048512_Q-POOJA4759000111zon_250424_1524@F.pdf_page_43.png",
+  "raw_text": "ee |\n@5) SCAR SUPER SPECIALITY HOSPITAL “>\nBe\nTR & TRAUMA CENTRE oy |\n7HS NABH\nOpp. Civil Hospital, Sonipat | Mob :[— }. J\nPatient Nanfl =i\ni —| Ca\n[JOSCAR HOSPITAL Sample Kee-LMte 09:01/2025\nReport Date 11042025\nMICROBIOLOGY\nTest Namq With Methodology Result Unit Blological Ref.Interval\nCulture & Sensitivity (Blood) .\nFINAL REPORT UPTO 3r DAY No Aerobic Bacterial Growth\nComments\nThis test is Ubed to check for the presence of a systemic infection when the patent shows signs or symptoms of a bactenafl\ninfecfion, suf as fever, chills, elevated whita blood cell count, and fatigue, which also may be a sign of infection occurring in\nother parts of the body, such as a urinary tract infection (UTI), pneumonia, diarrhea, or slun Infection .\nA positive bifod cutture may mean that patent bs having a bacterial or fungal infecton in your bloodstream that needs to be\ntroated immediately or & could be false positive due to skin contamination. A positive result could also be a faise positve\ncaused by skin contamination. So a repeat blood cutture test possve with the same bacteria, indicates that the bacteria\nfound In the gulture are causing infecton,\nA negative cLiture lest indicates the absence of any infecton , of pabent is on antibiotics or some microorganisms are more\ndifficult to grga in culture and more testing may be required. A cinical correlation of the test result is very important.\nAntlblotle qusceptibility report: Antibiotic susceptibility test (AST) was done by Kirby Bauer dise diffusion\nmethod, ABT reporting is done as per CLINICAL AND LABORATORY STANDARDS INSTITUTE, USA 2017\nguidelines. Phe drugs are listed as per the FDA clinical Indications for use.\nDr. SWETA KUMARI\n-B.B.S..M.S\nobs Gynae) Dr/GURLEEN GILL\n. Reégd7HN 013316 M (Panotugy)\n+ 4a HE ACS a\nLy fy ae\n%, As we OK\\s\ngf. 4 PS\nCBC, Thyroid, Kidney F netlan Test, Liver Function Test, Upid Profile, Blood Sugar, LH, FSH, Prolactin, B-HCG, TORCH, CA-425, CEA, PSA\n| Golor Doppler Ultrasound, H.S.G. IVP, Barium Studles, Digital X-Ray, Mult! Slice Spiral CT Scan, E.C.G.,\nE££.6,-21 Channels EMG NCV VEP B.E.RA. PFY & Comprehensive Health Check-ups etc,\nTS\n'3D/40_U)trasounds Color, Doppler, CT-Scan; Digital X-Ray & Computerised Lab |\n° 7 = acy 9 SS Se\n(NO}|FOR'MEDICO LEGAL PURPOSE} | GRACO CESS CAN | | |",
+  "raw_text_preview": "ee |\n@5) SCAR SUPER SPECIALITY HOSPITAL “>\nBe\nTR & TRAUMA CENTRE oy |\n7HS NABH\nOpp. Civil Hospital, Sonipat | Mob :[— }. J\nPatient Nanfl =i\ni —| Ca\n[JOSCAR HOSPITAL Sample Kee-LMte 09:01/2025\nReport Date 11042025\nMICROBIOLOGY\nTest Namq With Methodology Result Unit Blological Ref.Interval\nCulture & Sensitivity (Blood) .\nFINAL REPORT UPTO 3r DAY No Aerobic Bacterial Growth\nComments\nThis test is Ubed to check for the presence of a systemic infection when the patent shows signs or symptoms of a bactenafl\ninfecfion, suf as fever, chills, elevated whita blood cell count, and fatigue, which also may be a sign of infection occurring in\nother parts of the body, such as a urinary tract infection (UTI), pneumonia, diarrhea, or slun Infection .\nA positive bifod cutture may mean that patent bs having a...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Test Namq With Methodology Result Unit Blological Ref.Interval"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Culture & Sensitivity (Blood) ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "infecfion, suf as fever, chills, elevated whita blood cell count, and fatigue, which also may be a sign of infection occurring in"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "other parts of the body, such as a urinary tract infection (UTI), pneumonia, diarrhea, or slun Infection ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "A positive bifod cutture may mean that patent bs having a bacterial or fungal infecton in your bloodstream that needs to be"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "caused by skin contamination. So a repeat blood cutture test possve with the same bacteria, indicates that the bacteria"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "method, ABT reporting is done as per CLINICAL AND LABORATORY STANDARDS INSTITUTE, USA 2017"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CBC, Thyroid, Kidney F netlan Test, Liver Function Test, Upid Profile, Blood Sugar, LH, FSH, Prolactin, B-HCG, TORCH, CA-425, CEA, PSA"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "E££.6,-21 Channels EMG NCV VEP B.E.RA. PFY & Comprehensive Health Check-ups etc,"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "fever"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "infection"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Test Namq With Methodology Result Unit Blological Ref.Interval"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Culture & Sensitivity (Blood) ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "infecfion, suf as fever, chills, elevated whita blood cell count, and fatigue, which also may be a sign of infection occurring in"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "other parts of the body, such as a urinary tract infection (UTI), pneumonia, diarrhea, or slun Infection ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "A positive bifod cutture may mean that patent bs having a bacterial or fungal infecton in your bloodstream that needs to be"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "caused by skin contamination. So a repeat blood cutture test possve with the same bacteria, indicates that the bacteria"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "method, ABT reporting is done as per CLINICAL AND LABORATORY STANDARDS INSTITUTE, USA 2017"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CBC, Thyroid, Kidney F netlan Test, Liver Function Test, Upid Profile, Blood Sugar, LH, FSH, Prolactin, B-HCG, TORCH, CA-425, CEA, PSA"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "E££.6,-21 Channels EMG NCV VEP B.E.RA. PFY & Comprehensive Health Check-ups etc,"
+      }
+    ],
+    "clinical_keywords": [
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "fever"
+      },
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "infection"
+      }
+    ]
+  },
+  "patient_summary": "9 medication or dosage-related line(s) were detected. Clinical keywords found: fever, infection."
+}

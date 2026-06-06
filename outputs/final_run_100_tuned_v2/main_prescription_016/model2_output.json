@@ -1,0 +1,25 @@
+{
+  "case_id": "main_prescription_016",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\119.jpg",
+  "raw_text": "a 4p GOveice ieriecaett taro Tere Ap tbat a ones 1\n| oe EMERGENCY RECISTIRATION CARD |\naa = oe\nto: 52\nPA <3<r-9 PITANPURA Category = Gczcral/ BPL/ EV/S/ DGENS/ St Citizen/Cthers :\nPee DOOD ai MOAT , in\npcr INO Bpe0 | C7aO :\nac i J A : ; 0 on ae\n| SLESUGART SEP Rat iN : CNL OG CHOL IE ae\ni, cS 5 5 5 } Bal\npete 7 d ’ J\nie Pb cSofsate drinking elcosd) Iie erate ba ara co ws artes\npian Al ake _. °\n4 OM. ‘ . a\nshay Cg 0",
+  "raw_text_preview": "a 4p GOveice ieriecaett taro Tere Ap tbat a ones 1\n| oe EMERGENCY RECISTIRATION CARD |\naa = oe\nto: 52\nPA <3<r-9 PITANPURA Category = Gczcral/ BPL/ EV/S/ DGENS/ St Citizen/Cthers :\nPee DOOD ai MOAT , in\npcr INO Bpe0 | C7aO :\nac i J A : ; 0 on ae\n| SLESUGART SEP Rat iN : CNL OG CHOL IE ae\ni, cS 5 5 5 } Bal\npete 7 d ’ J\nie Pb cSofsate drinking elcosd) Iie erate ba ara co ws artes\npian Al ake _. °\n4 OM. ‘ . a\nshay Cg 0",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Pee DOOD ai MOAT , in"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Pee DOOD ai MOAT , in"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "main_brain_015",
+  "modality": "brain_mri",
+  "image_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\images\\brain_mri\\Training\\notumor\\Tr-no_1392.jpg",
+  "top_predictions": [
+    {
+      "label": "no_tumor",
+      "probability": 0.9999955892562866
+    },
+    {
+      "label": "meningioma_tumor",
+      "probability": 2.894479621318169e-06
+    },
+    {
+      "label": "glioma_tumor",
+      "probability": 1.2454678426365717e-06
+    },
+    {
+      "label": "pituitary_tumor",
+      "probability": 2.8532582518892013e-07
+    }
+  ],
+  "probabilities": {
+    "glioma_tumor": 1.2454678426365717e-06,
+    "meningioma_tumor": 2.894479621318169e-06,
+    "no_tumor": 0.9999955892562866,
+    "pituitary_tumor": 2.8532582518892013e-07
+  },
+  "embedding_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\outputs\\final_run_100_tuned_v2\\main_brain_015\\main_brain_015_brain_mri_embedding.npy",
+  "patient_summary_text": "Brain MRI suggests: no_tumor with confidence 1.00.",
+  "predicted_labels": [],
+  "thresholds_used": null,
+  "xray_threshold_mode": null,
+  "xray_thresholds_used": null,
+  "xray_positive_labels": null,
+  "xray_probabilities": null,
+  "xray_binary_predictions": null
+}

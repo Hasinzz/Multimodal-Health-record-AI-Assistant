@@ -1,0 +1,25 @@
+{
+  "case_id": "main_lab_002",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0055458_Q-SARLAKUMAR202630001compressed_250428_1149@F.pdf_page_33.png",
+  "raw_text": "Sh yes Sanne (few\nMY Ujalayeyentis a ~~ ee\n~ Jee a A Bh.\nag HEALTHCARE SERVICES iCygnus;Superspeciality) Hospital] NASH.\nRy\nbg eee nme eh Sfp hh ch pene nam tag tenant ananaunds datetime parc iv onenDe Py aapOp PF POPOL H PS ap aA\nReqxot#3 od CP440 . Bed No ITO OTPRIVA\nLoc.Req No = 137596 , . Bill Date :\nCt) —— J a | CC]\n——S== . [a |\n: _—] LI = )\nINVESTIGATION . RESULTs . UNITS REFERENCE RANGE\nPTIINR .\nPT (PROTHROMBIN TIME) -\nPT (PROTHROMBIN TIME) 16.9 H Seconds 114-137 —\nCONTROL 13.4 :\nore 1.26 ,\nPT INR 1.2 tatio - 0.00 - 1.40\n. u *** End Of The Report ***\n. Dr. amd Yedav\n835, , ONB (OBS & GYNAE) ,\nOC-83984 :\nCygnus Superspeciality Hasptal, Rewari\nHospital Address : Old Sheela Yadav Hospital, Opp. Chal Hospital, Near BSNL Office, Reward, Haryana-123401 I Tel. No. :01274-25855¢ gd\nRegdJCprp. Office : Cygnus Medicare Pvt. Ltd., A-9A, Ground Floor, Green Park Main, NewDelhi- 110018...\n~Yy Tel. No, \\q14-41750891 | Website ; ujalacygnus.com | : .\nbad ctr Ds : Haryana : Sonipat | Kaithal amen]! Kurukshetra | Panipat | Rewari t\n* Beaks Pechgiie tama Vihar | 117 Main Gaet | Uttar Pradesh : Varanasi | Uttarakhand : Kashipur ap eae\nPehl THES OFRRQ UPTO Aon 2 Ge PAA _ SERRE SIA . Palle",
+  "raw_text_preview": "Sh yes Sanne (few\nMY Ujalayeyentis a ~~ ee\n~ Jee a A Bh.\nag HEALTHCARE SERVICES iCygnus;Superspeciality) Hospital] NASH.\nRy\nbg eee nme eh Sfp hh ch pene nam tag tenant ananaunds datetime parc iv onenDe Py aapOp PF POPOL H PS ap aA\nReqxot#3 od CP440 . Bed No ITO OTPRIVA\nLoc.Req No = 137596 , . Bill Date :\nCt) —— J a | CC]\n——S== . [a |\n: _—] LI = )\nINVESTIGATION . RESULTs . UNITS REFERENCE RANGE\nPTIINR .\nPT (PROTHROMBIN TIME) -\nPT (PROTHROMBIN TIME) 16.9 H Seconds 114-137 —\nCONTROL 13.4 :\nore 1.26 ,\nPT INR 1.2 tatio - 0.00 - 1.40\n. u *** End Of The Report ***\n. Dr. amd Yedav\n835, , ONB (OBS & GYNAE) ,\nOC-83984 :\nCygnus Superspeciality Hasptal, Rewari\nHospital Address : Old Sheela Yadav Hospital, Opp. Chal Hospital, Near BSNL Office, Reward, Haryana-123401 I Tel. No. :01274-25855¢ gd\nRegdJCpr...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Reqxot#3 od CP440 . Bed No ITO OTPRIVA"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Reqxot#3 od CP440 . Bed No ITO OTPRIVA"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

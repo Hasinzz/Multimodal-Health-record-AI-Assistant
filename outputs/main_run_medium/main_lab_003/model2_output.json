@@ -1,0 +1,58 @@
+{
+  "case_id": "main_lab_003",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0053408_Q-SATISHKUMAR19.04.20250001compressed_250427_1052@F.pdf_page_37.png",
+  "raw_text": "@ T PITAL YAS\ncy, ~\ny, SWASTIK i Ha\n. °\nWY Jhajjar Road, Bahadurgarh \\ !\n[The Stats eat Ss\nTha Spit Js Care\nrat S= SriNo. 154 Date CJ\noF a | os | ee Ee ee |\nCy] swastikhoseial = EJ\net) — | =\nHAEMATOLOGY\nHB AIC 5.65 % |\nEXPECTED VALUES :-\nMetabolicaly healthy patients = 48-60 % HbAIC ; :\nGood Control = 6.0-6.8 % HbAIC\nFair Control = 6.8-8.2 % HbAIC\nPoor Control = >8.2 % HbAIC\nREMARKS:-\nIn vitro quantitative determination of HBAIC in whole blood is utilized in long term monitoring of glycemia .\nThe HbAIC level correlates with the mean glucose concentration prevailing in the course of the patient's we\nrecent history (approx - 6-8 weeks) and therefore provides much more reliable information for glycemia\nmonitoring than do determinations of blood glucose or urinary glucose. Voy ~\nIt ts recommended that the determination of HBAIC be performed at intervals of 4-6 weeksduring Diabetes S\n| Mellitus therapy. SA ae SOON,\n| ~~ ON My VOY\n| Results of HbAIC should be assessed in conjunction with the patient's medical history, clinical ~ ON \\\nexaminations NT ‘\nand other findings. Xen ;\nNo?\n| *** End Of Report **** ‘\\\n| “ “HORE\n: “SP po ereepares . .\n| Pay Se , Di, Prvverere Sharma Dr Cty 473 LAIN\nAS . et oe Mes lig MER ; ou\nmm ANG Geno, ; . “AGES . -\n‘Qtr hy EW. UEC 8198\nTECHNICIAN” —\n— a\nOMC/R/10211\niS a! 43 i ey a “aie Pe clllin 20n7 Hire PAVAILABLE}] Se Color Dopple -\nMes tlaryane EAUCab Tesh ICUs Ambulance Facility, 24xQHCS AVAILABLE) | pxp-<-ehengaaaa\n: Delhi Government MiEiabaaea : pomaantel cama .\n| P = ; — . “oT meee ©t Digital X-Ra\nDaih{tiai Soard i | NOTLEOR MEDICO.LEGALRURPOSE | EP®-atiarh\nBEcIAIL TEAS Insurance mam \" _",
+  "raw_text_preview": "@ T PITAL YAS\ncy, ~\ny, SWASTIK i Ha\n. °\nWY Jhajjar Road, Bahadurgarh \\ !\n[The Stats eat Ss\nTha Spit Js Care\nrat S= SriNo. 154 Date CJ\noF a | os | ee Ee ee |\nCy] swastikhoseial = EJ\net) — | =\nHAEMATOLOGY\nHB AIC 5.65 % |\nEXPECTED VALUES :-\nMetabolicaly healthy patients = 48-60 % HbAIC ; :\nGood Control = 6.0-6.8 % HbAIC\nFair Control = 6.8-8.2 % HbAIC\nPoor Control = >8.2 % HbAIC\nREMARKS:-\nIn vitro quantitative determination of HBAIC in whole blood is utilized in long term monitoring of glycemia .\nThe HbAIC level correlates with the mean glucose concentration prevailing in the course of the patient's we\nrecent history (approx - 6-8 weeks) and therefore provides much more reliable information for glycemia\nmonitoring than do determinations of blood glucose or urinary glucose. Voy ~\nIt ts recommen...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Metabolicaly healthy patients = 48-60 % HbAIC ; :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Good Control = 6.0-6.8 % HbAIC"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "In vitro quantitative determination of HBAIC in whole blood is utilized in long term monitoring of glycemia ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "monitoring than do determinations of blood glucose or urinary glucose. Voy ~"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "diabetes"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Metabolicaly healthy patients = 48-60 % HbAIC ; :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Good Control = 6.0-6.8 % HbAIC"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "In vitro quantitative determination of HBAIC in whole blood is utilized in long term monitoring of glycemia ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "monitoring than do determinations of blood glucose or urinary glucose. Voy ~"
+      }
+    ],
+    "clinical_keywords": [
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "diabetes"
+      }
+    ]
+  },
+  "patient_summary": "4 medication or dosage-related line(s) were detected. Clinical keywords found: diabetes."
+}

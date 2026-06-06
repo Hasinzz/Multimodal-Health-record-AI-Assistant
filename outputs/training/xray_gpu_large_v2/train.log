@@ -1,0 +1,192 @@
+[Startup] For live GPU output, use: conda run --no-capture-output -n thesis_gpu python -m src.model1.train_xray ...
+[Data] Indexed 112120 image files under C:\Users\T2520824\thesis_multimodal_ai\data\images\xray
+[Data] Metadata columns detected: Image Index, Finding Labels
+[Data] Valid samples found: 112120
+[Data] Missing images skipped: 0
+[Data] Training samples: 89696
+[Data] Validation samples: 22424
+[Data] Class names: Atelectasis, Cardiomegaly, Effusion, Infiltration, Mass, Nodule, Pneumonia, Pneumothorax, Consolidation, Edema, Emphysema, Fibrosis, Pleural_Thickening, Hernia
+[Device] Using cuda
+[AMP] Enabled
+[Init] Loaded init checkpoint from checkpoints\model1\xray_best_model_gpu_full.pt
+[Init] Missing keys: 0
+[Init] Unexpected keys: 0
+[Loss] BCEWithLogitsLoss pos_weight prepared from training labels
+[Train] Current learning rate: 0.00005000
+[Train] Epoch 1/20
+  Batch  281/1402 | loss=0.9703
+  Batch  562/1402 | loss=0.9742
+  Batch  843/1402 | loss=0.9738
+  Batch 1124/1402 | loss=0.9714
+  Batch 1402/1402 | loss=0.9728
+[Validation] Epoch 1/20 | loss=1.0543 | macro_auroc=0.7965 | micro_auroc=0.8060 | macro_f1=0.1938 | micro_f1=0.2229 | macro_precision=0.1220 | macro_recall=0.6827
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.7965
+[Train] Current learning rate: 0.00004970
+[Train] Epoch 2/20
+  Batch  281/1402 | loss=0.9436
+  Batch  562/1402 | loss=0.9574
+  Batch  843/1402 | loss=0.9546
+  Batch 1124/1402 | loss=0.9600
+  Batch 1402/1402 | loss=0.9577
+[Validation] Epoch 2/20 | loss=1.0843 | macro_auroc=0.8014 | micro_auroc=0.8165 | macro_f1=0.2019 | micro_f1=0.2331 | macro_precision=0.1266 | macro_recall=0.6794
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8014
+[Train] Current learning rate: 0.00004880
+[Train] Epoch 3/20
+  Batch  281/1402 | loss=0.9588
+  Batch  562/1402 | loss=0.9475
+  Batch  843/1402 | loss=0.9452
+  Batch 1124/1402 | loss=0.9500
+  Batch 1402/1402 | loss=0.9468
+[Validation] Epoch 3/20 | loss=1.0699 | macro_auroc=0.8040 | micro_auroc=0.8187 | macro_f1=0.2062 | micro_f1=0.2311 | macro_precision=0.1297 | macro_recall=0.6884
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8040
+[Train] Current learning rate: 0.00004733
+[Train] Epoch 4/20
+  Batch  281/1402 | loss=0.9050
+  Batch  562/1402 | loss=0.9184
+  Batch  843/1402 | loss=0.9260
+  Batch 1124/1402 | loss=0.9264
+  Batch 1402/1402 | loss=0.9342
+[Validation] Epoch 4/20 | loss=1.0572 | macro_auroc=0.8021 | micro_auroc=0.8125 | macro_f1=0.1984 | micro_f1=0.2244 | macro_precision=0.1246 | macro_recall=0.7037
+[Train] Current learning rate: 0.00004532
+[Train] Epoch 5/20
+  Batch  281/1402 | loss=0.9111
+  Batch  562/1402 | loss=0.9202
+  Batch  843/1402 | loss=0.9188
+  Batch 1124/1402 | loss=0.9154
+  Batch 1402/1402 | loss=0.9149
+[Validation] Epoch 5/20 | loss=1.0701 | macro_auroc=0.8081 | micro_auroc=0.8182 | macro_f1=0.2036 | micro_f1=0.2316 | macro_precision=0.1272 | macro_recall=0.7028
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8081
+[Train] Current learning rate: 0.00004282
+[Train] Epoch 6/20
+  Batch  281/1402 | loss=0.8866
+  Batch  562/1402 | loss=0.9005
+  Batch  843/1402 | loss=0.9094
+  Batch 1124/1402 | loss=0.9019
+  Batch 1402/1402 | loss=0.9015
+[Validation] Epoch 6/20 | loss=1.1000 | macro_auroc=0.8066 | micro_auroc=0.8258 | macro_f1=0.2172 | micro_f1=0.2494 | macro_precision=0.1385 | macro_recall=0.6516
+[Train] Current learning rate: 0.00003990
+[Train] Epoch 7/20
+  Batch  281/1402 | loss=0.8702
+  Batch  562/1402 | loss=0.8741
+  Batch  843/1402 | loss=0.8736
+  Batch 1124/1402 | loss=0.8767
+  Batch 1402/1402 | loss=0.8810
+[Validation] Epoch 7/20 | loss=1.1115 | macro_auroc=0.8070 | micro_auroc=0.8226 | macro_f1=0.2135 | micro_f1=0.2434 | macro_precision=0.1356 | macro_recall=0.6704
+[Train] Current learning rate: 0.00003662
+[Train] Epoch 8/20
+  Batch  281/1402 | loss=0.8465
+  Batch  562/1402 | loss=0.8543
+  Batch  843/1402 | loss=0.8565
+  Batch 1124/1402 | loss=0.8557
+  Batch 1402/1402 | loss=0.8621
+[Validation] Epoch 8/20 | loss=1.1105 | macro_auroc=0.8097 | micro_auroc=0.8255 | macro_f1=0.2173 | micro_f1=0.2472 | macro_precision=0.1386 | macro_recall=0.6608
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8097
+[Train] Current learning rate: 0.00003307
+[Train] Epoch 9/20
+  Batch  281/1402 | loss=0.8454
+  Batch  562/1402 | loss=0.8534
+  Batch  843/1402 | loss=0.8460
+  Batch 1124/1402 | loss=0.8440
+  Batch 1402/1402 | loss=0.8488
+[Validation] Epoch 9/20 | loss=1.1216 | macro_auroc=0.8087 | micro_auroc=0.8284 | macro_f1=0.2149 | micro_f1=0.2457 | macro_precision=0.1348 | macro_recall=0.6723
+[Train] Current learning rate: 0.00002933
+[Train] Epoch 10/20
+  Batch  281/1402 | loss=0.8142
+  Batch  562/1402 | loss=0.8151
+  Batch  843/1402 | loss=0.8192
+  Batch 1124/1402 | loss=0.8201
+  Batch 1402/1402 | loss=0.8229
+[Validation] Epoch 10/20 | loss=1.1487 | macro_auroc=0.8108 | micro_auroc=0.8287 | macro_f1=0.2212 | micro_f1=0.2466 | macro_precision=0.1398 | macro_recall=0.6733
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8108
+[Train] Current learning rate: 0.00002550
+[Train] Epoch 11/20
+  Batch  281/1402 | loss=0.8261
+  Batch  562/1402 | loss=0.8290
+  Batch  843/1402 | loss=0.8271
+  Batch 1124/1402 | loss=0.8291
+  Batch 1402/1402 | loss=0.8298
+[Validation] Epoch 11/20 | loss=1.0978 | macro_auroc=0.8115 | micro_auroc=0.8285 | macro_f1=0.2131 | micro_f1=0.2441 | macro_precision=0.1337 | macro_recall=0.6878
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8115
+[Train] Current learning rate: 0.00002167
+[Train] Epoch 12/20
+  Batch  281/1402 | loss=0.8166
+  Batch  562/1402 | loss=0.8135
+  Batch  843/1402 | loss=0.8129
+  Batch 1124/1402 | loss=0.8103
+  Batch 1402/1402 | loss=0.8088
+[Validation] Epoch 12/20 | loss=1.1630 | macro_auroc=0.8114 | micro_auroc=0.8360 | macro_f1=0.2253 | micro_f1=0.2605 | macro_precision=0.1436 | macro_recall=0.6427
+[Train] Current learning rate: 0.00001793
+[Train] Epoch 13/20
+  Batch  281/1402 | loss=0.7943
+  Batch  562/1402 | loss=0.7894
+  Batch  843/1402 | loss=0.7935
+  Batch 1124/1402 | loss=0.7976
+  Batch 1402/1402 | loss=0.7936
+[Validation] Epoch 13/20 | loss=1.1624 | macro_auroc=0.8115 | micro_auroc=0.8330 | macro_f1=0.2236 | micro_f1=0.2530 | macro_precision=0.1420 | macro_recall=0.6588
+[Train] Current learning rate: 0.00001438
+[Train] Epoch 14/20
+  Batch  281/1402 | loss=0.7854
+  Batch  562/1402 | loss=0.7861
+  Batch  843/1402 | loss=0.7856
+  Batch 1124/1402 | loss=0.7834
+  Batch 1402/1402 | loss=0.7806
+[Validation] Epoch 14/20 | loss=1.2106 | macro_auroc=0.8107 | micro_auroc=0.8345 | macro_f1=0.2292 | micro_f1=0.2600 | macro_precision=0.1474 | macro_recall=0.6391
+[Train] Current learning rate: 0.00001110
+[Train] Epoch 15/20
+  Batch  281/1402 | loss=0.7587
+  Batch  562/1402 | loss=0.7610
+  Batch  843/1402 | loss=0.7603
+  Batch 1124/1402 | loss=0.7611
+  Batch 1402/1402 | loss=0.7624
+[Validation] Epoch 15/20 | loss=1.1872 | macro_auroc=0.8125 | micro_auroc=0.8366 | macro_f1=0.2294 | micro_f1=0.2609 | macro_precision=0.1468 | macro_recall=0.6411
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8125
+[Train] Current learning rate: 0.00000818
+[Train] Epoch 16/20
+  Batch  281/1402 | loss=0.7464
+  Batch  562/1402 | loss=0.7517
+  Batch  843/1402 | loss=0.7492
+  Batch 1124/1402 | loss=0.7485
+  Batch 1402/1402 | loss=0.7492
+[Validation] Epoch 16/20 | loss=1.1875 | macro_auroc=0.8133 | micro_auroc=0.8377 | macro_f1=0.2315 | micro_f1=0.2638 | macro_precision=0.1483 | macro_recall=0.6416
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_large_v2.pt using macro_auroc=0.8133
+[Train] Current learning rate: 0.00000568
+[Train] Epoch 17/20
+  Batch  281/1402 | loss=0.7383
+  Batch  562/1402 | loss=0.7364
+  Batch  843/1402 | loss=0.7343
+  Batch 1124/1402 | loss=0.7350
+  Batch 1402/1402 | loss=0.7374
+[Validation] Epoch 17/20 | loss=1.2109 | macro_auroc=0.8124 | micro_auroc=0.8379 | macro_f1=0.2316 | micro_f1=0.2651 | macro_precision=0.1487 | macro_recall=0.6320
+[Train] Current learning rate: 0.00000367
+[Train] Epoch 18/20
+  Batch  281/1402 | loss=0.7332
+  Batch  562/1402 | loss=0.7369
+  Batch  843/1402 | loss=0.7324
+  Batch 1124/1402 | loss=0.7340
+  Batch 1402/1402 | loss=0.7356
+[Validation] Epoch 18/20 | loss=1.2362 | macro_auroc=0.8116 | micro_auroc=0.8380 | macro_f1=0.2368 | micro_f1=0.2698 | macro_precision=0.1542 | macro_recall=0.6163
+[Train] Current learning rate: 0.00000220
+[Train] Epoch 19/20
+  Batch  281/1402 | loss=0.7406
+  Batch  562/1402 | loss=0.7327
+  Batch  843/1402 | loss=0.7342
+  Batch 1124/1402 | loss=0.7301
+  Batch 1402/1402 | loss=0.7274
+[Validation] Epoch 19/20 | loss=1.2304 | macro_auroc=0.8118 | micro_auroc=0.8397 | macro_f1=0.2368 | micro_f1=0.2697 | macro_precision=0.1530 | macro_recall=0.6227
+[Train] Current learning rate: 0.00000130
+[Train] Epoch 20/20
+  Batch  281/1402 | loss=0.7186
+  Batch  562/1402 | loss=0.7234
+  Batch  843/1402 | loss=0.7258
+  Batch 1124/1402 | loss=0.7228
+  Batch 1402/1402 | loss=0.7244
+[Validation] Epoch 20/20 | loss=1.2378 | macro_auroc=0.8118 | micro_auroc=0.8386 | macro_f1=0.2349 | micro_f1=0.2686 | macro_precision=0.1521 | macro_recall=0.6200
+[Output] Training history saved to outputs\training\xray_gpu_large_v2\xray_training_history.csv
+[Output] Metrics JSON saved to outputs\training\xray_gpu_large_v2\xray_metrics.json
+[Output] AUROC table saved to outputs\training\xray_gpu_large_v2\xray_auc_table.csv
+[Output] F1 table saved to outputs\training\xray_gpu_large_v2\xray_f1_table.csv
+[Output] Threshold table saved to outputs\training\xray_gpu_large_v2\xray_threshold_table.csv
+[Output] Loss curve saved to outputs\training\xray_gpu_large_v2\xray_loss_curve.png
+[Output] Macro AUROC curve saved to outputs\training\xray_gpu_large_v2\xray_macro_auc_curve.png
+[Output] Macro F1 curve saved to outputs\training\xray_gpu_large_v2\xray_macro_f1_curve.png
+[Done] Chest X-ray training finished. Best score: macro_auroc=0.8133 at epoch 16

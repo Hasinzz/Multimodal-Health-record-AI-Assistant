@@ -1,0 +1,25 @@
+{
+  "case_id": "main_prescription_014",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\306866877_778557093405523_6314373305025380271_n.jpg",
+  "raw_text": "“Thong tn Tr meer mais naman anecie array mesnae tne patentee re ent ee tevin tie be cece\n6ng BHXH | £2 Dang ky ché dd dn fa Tinh hinh Givang - Bénh ESS sao cio ~ [E] those .\nSS\n“2 Ké don thudc Se\nOe cece nae hehehe enn nee\n| Théng tin dan Bau ten: 522529 |\nMa Ten , a . JROANG NGOo GAT EN |\nKhoa Ph [120 : hea r.x|Khoa Knam bénh- Tham da chien Hotén BN JHOANGNGOCCATTIEN [9] |\nam ham j an oo a ' |\nNaay ké don [fE0972022_ =| S6 WwIPK iz 2200201011: \\ Gigi tinh J Nam Tus | 1 '\n‘|. [MEM MOIHONG CAP a yy N Thi trén Sia Huyén Quang Dien TT- :\n| Chan doan : note Dia chi Hue :\n| Ma Bs Jounoo2 Tén BS [Bang Phuc Minh Duc hy. Quay thude [Nha thudc 96 1 (NH) ; a |.\n: LTén thudc a | BVT | SL Bon Gii Thanh_Tien | Gich ding |\nTT css Pic zasel zac0)\n|[oteonenr smotchownenteme) [vin | s [ af ax) TY\n| actor neon kas [a [a [see 068) i060) I\n[eect Pea oai a6 zene\nLi dan: J Sd dung thudc theo dung chi dinh cla bac si.\nta $3 ow po) Xéa théng tin ©\nLuu Xa In Tim phiéu dé nhip mai Thoat\n: '\njoa O09 er\nover Ty _\na ah\nsane? Y\nia .\n. a\n/ \\\n’ .]\nf-",
+  "raw_text_preview": "“Thong tn Tr meer mais naman anecie array mesnae tne patentee re ent ee tevin tie be cece\n6ng BHXH | £2 Dang ky ché dd dn fa Tinh hinh Givang - Bénh ESS sao cio ~ [E] those .\nSS\n“2 Ké don thudc Se\nOe cece nae hehehe enn nee\n| Théng tin dan Bau ten: 522529 |\nMa Ten , a . JROANG NGOo GAT EN |\nKhoa Ph [120 : hea r.x|Khoa Knam bénh- Tham da chien Hotén BN JHOANGNGOCCATTIEN [9] |\nam ham j an oo a ' |\nNaay ké don [fE0972022_ =| S6 WwIPK iz 2200201011: \\ Gigi tinh J Nam Tus | 1 '\n‘|. [MEM MOIHONG CAP a yy N Thi trén Sia Huyén Quang Dien TT- :\n| Chan doan : note Dia chi Hue :\n| Ma Bs Jounoo2 Tén BS [Bang Phuc Minh Duc hy. Quay thude [Nha thudc 96 1 (NH) ; a |.\n: LTén thudc a | BVT | SL Bon Gii Thanh_Tien | Gich ding |\nTT css Pic zasel zac0)\n|[oteonenr smotchownenteme) [vin | s [ af ax) TY\n| actor ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "‘|. [MEM MOIHONG CAP a yy N Thi trén Sia Huyén Quang Dien TT- :"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "‘|. [MEM MOIHONG CAP a yy N Thi trén Sia Huyén Quang Dien TT- :"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

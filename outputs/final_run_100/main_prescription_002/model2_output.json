@@ -1,0 +1,57 @@
+{
+  "case_id": "main_prescription_002",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\printed\\306014035_1264198467686524_6522188173724354873_n (1).jpg",
+  "raw_text": "7 494821* :\n7 Boy Te *22001 !\nBENH VIEN TW HUE 22001494821\n. x .\n+. Khoa: Khoa Kham bénh Quay: Nha thuée s6 2 (tng 1 nha ODA)\n+ oar &\n12 io ten: LE TH] LOAN ceceseae THO: 68 Giditinh: NO\n- Chan doa: viém da day HP (+) gian tinh mach chi dui hdi chizng rudt kieh thfch\n. STH Tén Thudc Cach ding, ligu dung .\n. Esotrax 40(Esomeprazole 40mg) Vién 42 |ngay 3 vién chia 3 trudc an\n. : Fabamox 1000 DT(Amoxicillin(duéidang 42 |ngay 3 vién chia 3 sau an (\nAmoxicillin trihydrat) 100mg) Vien | fsangtrvatéi)\n' Rosemin 900mg, 100mg(\"Phan doan 60 |ngay 2 vién chia 2 ( sang ,\n: flavonoid tinh khiét dang vi hat chtra chiéu) sau an\n. i diosmin va hesperidin (9:1) twong Ung: : :\n: Diosmin\n7 Hesperidin\") Vién a Sn ee \\\n: (| p)Orimy (Multivitamin) Vién 40 |nagfy 2 vién chia 2 sau an (\nan a ve ee nef eee fSANG CHIU)\n: Baci- subti(Bacillus subtilis ) Vién 30 jnagfy 2 vién chia 2 sau an ( * .\nq . i\na\n} sae Ne\nLot dan: St dung thuéc theo ding chi dinh cla bdo st '\n} , sal 27 thang ¥ nim 2022\n‘ . lEU TR]\nKhém laixin mang theo don nay Hoa .\nmE oang Thi Td Anh",
+  "raw_text_preview": "7 494821* :\n7 Boy Te *22001 !\nBENH VIEN TW HUE 22001494821\n. x .\n+. Khoa: Khoa Kham bénh Quay: Nha thuée s6 2 (tng 1 nha ODA)\n+ oar &\n12 io ten: LE TH] LOAN ceceseae THO: 68 Giditinh: NO\n- Chan doa: viém da day HP (+) gian tinh mach chi dui hdi chizng rudt kieh thfch\n. STH Tén Thudc Cach ding, ligu dung .\n. Esotrax 40(Esomeprazole 40mg) Vién 42 |ngay 3 vién chia 3 trudc an\n. : Fabamox 1000 DT(Amoxicillin(duéidang 42 |ngay 3 vién chia 3 sau an (\nAmoxicillin trihydrat) 100mg) Vien | fsangtrvatéi)\n' Rosemin 900mg, 100mg(\"Phan doan 60 |ngay 2 vién chia 2 ( sang ,\n: flavonoid tinh khiét dang vi hat chtra chiéu) sau an\n. i diosmin va hesperidin (9:1) twong Ung: : :\n: Diosmin\n7 Hesperidin\") Vién a Sn ee \\\n: (| p)Orimy (Multivitamin) Vién 40 |nagfy 2 vién chia 2 sau an (\nan a ve ee nef eee fSANG C...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "+. Khoa: Khoa Kham bénh Quay: Nha thuée s6 2 (tng 1 nha ODA)"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ". Esotrax 40(Esomeprazole 40mg) Vién 42 |ngay 3 vién chia 3 trudc an"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Amoxicillin trihydrat) 100mg) Vien | fsangtrvatéi)"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "' Rosemin 900mg, 100mg(\"Phan doan 60 |ngay 2 vién chia 2 ( sang ,"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Lot dan: St dung thuéc theo ding chi dinh cla bdo st '"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "+. Khoa: Khoa Kham bénh Quay: Nha thuée s6 2 (tng 1 nha ODA)"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ". Esotrax 40(Esomeprazole 40mg) Vién 42 |ngay 3 vién chia 3 trudc an"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Amoxicillin trihydrat) 100mg) Vien | fsangtrvatéi)"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "' Rosemin 900mg, 100mg(\"Phan doan 60 |ngay 2 vién chia 2 ( sang ,"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Lot dan: St dung thuéc theo ding chi dinh cla bdo st '"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "5 medication or dosage-related line(s) were detected."
+}

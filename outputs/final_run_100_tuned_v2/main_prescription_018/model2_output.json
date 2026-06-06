@@ -1,0 +1,33 @@
+{
+  "case_id": "main_prescription_018",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\306492681_624444992629082_2816686601032372372_n.jpg",
+  "raw_text": "soe 5 . “ vas\n. i\nhdng tin En pee ae ae ;\ndang ky ché 46 an fr Tinh hinh Giuang - Bénh BS) bdo cdo [ [QJ trot .\n“2 Ké don thude ie) an) Re er ee =\nPEN a ob te hee bea eda Lady Ce ee ae rn ne [Ae & fee)\neee ge 6 518.566.\nKhoa Ph F209 Khoa i K[Khoa Kham bénh - Tham dé chden ' Hatén BN JNGUYEN NGO PHUONG THAO [do]\nNoay ké don IEo9/2022 x] sswipk [| 2200200829 Boo. @igitnn ONG Tus: | 2\n. Chan don em pl en e ae te Dia chi pa Huong Vinh Thj x8 Huong Tra TT.\nMaBs . [SINOOT “| TénBs [Ng Bue sy ete Quy thude [tina thude 56.1 (NAD J\nTénthudc ; lovT | st | Pon_Gid_ | Thanh Tin | Céch ding {\n| BOSTOCERRT SSengism Cafdrint2siia/ Sma chal | 1 }.113,400| 113,400 {nay usng 10 mi cha 2\nTOSSEQUE(Bromhexin 160mg) | 1 chat {1 [ 114,450|\" 114,450 [gay udng 15 mi chu 2 [x]\nSe alcaaldseot iL eaten\nTkumune . . ui : Chai 1 290,716 290,716 !sang ung 5 mi [x]\ncc iL Oe BS, ee\nLai dan: Sw dung thudc theo dung chi dinh cua bac st\nS bo P aog the te ©\n- poled\niad sonememetnea ees ctastenceneenendteeereminnnattisheaeentoemahemmenmenentenenennemememememeenemetminennemnntniemeameeneanee ene\npa\nws - i ” . wanna.\nnena ~~ .\nr 7",
+  "raw_text_preview": "soe 5 . “ vas\n. i\nhdng tin En pee ae ae ;\ndang ky ché 46 an fr Tinh hinh Giuang - Bénh BS) bdo cdo [ [QJ trot .\n“2 Ké don thude ie) an) Re er ee =\nPEN a ob te hee bea eda Lady Ce ee ae rn ne [Ae & fee)\neee ge 6 518.566.\nKhoa Ph F209 Khoa i K[Khoa Kham bénh - Tham dé chden ' Hatén BN JNGUYEN NGO PHUONG THAO [do]\nNoay ké don IEo9/2022 x] sswipk [| 2200200829 Boo. @igitnn ONG Tus: | 2\n. Chan don em pl en e ae te Dia chi pa Huong Vinh Thj x8 Huong Tra TT.\nMaBs . [SINOOT “| TénBs [Ng Bue sy ete Quy thude [tina thude 56.1 (NAD J\nTénthudc ; lovT | st | Pon_Gid_ | Thanh Tin | Céch ding {\n| BOSTOCERRT SSengism Cafdrint2siia/ Sma chal | 1 }.113,400| 113,400 {nay usng 10 mi cha 2\nTOSSEQUE(Bromhexin 160mg) | 1 chat {1 [ 114,450|\" 114,450 [gay udng 15 mi chu 2 [x]\nSe alcaaldseot iL eaten\nTkumune . . ui...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "dang ky ché 46 an fr Tinh hinh Giuang - Bénh BS) bdo cdo [ [QJ trot ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "TOSSEQUE(Bromhexin 160mg) | 1 chat {1 [ 114,450|\" 114,450 [gay udng 15 mi chu 2 [x]"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "dang ky ché 46 an fr Tinh hinh Giuang - Bénh BS) bdo cdo [ [QJ trot ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "TOSSEQUE(Bromhexin 160mg) | 1 chat {1 [ 114,450|\" 114,450 [gay udng 15 mi chu 2 [x]"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected."
+}

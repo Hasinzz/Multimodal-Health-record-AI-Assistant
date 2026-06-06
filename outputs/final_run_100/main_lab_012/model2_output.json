@@ -1,0 +1,49 @@
+{
+  "case_id": "main_lab_012",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\BLR-0425-PA-0040301_Q-Report3_250422_1436@F.pdf_page_2.png",
+  "raw_text": "INSTITUTE OF LIVER & BILIARY SCIENCES\n(An Autonomous Society under Government of NCT of Delhi)\nLr D-1, Vasant Kunj, New Delhi, India\ni | bs 2 Ferm P ]\n—'|\n_— | : IPID.0112385 Patient's all | ee |\nReferred By : Dr Satender Pal Singh Requisition ay 4312180\nWard : HDU Phase-IT Bed 2320-02\nDate of Collection : 21-Apr-2025 00:26 Reporting Date 21-Apr-2025 06:23\n| —_—\nLABORATORY\nTEST Result Unit Reference Range\neGFR 125 mi/min/1.73\nm*2\nRemarks: PLEASE CORRELATE CLINICALLY.\nLiver Function Test_/ Profile** * [SERUM\nMethod : DPD\nSample Type : Serum\nBilirubin Total{ DPD} 1.18 mg/dl 01-12\nBilirubin Direct{ DPD} 0.3 *H 0-0.2\nBilirubin Indirect (Calculated) 0.88 *H 0.2-0.8\nAST/SGOT {IFCC-Without P-5P} 33 TU/L 5-40\nALT /SGPT (1FCC-Without P-5P) 23 < 30\nAlkaline Phosphatase{IFCC Amp 79 50 - 116\nBuffer}\nGGT {IFCC} 12 <55\nTotal Protein{Biuret} 5.29 *L g/dL 6.4- 8.3\nAlbumin {BCP Bromocresol Green} 2.38 *L 3.5-5.2\nGlobulin (Calculated) 2.91 gm/dl\nA\\G Ratio (Calculated) 0.82 *L 1.5-2.5\nRemarks: PLEASE CORRELATE CLINICALLY.\nMagnesium-serum** * [SERUM\nSample Type : Serum\nMagnesium (Xylldyl 3.1 *H mg/dl 1.7-2.4\nBlue-Colourimetric-Tris-B\nRemarks: PLEASE CORRELATE CLINICALLY.\nCOAGULATION\nPT / PT-INR ** * [PLASMA]\nSample Type : Citrated Plasma\nMethad : Photo Optical Clot Detection\nProthrombin Time(PT)\nTest 16.0 seconds\nMean Normal Prothrombin 12.0\nTime(MNPT)\nINR 1.36\nBIO - CHEMISTRY\n* Use of NABL symbol is subject to scape of accreditation",
+  "raw_text_preview": "INSTITUTE OF LIVER & BILIARY SCIENCES\n(An Autonomous Society under Government of NCT of Delhi)\nLr D-1, Vasant Kunj, New Delhi, India\ni | bs 2 Ferm P ]\n—'|\n_— | : IPID.0112385 Patient's all | ee |\nReferred By : Dr Satender Pal Singh Requisition ay 4312180\nWard : HDU Phase-IT Bed 2320-02\nDate of Collection : 21-Apr-2025 00:26 Reporting Date 21-Apr-2025 06:23\n| —_—\nLABORATORY\nTEST Result Unit Reference Range\neGFR 125 mi/min/1.73\nm*2\nRemarks: PLEASE CORRELATE CLINICALLY.\nLiver Function Test_/ Profile** * [SERUM\nMethod : DPD\nSample Type : Serum\nBilirubin Total{ DPD} 1.18 mg/dl 01-12\nBilirubin Direct{ DPD} 0.3 *H 0-0.2\nBilirubin Indirect (Calculated) 0.88 *H 0.2-0.8\nAST/SGOT {IFCC-Without P-5P} 33 TU/L 5-40\nALT /SGPT (1FCC-Without P-5P) 23 < 30\nAlkaline Phosphatase{IFCC Amp 79 50 - 116\nBuffer}\nG...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method : DPD"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Bilirubin Total{ DPD} 1.18 mg/dl 01-12"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Magnesium (Xylldyl 3.1 *H mg/dl 1.7-2.4"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "* Use of NABL symbol is subject to scape of accreditation"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method : DPD"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Bilirubin Total{ DPD} 1.18 mg/dl 01-12"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Magnesium (Xylldyl 3.1 *H mg/dl 1.7-2.4"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "* Use of NABL symbol is subject to scape of accreditation"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "4 medication or dosage-related line(s) were detected."
+}

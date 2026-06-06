@@ -1,0 +1,31 @@
+{
+  "case_id": "smoke_full_brain_001",
+  "modality": "brain_mri",
+  "image_path": "data/images/brain_mri/Testing/glioma/Te-gl_1.jpg",
+  "top_predictions": [
+    {
+      "label": "no_tumor",
+      "probability": 0.8278235793113708
+    },
+    {
+      "label": "meningioma_tumor",
+      "probability": 0.09241799265146255
+    },
+    {
+      "label": "pituitary_tumor",
+      "probability": 0.07843702286481857
+    },
+    {
+      "label": "glioma_tumor",
+      "probability": 0.0013214251957833767
+    }
+  ],
+  "probabilities": {
+    "glioma_tumor": 0.0013214251957833767,
+    "meningioma_tumor": 0.09241799265146255,
+    "no_tumor": 0.8278235793113708,
+    "pituitary_tumor": 0.07843702286481857
+  },
+  "embedding_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\outputs\\smoke_full_brain_001\\smoke_full_brain_001_brain_mri_embedding.npy",
+  "patient_summary_text": "Brain MRI suggests: no_tumor with confidence 0.83."
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "main_lab_014",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\DEL-0425-PA-0052259_qqrr_27-04-2025_0524-02_PM@G.pdf_page_26.png",
+  "raw_text": "a” PSRI HOSPITAL gee, OE\nA MULTI SPECIALITY HOSPITAL TARTEES Os We-2835\nSS\nLABORATORY DIVISION\na | — — —\nC ] 2 IPD Report Date (CJ 9:33am\nCotlection Date&Time ) a | 6:25AM Lab No = 628562\nSample Type «SERUM Report Status : Final\nReferred By : Dr COL ARUN KUMAR VSM Bed No/Ward : MICU-12/A-Block-SECOND FLO\neee ICUS EAB LOCK SECOND FLO\nHAEMATOLOGY\n—— eee\nInvestigation =] [ ] [ ] [— ]\nTLC\nTLC (Total Leucocyte Count) 13.85 H LOAZ/uL 4,00 - 11.00\n(Mcthod - Electrical Impedence)\n“End Of Report**\nSee\nDr Pi rN\nMBBS, MD, PATHOLOGY DIP\nRCPATH HISTOPATHOLOGY\nATTENDING CONSULTANT\na |\neee _ ™\noi For Appointment [Je] —\n> P Ss R ] 2) oppuapsn.net, infog-psr.net G www.psrihospital.com\neee eee eee Pahospaah com\no MULTI SPECIALITY] — pseiHOsPrTal, Presa Enclave Marg, Shelkh Soral, Phase Il Near Saket Court, New Delhi1?\nHOSPITAL CIN No : U74899PL1995NPLO70915",
+  "raw_text_preview": "a” PSRI HOSPITAL gee, OE\nA MULTI SPECIALITY HOSPITAL TARTEES Os We-2835\nSS\nLABORATORY DIVISION\na | — — —\nC ] 2 IPD Report Date (CJ 9:33am\nCotlection Date&Time ) a | 6:25AM Lab No = 628562\nSample Type «SERUM Report Status : Final\nReferred By : Dr COL ARUN KUMAR VSM Bed No/Ward : MICU-12/A-Block-SECOND FLO\neee ICUS EAB LOCK SECOND FLO\nHAEMATOLOGY\n—— eee\nInvestigation =] [ ] [ ] [— ]\nTLC\nTLC (Total Leucocyte Count) 13.85 H LOAZ/uL 4,00 - 11.00\n(Mcthod - Electrical Impedence)\n“End Of Report**\nSee\nDr Pi rN\nMBBS, MD, PATHOLOGY DIP\nRCPATH HISTOPATHOLOGY\nATTENDING CONSULTANT\na |\neee _ ™\noi For Appointment [Je] —\n> P Ss R ] 2) oppuapsn.net, infog-psr.net G www.psrihospital.com\neee eee eee Pahospaah com\no MULTI SPECIALITY] — pseiHOsPrTal, Presa Enclave Marg, Shelkh Soral, Phase Il Near Saket Court, ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(Mcthod - Electrical Impedence)"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(Mcthod - Electrical Impedence)"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

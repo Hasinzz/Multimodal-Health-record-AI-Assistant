@@ -1,0 +1,136 @@
+{
+  "case_id": "doc_test_001",
+  "file": "data/documents/README_CHESTXRAY.pdf",
+  "raw_text": "--- Page 1 ---\nNIH Chest X-ray Dataset of 14 Common Thorax Disease Categories:\n(1, Atelectasis; 2, Cardiomegaly; 3, Effusion; 4, Infiltration; 5, Mass; 6, Nodule; 7, Pneumonia; 8,\nPneumothorax; 9, Consolidation; 10, Edema; 11, Emphysema; 12, Fibrosis; 13,\nPleural_Thickening; 14 Hernia)\nBackground & Motivation: Chest X-ray exam is one of the most frequent and cost-effective\nmedical imaging examination. However clinical diagnosis of chest X-ray can be challenging, and\nsometimes believed to be harder than diagnosis via chest CT imaging. Even some promising\nwork have been reported in the past, and especially in recent deep learning work on\nTuberculosis (TB) classification. To achieve clinically relevant computer-aided detection and\ndiagnosis (CAD) in real world medical sites on all data settings of chest X-rays is still very\ndifficult, if not impossible when only several thousands of images are employed for study. This is\nevident from [2] where the performance deep neural networks for thorax disease recognition is\nseverely limited by the availability of only 4143 frontal view images [3] (Openi is the previous\nlargest publicly available chest X-ray dataset to date).\nIn this database, we provide an enhanced version (with 6 more disease categories and more\nimages as well) of the dataset used in the recent work [1] which is approximately 27 times of the\nnumber of frontal chest x-ray images in [3]. Our dataset is extracted from the clinical PACS\ndatabase at National Institutes of Health Clinical Center and consists of ~60% of all frontal chest\nx-rays in the hospital. Therefore we expect this dataset is significantly more representative to\nthe real patient population distributions and realistic clinical diagnosis challenges, than any\nprevious chest x-ray datasets. Of course, the size of our dataset, in terms of the total numbers\nof images and thorax disease frequencies, would better facilitate deep neural network training\n[2]. Refer to [1] on the details of how the dataset is extracted and image labels are mined\nthrough natural language processing (NLP).\nDetails: ChestX-ray dataset comprises 112,120 frontal-view X-ray images of 30,805 unique\npatients with the text-mined fourteen disease image labels (where each image can have multi-\nlabels), mined from the associated radiological reports using natural language processing.\nFourteen common thoracic pathologies include Atelectasis, Consolidation, Infiltration,\nPneumothorax, Edema, Emphysema, Fibrosis, Effusion, Pneumonia, Pleural_thickening,\nCardiomegaly, Nodule, Mass and Hernia, which is an extension of the 8 common disease\npatterns listed in our CVPR 2017 paper. Note that original radiology reports (associated with\nthese chest x-ray studies) are not meant to be publicly shared for many reasons. The text-mined\ndisease labels are expected to have accuracy >90%. Please find more details and benchmark\nperformance of trained models based on 14 disease labels in our arxiv paper: 1705.02315\nContents:\n1. 112,120 frontal-view chest X-ray PNG images in 1024*1024 resolution (under images folder)\n2. Meta data for all images (Data_Entry_2017.csv): Image Index, Finding Labels, Follow-up #,\nPatient ID, Patient Age, Patient Gender, View Position, Original Image Size and Original Image\nPixel Spacing.\n--- Page 2 ---\n3. Bounding boxes for ~1000 images (BBox_List_2017.csv): Image Index, Finding Label,\nBbox[x, y, w, h]. [x y] are coordinates of each box's topleft corner. [w h] represent the width and\nheight of each box.\n4. Two data split files (train_val_list.txt and test_list.txt) are provided. Images in the ChestX-ray\ndataset are divided into these two sets on the patient level. All studies from the same patient will\nonly appear in either training/validation or testing set.\nIf you find the dataset useful for your research projects, please cite our CVPR 2017 paper:\nXiaosong Wang, Yifan Peng, Le Lu, Zhiyong Lu, Mohammadhadi Bagheri, Ronald M. Summers.\nChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly- Supervised\nClassification and Localization of Common Thorax Diseases, IEEE CVPR, pp. 3462-3471,2017\n@InProceedings{wang2017chestxray,\nauthor = {Wang, Xiaosong and Peng, Yifan and Lu, Le and Lu, Zhiyong and Bagheri, Mohammadhadi\nand Summers, Ronald},\ntitle |= {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised\nClassification and Localization of Common Thorax Diseases},\nbooktitle = {2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},\npages = {3462--3471},\nyear ={2017}\nQuestions Comments: (xiaosong.wang@nih.gov; le.lu@nih.gov; rms@nih.gov)\nLimitations: 1) The image labels are NLP extracted so there would be some erroneous labels\nbut the NLP labelling accuracy is estimated to be >90%. 2) Very limited numbers of disease\nregion bounding boxes. 3) Chest x-ray radiology reports are not anticipated to be publicly\nshared. Parties who use this public dataset are encouraged to share their “updated” image\nlabels and/or new bounding boxes in their own studied later, maybe through manual annotation.\nAcknowledgement: This work was supported by the Intramural Research Program of the NIH\nClinical Center (clinicalcenter.nih.gov) and National Library of Medicine (www.nlm.nih.gov). We\nthank NVIDIA Corporation for the GPU donations.\nReference:\n[1] Xiaosong Wang, Yifan Peng, Le Lu, Zhiyong Lu, Mohammadhadi Bagheri, Ronald Summers,\nChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised\nClassification and Localization of Common Thorax Diseases, IEEE CVPR, pp. 3462-3471, 2017\n[2] Hoo-chang Shin, Kirk Roberts, Le Lu, Dina Demner-Fushman, Jianhua Yao, Ronald M.\nSummers, Learning to Read Chest X-Rays: Recurrent Neural Cascade Model for Automated\nImage Annotation, IEEE CVPR, pp. 2497-2506, 2016\n--- Page 3 ---\n[3] Open-i: An open access biomedical search engine. https: //openi.nim.nih.gov\nA, Distributions of 14 disease categories with co-occurrence statistics:\na 7 ™\n, \"ao,\nNY \\ Vj\n\\ NH LZ. LG, Ys\n~~ | '\\e ® ay 1. EE\na S=i 174 ‘6’ 6/2]\n& oe < | al ~- I\\ ZL Hy“\n— FT FOP FLA\n— oe WY G7 . 3\nSY eA ae\n= Sy, bo yew aa el\nWA ¢ eK ta” VA a SS\n; =e <4) 4 LX ye\nae Ss 5 an Iie\nx TV 4 i y [|] &- A | » S\n=o SA A> sw, Se.\nZA ay OM gy, te Seay ;\nRE VV THES\n= {fe\n{ Wy. WH, vi\n| l) K) fj A a\nWee MU le\nWX 7\nSe\nlA Wat \\/\n{ Va \\y/\na Hernia\nA.2 co-occurrence matrix of the fourteen thorax diseases in this chest X-ray dataset\njefe fro [ae fe [oe [= [es fo fe [* fa [nw |\nEE\nperf [ow [ow foo ow [ee [or [oe [om [ae [ve [ow [a\n--- Page 4 ---\nfas [ooo [oo [row [oe [ow [oe [oo [oo Tor [os Toe [oo To _]\nfre_[s [os [we [or foo [x [ow [me |» [ro [wo [oo [2 |\njex_[er [oe [ow [oe [or [me fo [oe fo [eo fe [ef\njae [foe fos [oe [we [vo [of [we fro [oe fo\nee\neo ff i fe fe ee ff fe |\nB. Eight visual examples of common thorax diseases\nTroe 7 — = 4\n; “ 4\n“Soy ee a\n¥ \\ 7 7\n| | j\nAtelectasis Cardiomegaly Effusion | Infiltration\naN\ni ~\n~~ .\nMass Nodule Pneumonia | Pneumothorax\nC. Two Samples of disease localization using weakly supervised deep neural networks\n--- Page 5 ---\nRadiology report | Keyword | Localization Result\nfindings include: 1. left basilar at- | Effusion;\nelectasis/consolidation. 2. prominent | Infiltration;\nhilum (mediastinal adenopathy). 3. | Atelectasis F\nleft pic catheter (tip in atriocaval junc- j\ntion). 4. stable, normal appearing car-\ndiomediastinal silhouette. | i\nimpression: small right pleural ef- | a eae!\nfusion otherwise stable abnormal |\nstudy including left basilar infil- \\\ntrate/atelectasis, prominent hilum, t\nand position of left pic catheter (tip\natriocaval junction).\nTable 4. A sample of chest x-ray radiology report, mined disease keywords and localization result from the “Atelectasis” Class. Correct\nbounding box (in green), false positives (in red) and the ground truth (in blue) are plotted over the original image.\nRadiology report [| Keyword | Localization Result\nfindings include: 1. cardiomegaly (ct | Cardiomegaly -\nratio of 17/30). 2. otherwise normal call\nlungs and mediastinal contours. 3. no\nevidence of focal bone lesion. dictat-\ning\nalte\nTable 5. A sample of chest x-ray radiology report, mined disease keywords and localization result from the “Cardiomegaly” Class. Correct\nbounding box (in green), false positives (in red) and the ground truth (in blue) are plotted over the original image.",
+  "raw_text_preview": "--- Page 1 ---\nNIH Chest X-ray Dataset of 14 Common Thorax Disease Categories:\n(1, Atelectasis; 2, Cardiomegaly; 3, Effusion; 4, Infiltration; 5, Mass; 6, Nodule; 7, Pneumonia; 8,\nPneumothorax; 9, Consolidation; 10, Edema; 11, Emphysema; 12, Fibrosis; 13,\nPleural_Thickening; 14 Hernia)\nBackground & Motivation: Chest X-ray exam is one of the most frequent and cost-effective\nmedical imaging examination. However clinical diagnosis of chest X-ray can be challenging, and\nsometimes believed to be harder than diagnosis via chest CT imaging. Even some promising\nwork have been reported in the past, and especially in recent deep learning work on\nTuberculosis (TB) classification. To achieve clinically relevant computer-aided detection and\ndiagnosis (CAD) in real world medical sites on all data settin...",
+  "entities": [
+    {
+      "type": "PATIENT_INFO",
+      "field": "age",
+      "text": "1"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(1, Atelectasis; 2, Cardiomegaly; 3, Effusion; 4, Infiltration; 5, Mass; 6, Nodule; 7, Pneumonia; 8,"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "In this database, we provide an enhanced version (with 6 more disease categories and more"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "database at National Institutes of Health Clinical Center and consists of ~60% of all frontal chest"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Cardiomegaly, Nodule, Mass and Hernia, which is an extension of the 8 common disease"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "performance of trained models based on 14 disease labels in our arxiv paper: 1705.02315"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly- Supervised"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "title |= {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Summers, Learning to Read Chest X-Rays: Recurrent Neural Cascade Model for Automated"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Mass Nodule Pneumonia | Pneumothorax"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "tion). 4. stable, normal appearing car-"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "fusion otherwise stable abnormal |"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Table 4. A sample of chest x-ray radiology report, mined disease keywords and localization result from the “Atelectasis” Class. Correct"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Table 5. A sample of chest x-ray radiology report, mined disease keywords and localization result from the “Cardiomegaly” Class. Correct"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {
+      "age": "1"
+    },
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(1, Atelectasis; 2, Cardiomegaly; 3, Effusion; 4, Infiltration; 5, Mass; 6, Nodule; 7, Pneumonia; 8,"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "In this database, we provide an enhanced version (with 6 more disease categories and more"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "database at National Institutes of Health Clinical Center and consists of ~60% of all frontal chest"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Cardiomegaly, Nodule, Mass and Hernia, which is an extension of the 8 common disease"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "performance of trained models based on 14 disease labels in our arxiv paper: 1705.02315"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly- Supervised"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "title |= {ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Summers, Learning to Read Chest X-Rays: Recurrent Neural Cascade Model for Automated"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Mass Nodule Pneumonia | Pneumothorax"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "tion). 4. stable, normal appearing car-"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "fusion otherwise stable abnormal |"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Table 4. A sample of chest x-ray radiology report, mined disease keywords and localization result from the “Atelectasis” Class. Correct"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Table 5. A sample of chest x-ray radiology report, mined disease keywords and localization result from the “Cardiomegaly” Class. Correct"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "Patient information found: age: 1. 14 medication or dosage-related line(s) were detected."
+}

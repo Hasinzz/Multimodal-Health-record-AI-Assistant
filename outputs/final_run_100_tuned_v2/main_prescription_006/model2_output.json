@@ -1,0 +1,15 @@
+{
+  "case_id": "main_prescription_006",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\82.jpg",
+  "raw_text": "| |\nuy\nge Ee [wee Leh Lag [enti C= aan [wencrem: |\nGeneral Examination / Allergies. Clinical Diagnosis & Management Plan {\nHistory . . tic cor\nCt dnp 3 fawn)\nCG\n5 orhyatl 04 _ hey\nae Le a\nNav is Coe ”\n\\i4 CON say Ol res!\nOsh\nbk",
+  "raw_text_preview": "| |\nuy\nge Ee [wee Leh Lag [enti C= aan [wencrem: |\nGeneral Examination / Allergies. Clinical Diagnosis & Management Plan {\nHistory . . tic cor\nCt dnp 3 fawn)\nCG\n5 orhyatl 04 _ hey\nae Le a\nNav is Coe ”\n\\i4 CON say Ol res!\nOsh\nbk",
+  "entities": [],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "The document was processed, but no strong structured clinical entities were detected."
+}

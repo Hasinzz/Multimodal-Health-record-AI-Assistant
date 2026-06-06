@@ -1,0 +1,16 @@
+{
+  "case_id": "main_prescription_002",
+  "image_findings": null,
+  "text_findings": "3 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.19124389123073487,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    }
+  ],
+  "final_summary": "Case ID: main_prescription_002\n\nImage findings: No image input was provided.\n\nDocument findings: 3 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.191. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\n3 medication or dosage-related line(s) were detected.\n. 3\n. . . . ee\nhing tin uo Botts ee .\nHK | O Ding ky ché do an | Tinh hinh Giuéng - Bénh [gs Bao cdo.» |) treet .\n2 Ké dan thudc : : es ‘ : a\ni CThéng tin ddn BR rag tn: 461.996\n‘| Khoa kh [120 Khoa i Khoa Kham bénh=Thamde chen - wip Hetén BN PHAN NGOC AN NHIEN [9]\nNoay ké don [MEvo9/2022 +] sowirk [2200201088 | Giaitinh [Na tusi J 2\n: Fs loan tigéu hoa ‘ : ; a Pho é i a\nChén dodn Hoan teu hoa . , * Bia chi ya Pha Duong Huyén Phu Vang TT-\n{ Ma Bs [sinood Tén BS |Ngé Buc SF Quay thuée {iuna thudc s6 1 (NHI) ~]\nnn eee ci eee tects ee crt ine cette i ge ete ee ee\nTén thudc | DVT | SL | Don_Ga, LThanh_Tién | Céch ding {\n} DOMPENIGH OMG(Domperidon) AIAIMNIBN (eit Mrs ses] 41,725 ngay udng 1 ng cha 2\nGuna Bio gai 207 S17 080 ngay udng 2 gdi cha 2 [x |\nLUXHEA : lo | 4 | 273,191| 273,191 |séng uén...\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'Chén dodn Hoan teu hoa . , * Bia chi ya Pha Duong Huyén Phu Vang TT-'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '{ Ma Bs [sinood Tén BS |Ngé Buc SF Quay thuée {iuna thudc s6 1 (NHI) ~]'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '} DOMPENIGH OMG(Domperidon) AIAIMNIBN (eit Mrs ses] 41,725 ngay udng 1 ng cha 2'}"
+}

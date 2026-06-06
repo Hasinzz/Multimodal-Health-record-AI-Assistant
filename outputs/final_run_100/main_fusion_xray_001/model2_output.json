@@ -1,0 +1,49 @@
+{
+  "case_id": "main_fusion_xray_001",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\307547366_622464496047160_6953521958229904387_n.jpg",
+  "raw_text": "simmons oon eg snes aoe ee ennai ans eis en, wen emo oo\nXH ding ky ché 48 an T= Tinh hinh Giuéng - Bénh Pea Bdo cdo ~ [0] those ° :\nOe\n@ Ké don thuée me eye\n2 a ee se tn a re wi we whe r st tye a ee flee wae * to Ja & bese]\n‘7 ThEng tin dgn wy ee tn: 773,888\n| Khoamkn [izo Khoa WP. [Khoa Kham beans Thém dé chien 3 He tén BN JHOANG GIA BAO [9]\nNoay ké don [09/2000 z] sévwipx [2200201307 lai tinh [Nam Tusi | 5\nfren RUOT/BIENG A unre es rere ——\nChan dodn ° N f \" bis cht Xd Pho My Huyén Phy Vang TT- Hué\nMa Bs [r4p26e Ten BS [Pham Va Phuong Thao OY Quay thuge finns thude so 1 (NHI) =]\nTén thudc !aVT | SL Bon_Gid_) Thanh Ten | Cach dang” l\n| AVS 60 Ee adi | 30 6,303 189,090 GAY UONG 2 GdI cHIA 2 [x]\nZinC Plex Chal | 1 281,438 _281,438 'NGAY UGNG 5 ML [x]\nATISYRUP ZINC 20m9/10mKKém suffat hep... | 6uG | 30 1242] 303,360 |NGAY UONG 1 6NG Ix]\ntof Q [x]\nLdi dan: Sd dung thudc theo dung chi dinh cua bac st\n~ _ ‘. ?\nLu ea i To ahéu lie nie\na \\",
+  "raw_text_preview": "simmons oon eg snes aoe ee ennai ans eis en, wen emo oo\nXH ding ky ché 48 an T= Tinh hinh Giuéng - Bénh Pea Bdo cdo ~ [0] those ° :\nOe\n@ Ké don thuée me eye\n2 a ee se tn a re wi we whe r st tye a ee flee wae * to Ja & bese]\n‘7 ThEng tin dgn wy ee tn: 773,888\n| Khoamkn [izo Khoa WP. [Khoa Kham beans Thém dé chien 3 He tén BN JHOANG GIA BAO [9]\nNoay ké don [09/2000 z] sévwipx [2200201307 lai tinh [Nam Tusi | 5\nfren RUOT/BIENG A unre es rere ——\nChan dodn ° N f \" bis cht Xd Pho My Huyén Phy Vang TT- Hué\nMa Bs [r4p26e Ten BS [Pham Va Phuong Thao OY Quay thuge finns thude so 1 (NHI) =]\nTén thudc !aVT | SL Bon_Gid_) Thanh Ten | Cach dang” l\n| AVS 60 Ee adi | 30 6,303 189,090 GAY UONG 2 GdI cHIA 2 [x]\nZinC Plex Chal | 1 281,438 _281,438 'NGAY UGNG 5 ML [x]\nATISYRUP ZINC 20m9/10mKKém suffat hep... ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "XH ding ky ché 48 an T= Tinh hinh Giuéng - Bénh Pea Bdo cdo ~ [0] those ° :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Chan dodn ° N f \" bis cht Xd Pho My Huyén Phy Vang TT- Hué"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ZinC Plex Chal | 1 281,438 _281,438 'NGAY UGNG 5 ML [x]"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ATISYRUP ZINC 20m9/10mKKém suffat hep... | 6uG | 30 1242] 303,360 |NGAY UONG 1 6NG Ix]"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "XH ding ky ché 48 an T= Tinh hinh Giuéng - Bénh Pea Bdo cdo ~ [0] those ° :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Chan dodn ° N f \" bis cht Xd Pho My Huyén Phy Vang TT- Hué"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ZinC Plex Chal | 1 281,438 _281,438 'NGAY UGNG 5 ML [x]"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ATISYRUP ZINC 20m9/10mKKém suffat hep... | 6uG | 30 1242] 303,360 |NGAY UONG 1 6NG Ix]"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "4 medication or dosage-related line(s) were detected."
+}

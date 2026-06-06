@@ -1,0 +1,40 @@
+{
+  "case_id": "main_lab_002",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\BLR-0425-PA-0039192_E-PareshwarFinalBill_250427_1337@E.pdf_page_88.png",
+  "raw_text": "a = Dro 1S OFI9001-2003)\n| (@)) Diacmostie Point Pathologvlabs\na pay SS — —_ ay An\nwn! EQUIPPED WITH COMPUTERISED AUTO CHEMISTR BLOOD GAS & HAEMATOLOGY, ANALYSERS\n01910291 077108109 tial Floor, Agarwal, lower, PRL ab Mkt. Dilshad Gardens Oeihl-35.P!\nSARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path\nKJ-7, Kavi Nagar, Ghaziabad (U°P.} 1H 1]\noe SE) oe | Wem\nPatient 1)\nReferred—] LluvVeRMA .\nLab SerialNo: 07 . . Receiving Le 6:00:30AM\nWard No SP -25 Reporting Date : pel 9:29:07AM\nCR/UHD No : 0223 / 391503 Date TAT : 2 Hours 29 Minute\nInvestigation . Observed Value Unit Biological Ref Interval .\n; . HEMATOLOGY\n_~PLLPROTHROMBIN TIME ) .: OC ; . .\nNORMAL CONTROL VALUE 13.0 second(s) °\nPATIENT VALUE 17.5 second(s)\nInternational Normalized Ratio 1.37 .\nSpecimen : PT PLASMA\nComment :\n1. INR is the parameter of choice in monitoring adequacy of oral anticoagulant therapy. Appropriate therapeutic range\nvaries with the disease and treatment intensity -\n2. Prolonged INR suggests potential bleeding disorder / bieeding complications .\n3. Results should be clinically correlated : . .\n_ 4. Test conducted on Citrated plasma\nRecommendedTherapeutic range for Oral Anticoagulant therapy\nINR 2,0-3.0 + -\nTreatment of Venous thrombosis & Pulmonary embolism- .\nProphylaxis of Venous thrombosis (High risk surgery): .\nPrevention of systemic embolism in tissue heart valves,\nAMI, Valvular heart disease & Atrial fibrillation- So,\nBileafiet mechanical valve in aortic position me Tete : a\nINR 2.5-3.5: , ‘ oS :\nMechanical prosthetic valves\n~ Systemic recurrent emboli\nComments:Prothrombin time measures the extrinsic coagulation pathway which consists of activated Factor VII (Vlla),\nTissue factor and Proteins of the common pathway (Factors X, V, Il & Fibrinogen). This assay is used to control long\nterm oral anticoagulant therapy, evaluation of liver function & to evaluate coagulation disorders specially factors\ninvolved in the extrinsic pathway like Factors V, VII, X, Prothrombin & Fibrinogen.\nae **ENDOF REPORT . -\n: 1s ONG\n. Oso Pecae a\n* GRA\n. Page 1 of 1 .\n. 4 one\nfyAry\nFACILITIES : FOR HORMONES ASSA¥E; FRE HISTOPATHOLOGY, BONE MARROW ASPIRATION & BIOPSY WITH MICRO PHOTOGRAPHS.\nNOTE ; ABOVE MENTIGNED FINDINGS ARE A PROFESSIONAL OPINION AND NOT A FINAL DIAGNOSIS, ALL LABORATORY TESTS & OTHER\nINVESTIGATION RESULTS ARE TO BE CORELATED CLINIC-PATHOLOGICALLY, DISCREPANCIES, IF ANY, NECESSITATE REVIEW/REPEAT OF THE TESTS.\n(RENIN 05.0. 08 MEDICOLECAnCURLCS\nMICALCORETATION IS MANDATO!",
+  "raw_text_preview": "a = Dro 1S OFI9001-2003)\n| (@)) Diacmostie Point Pathologvlabs\na pay SS — —_ ay An\nwn! EQUIPPED WITH COMPUTERISED AUTO CHEMISTR BLOOD GAS & HAEMATOLOGY, ANALYSERS\n01910291 077108109 tial Floor, Agarwal, lower, PRL ab Mkt. Dilshad Gardens Oeihl-35.P!\nSARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path\nKJ-7, Kavi Nagar, Ghaziabad (U°P.} 1H 1]\noe SE) oe | Wem\nPatient 1)\nReferred—] LluvVeRMA .\nLab SerialNo: 07 . . Receiving Le 6:00:30AM\nWard No SP -25 Reporting Date : pel 9:29:07AM\nCR/UHD No : 0223 / 391503 Date TAT : 2 Hours 29 Minute\nInvestigation . Observed Value Unit Biological Ref Interval .\n; . HEMATOLOGY\n_~PLLPROTHROMBIN TIME ) .: OC ; . .\nNORMAL CONTROL VALUE 13.0 second(s) °\nPATIENT VALUE 17.5 second(s)\nInternational Normalized Ratio 1.37 .\nSpecimen : PT PLASMA\nComment :\n1. INR ...",
+  "entities": [
+    {
+      "type": "PATIENT_INFO",
+      "field": "age",
+      "text": "1"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "wn! EQUIPPED WITH COMPUTERISED AUTO CHEMISTR BLOOD GAS & HAEMATOLOGY, ANALYSERS"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "SARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {
+      "age": "1"
+    },
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "wn! EQUIPPED WITH COMPUTERISED AUTO CHEMISTR BLOOD GAS & HAEMATOLOGY, ANALYSERS"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "SARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "Patient information found: age: 1. 2 medication or dosage-related line(s) were detected."
+}

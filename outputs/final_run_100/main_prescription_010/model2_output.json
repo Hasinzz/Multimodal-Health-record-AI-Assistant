@@ -1,0 +1,73 @@
+{
+  "case_id": "main_prescription_010",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\printed\\305692824_5513875948696310_2423018477374667126_n.jpg",
+  "raw_text": "BOY TE *22001961711*\nBISNY VIEN TW HUE 22001961711\ndn. dc sé 4 ha ODA '\nKhoa: K.Khdm bénh Quay: Nha thudéc sé 2 (tang 1 )\nHo tén: LETH! THUA Tudi: 32 Giditinh: N&\nBia chi: X4 Phd Thanh Huyén Duc Phd Quang Ngai i °\nCh&n doan: Viém da day HP am tinh\n‘fr tenthudc | st Jecachatng, téu dang ;\nSomexwell 40mg(Esomeprazol (duéi dan Ngay uéng sang 1 vién, tdi 4 fo\nEsomeprazol magnesi trihydrat) 40mg) vién truéc an 30 phat\n5 Mien .\nTritenols fort 800mg + 800mg + Ngay uéng 2 gdi chia 2 sau a\n100mg(Magnesi hydroxyd + nhém 1 gig | :\nhydroxyd + simethicon) Géi j ;\n| Letarid 50mg(Levosulpirid) Vien Ngay uéng tdi 1 vién sau an hoot\npo\n' L Teng khoan: 03 khoan Yo :\n| Ldid’n: HAN CHE THE\n: KHUYA CAN CAY CHUA, AN UONG DIEU BO, KHONG THUC\nNody 14 thag 9 nam 2022 i .\nBAS SI DIEW TR i\nKham fai xi _\n| at Xin mang theo don nay Bui Van Doan -",
+  "raw_text_preview": "BOY TE *22001961711*\nBISNY VIEN TW HUE 22001961711\ndn. dc sé 4 ha ODA '\nKhoa: K.Khdm bénh Quay: Nha thudéc sé 2 (tang 1 )\nHo tén: LETH! THUA Tudi: 32 Giditinh: N&\nBia chi: X4 Phd Thanh Huyén Duc Phd Quang Ngai i °\nCh&n doan: Viém da day HP am tinh\n‘fr tenthudc | st Jecachatng, téu dang ;\nSomexwell 40mg(Esomeprazol (duéi dan Ngay uéng sang 1 vién, tdi 4 fo\nEsomeprazol magnesi trihydrat) 40mg) vién truéc an 30 phat\n5 Mien .\nTritenols fort 800mg + 800mg + Ngay uéng 2 gdi chia 2 sau a\n100mg(Magnesi hydroxyd + nhém 1 gig | :\nhydroxyd + simethicon) Géi j ;\n| Letarid 50mg(Levosulpirid) Vien Ngay uéng tdi 1 vién sau an hoot\npo\n' L Teng khoan: 03 khoan Yo :\n| Ldid’n: HAN CHE THE\n: KHUYA CAN CAY CHUA, AN UONG DIEU BO, KHONG THUC\nNody 14 thag 9 nam 2022 i .\nBAS SI DIEW TR i\nKham fai xi _\n| at Xin man...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "dn. dc sé 4 ha ODA '"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Somexwell 40mg(Esomeprazol (duéi dan Ngay uéng sang 1 vién, tdi 4 fo"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Esomeprazol magnesi trihydrat) 40mg) vién truéc an 30 phat"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Tritenols fort 800mg + 800mg + Ngay uéng 2 gdi chia 2 sau a"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "100mg(Magnesi hydroxyd + nhém 1 gig | :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "| Letarid 50mg(Levosulpirid) Vien Ngay uéng tdi 1 vién sau an hoot"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Nody 14 thag 9 nam 2022 i ."
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "dn. dc sé 4 ha ODA '"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Somexwell 40mg(Esomeprazol (duéi dan Ngay uéng sang 1 vién, tdi 4 fo"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Esomeprazol magnesi trihydrat) 40mg) vién truéc an 30 phat"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Tritenols fort 800mg + 800mg + Ngay uéng 2 gdi chia 2 sau a"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "100mg(Magnesi hydroxyd + nhém 1 gig | :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "| Letarid 50mg(Levosulpirid) Vien Ngay uéng tdi 1 vién sau an hoot"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Nody 14 thag 9 nam 2022 i ."
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "7 medication or dosage-related line(s) were detected."
+}

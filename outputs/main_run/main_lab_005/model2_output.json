@@ -1,0 +1,82 @@
+{
+  "case_id": "main_lab_005",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\DEL-0425-PA-0052368_F-1745820554223RANPALSINGHKUNTALPREUATH_250428_1146@G.pdf_page_23.png",
+  "raw_text": "aa TT fey . 7 wee err\nnr ry\nSerie stim] . °\nreed\nalse) rol :\n~—_A TESTREPORT _ Status: Final\n| | ee SS aaa. =“\nSas. 1_—aOXx=—— =a —==\nCc | | ome | om | —\nCys. : Dr. MADHU IYER MD Physician Tele No. 7] me |\nLocation | : SUNSHINE GLOBAL HOSPITAL @ MANJALPUR BARODA UHID/IPD ~ : SER0167447 + SHM002736€\n. RANDOM PLASMA GLUCOSE\n. . Specimen: Fluoride plasma\nRandom Plasma Glucose H 281.00 mg/dL up to 140\nFlouride Plasma\nRemarks: ADV: Kindly correlate clinically.\nRemarks:\nif the patient Random Plasma Glucose value is >=200 mg/dL , Advice Oral Glocose Tolerence test(OGTT}for Further\nEvaluation, ++\nurlwerla for thé dlagnusls uf diabetes\n1. HbAle >/= 6.5 *\nOr\n2, Fasting plasma glucose >126 gm/dL. Fasting is defined as no caloric intake at least for 8 hrs.\nor\n3, Two hour plasma glucose >/= 200m¢/dl. during an oral glucose tolerence test by using a glucose load . .\ncontaining equivaient of 75 gm anhydrous glucose dissolved in water.\nOr -\n4,1n a patient with classic symptoms of hyperglycemia or hyperglycemic crisis, a random plasma glucose\n>/= 2G0 mg/dL. *In the absence of unequivocal hyperglycemia, criteria 1-3 should be confirmed by\n-repeat testing. American diabetes association. Standards of medical care in diabetes 2011. Diabetes care\n2011;34;S1i.\n. .\na Bag 2\nThis is an electronically authenticated report.\"Please verify the authenticity of this report by scanning the QR code to ensure data integrity.”\nApproved On: 28-Apr-2025 10:29 . ; Di\nINVESTIGATION CARRIED OUT BY — UNIPATH SPECIALITY LABORATORY (BARODA) LLP ts ae\n‘ . Dr. Usha Amliyar\nConsultant Pathologist\nReg Na.:- G-23421",
+  "raw_text_preview": "aa TT fey . 7 wee err\nnr ry\nSerie stim] . °\nreed\nalse) rol :\n~—_A TESTREPORT _ Status: Final\n| | ee SS aaa. =“\nSas. 1_—aOXx=—— =a —==\nCc | | ome | om | —\nCys. : Dr. MADHU IYER MD Physician Tele No. 7] me |\nLocation | : SUNSHINE GLOBAL HOSPITAL @ MANJALPUR BARODA UHID/IPD ~ : SER0167447 + SHM002736€\n. RANDOM PLASMA GLUCOSE\n. . Specimen: Fluoride plasma\nRandom Plasma Glucose H 281.00 mg/dL up to 140\nFlouride Plasma\nRemarks: ADV: Kindly correlate clinically.\nRemarks:\nif the patient Random Plasma Glucose value is >=200 mg/dL , Advice Oral Glocose Tolerence test(OGTT}for Further\nEvaluation, ++\nurlwerla for thé dlagnusls uf diabetes\n1. HbAle >/= 6.5 *\nOr\n2, Fasting plasma glucose >126 gm/dL. Fasting is defined as no caloric intake at least for 8 hrs.\nor\n3, Two hour plasma glucose >/= 200m¢/dl. d...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Location | : SUNSHINE GLOBAL HOSPITAL @ MANJALPUR BARODA UHID/IPD ~ : SER0167447 + SHM002736€"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Random Plasma Glucose H 281.00 mg/dL up to 140"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "if the patient Random Plasma Glucose value is >=200 mg/dL , Advice Oral Glocose Tolerence test(OGTT}for Further"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ">/= 2G0 mg/dL. *In the absence of unequivocal hyperglycemia, criteria 1-3 should be confirmed by"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "This is an electronically authenticated report.\"Please verify the authenticity of this report by scanning the QR code to ensure data integrity.”"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "INVESTIGATION CARRIED OUT BY — UNIPATH SPECIALITY LABORATORY (BARODA) LLP ts ae"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "‘ . Dr. Usha Amliyar"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "diabetes"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Location | : SUNSHINE GLOBAL HOSPITAL @ MANJALPUR BARODA UHID/IPD ~ : SER0167447 + SHM002736€"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Random Plasma Glucose H 281.00 mg/dL up to 140"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "if the patient Random Plasma Glucose value is >=200 mg/dL , Advice Oral Glocose Tolerence test(OGTT}for Further"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ">/= 2G0 mg/dL. *In the absence of unequivocal hyperglycemia, criteria 1-3 should be confirmed by"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "This is an electronically authenticated report.\"Please verify the authenticity of this report by scanning the QR code to ensure data integrity.”"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "INVESTIGATION CARRIED OUT BY — UNIPATH SPECIALITY LABORATORY (BARODA) LLP ts ae"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "‘ . Dr. Usha Amliyar"
+      }
+    ],
+    "clinical_keywords": [
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "diabetes"
+      }
+    ]
+  },
+  "patient_summary": "7 medication or dosage-related line(s) were detected. Clinical keywords found: diabetes."
+}

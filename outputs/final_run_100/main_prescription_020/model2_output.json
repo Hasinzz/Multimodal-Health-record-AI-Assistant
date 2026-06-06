@@ -1,0 +1,41 @@
+{
+  "case_id": "main_prescription_020",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\printed\\305687753_790356602093235_8406010995424440899_n.jpg",
+  "raw_text": ". ef Dees] - “a\nBOYTE *9995767*\nBENH VIEN TW HUE 9995767\nKhoa: Khoa Ngoai than - Tiét niéu Quay: Nha thuéc sé 2 (tang 1 nha ODA)\n_ Ho tén: TRAN HOU HOA Tudi: 42 Gidi tinh: NAM\nDia chi: BINH DAI- BEN TRE\nSe\nChan doan: VIEM XUOC HANG V|\nee Oe\nBm] TénThuée | SL. [ach ding, idu ding\n1 | ATSYP 40(Esomeprazole 40mg) vién 30 |UONG NGAY 1V TRUOC A\\\n: 30 PHUT\nAbamotic 5mg(Mosaprid citrat 5mg (dui NGAY UONG 2 GOI TRUOC\ndang mosaprid citrat hydrat)) géi AN 30 PHUT",
+  "raw_text_preview": ". ef Dees] - “a\nBOYTE *9995767*\nBENH VIEN TW HUE 9995767\nKhoa: Khoa Ngoai than - Tiét niéu Quay: Nha thuéc sé 2 (tang 1 nha ODA)\n_ Ho tén: TRAN HOU HOA Tudi: 42 Gidi tinh: NAM\nDia chi: BINH DAI- BEN TRE\nSe\nChan doan: VIEM XUOC HANG V|\nee Oe\nBm] TénThuée | SL. [ach ding, idu ding\n1 | ATSYP 40(Esomeprazole 40mg) vién 30 |UONG NGAY 1V TRUOC A\\\n: 30 PHUT\nAbamotic 5mg(Mosaprid citrat 5mg (dui NGAY UONG 2 GOI TRUOC\ndang mosaprid citrat hydrat)) géi AN 30 PHUT",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Khoa: Khoa Ngoai than - Tiét niéu Quay: Nha thuéc sé 2 (tang 1 nha ODA)"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "1 | ATSYP 40(Esomeprazole 40mg) vién 30 |UONG NGAY 1V TRUOC A\\"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Abamotic 5mg(Mosaprid citrat 5mg (dui NGAY UONG 2 GOI TRUOC"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Khoa: Khoa Ngoai than - Tiét niéu Quay: Nha thuéc sé 2 (tang 1 nha ODA)"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "1 | ATSYP 40(Esomeprazole 40mg) vién 30 |UONG NGAY 1V TRUOC A\\"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Abamotic 5mg(Mosaprid citrat 5mg (dui NGAY UONG 2 GOI TRUOC"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "3 medication or dosage-related line(s) were detected."
+}

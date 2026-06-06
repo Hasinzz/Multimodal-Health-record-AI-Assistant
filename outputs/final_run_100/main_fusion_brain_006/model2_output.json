@@ -1,0 +1,33 @@
+{
+  "case_id": "main_fusion_brain_006",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0048851_Q-FINAL0001_250422_1251@F.pdf_page_47.png",
+  "raw_text": "| ..\neae Silani Gate, Jhajjar (Haryana)\nROSENAC Ph.: 01251-252128, C ] |\nDate | a | Srl No. 28 . Patient hd\noo Cc] Co oOo cc\nC=} SCO. mRINAL VERMA Coyno. 14828 KENo. = 12326 :\nrst] | ome | Cl |\n. , SEROLOGY os\nCRP (QUANTITATIVE) 94.2 mg/L 0-10 : ‘\ntromunoturbidimetry ;\nINTERPRETATION :- . ‘ :\nIn normal healthy individuals, CRP levels generally do notexceed 10 mgm/L. CRP . plays a role in\nhost defence and tissue repair. There is a lag time of 6 -10 hrs between stimulus and rise in serum\nlevels, as compared to a lag time of 24-72 hrs, for other acute phase reactants. .\n**** End Of Report **** )\n. !\n\\ .\nDR. ALKA SINGLA | .,\nMBBS, MD (PATH) |\nConsultant Pathologist -\nRegd. No. DMC-17916\nCc _ -",
+  "raw_text_preview": "| ..\neae Silani Gate, Jhajjar (Haryana)\nROSENAC Ph.: 01251-252128, C ] |\nDate | a | Srl No. 28 . Patient hd\noo Cc] Co oOo cc\nC=} SCO. mRINAL VERMA Coyno. 14828 KENo. = 12326 :\nrst] | ome | Cl |\n. , SEROLOGY os\nCRP (QUANTITATIVE) 94.2 mg/L 0-10 : ‘\ntromunoturbidimetry ;\nINTERPRETATION :- . ‘ :\nIn normal healthy individuals, CRP levels generally do notexceed 10 mgm/L. CRP . plays a role in\nhost defence and tissue repair. There is a lag time of 6 -10 hrs between stimulus and rise in serum\nlevels, as compared to a lag time of 24-72 hrs, for other acute phase reactants. .\n**** End Of Report **** )\n. !\n\\ .\nDR. ALKA SINGLA | .,\nMBBS, MD (PATH) |\nConsultant Pathologist -\nRegd. No. DMC-17916\nCc _ -",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CRP (QUANTITATIVE) 94.2 mg/L 0-10 : ‘"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "In normal healthy individuals, CRP levels generally do notexceed 10 mgm/L. CRP . plays a role in"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CRP (QUANTITATIVE) 94.2 mg/L 0-10 : ‘"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "In normal healthy individuals, CRP levels generally do notexceed 10 mgm/L. CRP . plays a role in"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected."
+}

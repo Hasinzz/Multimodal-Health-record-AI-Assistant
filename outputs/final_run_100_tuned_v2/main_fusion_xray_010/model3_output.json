@@ -1,0 +1,40 @@
+{
+  "case_id": "main_fusion_xray_010",
+  "image_findings": "Chest X-ray suggests possible findings: Mass (0.88), Nodule (0.83).",
+  "text_findings": "1 lab value(s) were detected from the document. 1 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt",
+      "chunk_id": 0,
+      "score": 0.23107634605696073,
+      "text": "Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based mass with adjacent mass effect or calcification. Pituitary tumors may relate to sellar or suprasellar findings and can affect vision or hormone-related symptoms. No tumor does not replace radiology review; image quality, slice coverage, and clinical context still matter. Any automated MRI result should be reviewed by a qualified radiologist before clinical use."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.22021671450086555,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.18769075364563217,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt",
+      "chunk_id": 0,
+      "score": 0.15590529503472167,
+      "text": "Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, anemia, inflammation, liver injury, kidney dysfunction, or metabolic issues, depending on the pattern. Single values should not be over-interpreted without the full report and clinical context. OCR may misread digits, units, and abbreviations, so manual verification is required before any clinical decision."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 1,
+      "score": 0.06535641523809994,
+      "text": "l to produce a more complete patient overview."
+    }
+  ],
+  "final_summary": "Case ID: main_fusion_xray_010\n\nImage findings: Chest X-ray suggests possible findings: Mass (0.88), Nodule (0.83).\n\nDocument findings: 1 lab value(s) were detected from the document. 1 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt, score=0.231. Relevant note: Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based m...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.220. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.188. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt, score=0.156. Relevant note: Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, a...\nEvidence 5: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.065. Relevant note: l to produce a more complete patient overview....",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. Image-based findings are probabilistic and should be verified with clinical context. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Image findings:\nChest X-ray suggests possible findings: Mass (0.88), Nodule (0.83).\nPositive X-ray labels:\nMass, Nodule\nMass: 0.876584529876709\nNodule: 0.8254604935646057\nPneumothorax: 0.7524685263633728\nEffusion: 0.5672497749328613\nPleural_Thickening: 0.4256342351436615\nDocument findings:\n1 lab value(s) were detected from the document. 1 medication or dosage-related line(s) were detected.\n. NW A Unit of Omsans Diagnostic Group . (ED\n; ‘USG; CT.SCAN!X-RAY.& PATHOLOGY? SER E>. ;\nC— © — :\nNEARM a a\nUNDIVA CHAURAHA) BAJPUR-263 401 (U.S: NAGAR) UTTARAKHAN\nBI\nration in/orssa UHID SKH/03530\nnt NY, .\nae seen tmewoen a\nee Sex 31 Years Male\nRef.\ncn ‘Doctor Or. RAVEENA Report Date | om b\nfontact No. 7289865111 Barcode No\nINVESTIGATION —= a —\nHEMATOLOGY ;\nESR ane _mmhr 10-15\nCBC - COMPLETE HEMOGRAM ... .\nHB% (HAEMOGLOBIN) 244 gd 115-16\nTc 195008 cells/cumm “oon\nRBC 43 x .\nPCV 32.9 % 35-45\nMCV 75 f 7 52.98\nMat 24.8. pa 26-34\nTACHC 373 anvdl 30-36\nPLATELET COUNT 194 a\nDLC\nNEUTROPHILS bs : sous\nLYMPHOCYTES o % Os ;\nF=cINOPHILS os x 27\nFB iocries Ps % 0-2\nBASOPHILS\nene tances a R PO COmpicto ecrecenecneweasenetweneecerensttecenntmeensierneatetryennrerrerenes\ntors only, not for medico legal...\n{'type': 'LAB_VALUE', 'name': 'RBC', 'value': '43', 'unit': 'x', 'text': 'RBC 43 x'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'fontact No. 7289865111 Barcode No'}"
+}

@@ -1,0 +1,34 @@
+{
+  "class_names": [
+    "Atelectasis",
+    "Cardiomegaly",
+    "Effusion",
+    "Infiltration",
+    "Mass",
+    "Nodule",
+    "Pneumonia",
+    "Pneumothorax",
+    "Consolidation",
+    "Edema",
+    "Emphysema",
+    "Fibrosis",
+    "Pleural_Thickening",
+    "Hernia"
+  ],
+  "thresholds": {
+    "Atelectasis": 0.6399999856948853,
+    "Cardiomegaly": 0.9399999976158142,
+    "Effusion": 0.6600000262260437,
+    "Infiltration": 0.5099999904632568,
+    "Mass": 0.7300000190734863,
+    "Nodule": 0.6800000071525574,
+    "Pneumonia": 0.7699999809265137,
+    "Pneumothorax": 0.8100000023841858,
+    "Consolidation": 0.699999988079071,
+    "Edema": 0.8999999761581421,
+    "Emphysema": 0.9200000166893005,
+    "Fibrosis": 0.8299999833106995,
+    "Pleural_Thickening": 0.7699999809265137,
+    "Hernia": 0.8999999761581421
+  }
+}

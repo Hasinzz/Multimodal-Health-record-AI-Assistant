@@ -1,0 +1,47 @@
+[Startup] Chest X-ray threshold tuning started.
+[Startup] No retraining will be performed.
+[Device] Using cuda
+[AMP] Enabled
+[Checkpoint] Loaded: checkpoints\model1\xray_best_model_gpu_large_v2.pt
+[Checkpoint] Backbone: densenet121
+[Checkpoint] Image size: 224
+[Checkpoint] Class count: 14
+[Checkpoint] Missing keys: 0
+[Checkpoint] Unexpected keys: 0
+[Data] Indexed 112120 image files under C:\Users\T2520824\thesis_multimodal_ai\data\images\xray
+[Data] Metadata columns detected: Image Index, Finding Labels
+[Data] Valid samples found: 112120
+[Data] Missing images skipped: 0
+[Data] Validation samples: 22424
+[Data] Training samples: 89696
+[Data] Class names: Atelectasis, Cardiomegaly, Effusion, Infiltration, Mass, Nodule, Pneumonia, Pneumothorax, Consolidation, Edema, Emphysema, Fibrosis, Pleural_Thickening, Hernia
+[Default] Threshold=0.50 metrics:
+[Default] macro_auroc=0.8133 | micro_auroc=0.8377 | macro_f1=0.2315 | micro_f1=0.2638 | macro_precision=0.1482 | macro_recall=0.6415
+[Threshold] Searching 90 thresholds from 0.05 to 0.95 with step 0.01
+[Threshold] Atelectasis: threshold=0.64 | tuned_f1=0.3545 | precision=0.2708 | recall=0.5133
+[Threshold] Cardiomegaly: threshold=0.94 | tuned_f1=0.3507 | precision=0.3406 | recall=0.3614
+[Threshold] Effusion: threshold=0.66 | tuned_f1=0.5032 | precision=0.4115 | recall=0.6476
+[Threshold] Infiltration: threshold=0.51 | tuned_f1=0.3932 | precision=0.3123 | recall=0.5305
+[Threshold] Mass: threshold=0.73 | tuned_f1=0.3069 | precision=0.2445 | recall=0.4120
+[Threshold] Nodule: threshold=0.68 | tuned_f1=0.2145 | precision=0.1847 | recall=0.2556
+[Threshold] Pneumonia: threshold=0.77 | tuned_f1=0.0876 | precision=0.0571 | recall=0.1881
+[Threshold] Pneumothorax: threshold=0.81 | tuned_f1=0.3975 | precision=0.3406 | recall=0.4771
+[Threshold] Consolidation: threshold=0.70 | tuned_f1=0.2076 | precision=0.1356 | recall=0.4422
+[Threshold] Edema: threshold=0.90 | tuned_f1=0.2396 | precision=0.1974 | recall=0.3047
+[Threshold] Emphysema: threshold=0.92 | tuned_f1=0.2881 | precision=0.2821 | recall=0.2945
+[Threshold] Fibrosis: threshold=0.83 | tuned_f1=0.1348 | precision=0.0898 | recall=0.2698
+[Threshold] Pleural_Thickening: threshold=0.77 | tuned_f1=0.1955 | precision=0.1323 | recall=0.3742
+[Threshold] Hernia: threshold=0.90 | tuned_f1=0.3333 | precision=0.2581 | recall=0.4706
+[Tuned] Per-class thresholds applied.
+[Tuned] macro_f1=0.2862 | micro_f1=0.3366 | macro_precision=0.2327 | macro_recall=0.3958
+[Improve] macro_f1=+0.0547 | micro_f1=+0.0728 | macro_precision=+0.0844 | macro_recall=-0.2456
+[Output] Files created:
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_threshold_tuning_metrics.json
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_tuned_thresholds.csv
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_tuned_thresholds.json
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_default_vs_tuned_summary.csv
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_per_class_default_vs_tuned.csv
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_threshold_tuning_log.txt
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_default_vs_tuned_f1_bar.png
+[Output] outputs\training\xray_gpu_large_v2_threshold_tuning\xray_thresholds_bar.png
+[Done] Threshold tuning finished.

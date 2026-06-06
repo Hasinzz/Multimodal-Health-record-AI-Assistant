@@ -1,0 +1,25 @@
+{
+  "case_id": "main_prescription_009",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\25.jpg",
+  "raw_text": "Nn mam pet\nDeter OP quae f\nCy Bittetammer pvr Ge\nBoth, ate RY\nOe) Steklo Geek NS.\node fh sth nnalering, ra Xhi\nTeg De hed ote\nmone B4 fet call.",
+  "raw_text_preview": "Nn mam pet\nDeter OP quae f\nCy Bittetammer pvr Ge\nBoth, ate RY\nOe) Steklo Geek NS.\node fh sth nnalering, ra Xhi\nTeg De hed ote\nmone B4 fet call.",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ode fh sth nnalering, ra Xhi"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ode fh sth nnalering, ra Xhi"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

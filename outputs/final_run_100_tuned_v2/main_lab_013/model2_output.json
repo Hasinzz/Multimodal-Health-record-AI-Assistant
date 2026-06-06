@@ -1,0 +1,33 @@
+{
+  "case_id": "main_lab_013",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0057256_E-LABREPORTS_250427_1425@E.pdf_page_1.png",
+  "raw_text": "CIN NO. ; U85110RJ2015PTC048151\nFoon? 50 n H Hi gor (9) G-129 RIICO Phase-ll, In Front Of Hanuman\n& a R KY éB Mandir, Neemrana {Alwar} Raj. -301705\n1G); )RISHE CENTER} @ 01494-246333\n| oe | a | a C_] | oe | | oe |\n| | ED | oe | Cl | TT |\n| :Dr. CHETAN] OPD/IPD:IPD\nSample Collected at: Report Gen at:\n[on yi0:16:00 am [Coy2:44:01 Pm\nHAEMATOLOGY REPORT\nAccession No\nSAMPLE TYPE : EDTA BLOOD\nBo ee 0 eee ee es 2\ncomptereE——Jcounr’._ WC\ney ee 12.46\notal Leukocyte Count 10700 4000 - 11000\nDifferential LeucocyteCount_ Po\n40-75\n20-45\ner eee\n2.0-10.0\nPlatelet lakhs/emm 1.5-4.5\notal Red Blood Count Millions/cumm 3.5-5.5\n36.0-51.0\n80 - 100\n| pg 27-33\n31.5 - 35.0\n“\" End of Report ***\nKills\nNote: FULLY COMPUTERIZED LABORATORY reithe\nEQUIPPED WITH LATEST TECHNOLOGY\nMD (PATHOLOGY)\nRMAC NO. 46653/20632\nPrint On 2704/2028 20841 PM NOT VALID.FQR MEDICO LEGAL PURPOSE page ut",
+  "raw_text_preview": "CIN NO. ; U85110RJ2015PTC048151\nFoon? 50 n H Hi gor (9) G-129 RIICO Phase-ll, In Front Of Hanuman\n& a R KY éB Mandir, Neemrana {Alwar} Raj. -301705\n1G); )RISHE CENTER} @ 01494-246333\n| oe | a | a C_] | oe | | oe |\n| | ED | oe | Cl | TT |\n| :Dr. CHETAN] OPD/IPD:IPD\nSample Collected at: Report Gen at:\n[on yi0:16:00 am [Coy2:44:01 Pm\nHAEMATOLOGY REPORT\nAccession No\nSAMPLE TYPE : EDTA BLOOD\nBo ee 0 eee ee es 2\ncomptereE——Jcounr’._ WC\ney ee 12.46\notal Leukocyte Count 10700 4000 - 11000\nDifferential LeucocyteCount_ Po\n40-75\n20-45\ner eee\n2.0-10.0\nPlatelet lakhs/emm 1.5-4.5\notal Red Blood Count Millions/cumm 3.5-5.5\n36.0-51.0\n80 - 100\n| pg 27-33\n31.5 - 35.0\n“\" End of Report ***\nKills\nNote: FULLY COMPUTERIZED LABORATORY reithe\nEQUIPPED WITH LATEST TECHNOLOGY\nMD (PATHOLOGY)\nRMAC NO. 46653/20632\nPrin...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "SAMPLE TYPE : EDTA BLOOD"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "otal Red Blood Count Millions/cumm 3.5-5.5"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "SAMPLE TYPE : EDTA BLOOD"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "otal Red Blood Count Millions/cumm 3.5-5.5"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected."
+}

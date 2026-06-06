@@ -1,0 +1,15 @@
+{
+  "case_id": "main_prescription_009",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\307654788_888721635451280_2681273484555933270_n.jpg",
+  "raw_text": "BIO | > ding ty ché a9 5 | mn\nSan 0 | fr5 Tinh hinh Giueng - ga\nEO\nP Ké don thudc ie\nee oy\n= a cnet | St\nThéng tin don thude b>} |\n. rg én: 977.388— :\nMa fan Tén : :\nKhoa /P.Kh 1120 | Khoa P.K| Khoa Kham bénh-Th3m dé chtcn Hotén BN DOAN LE MINH QUAN [o] '\nam ham os raaaT : ;\n| Ngay ké don [f092022 >] $6. WPK l. 2200200593, Gigitinh «= [Nam Tudi | 7 {-\n\\ Chén doan Miémn hongMiém thanh quan : in \" ; oo Phuding 5 Thanh Phd déng Ha Quang\n{ a ce i Dia chi Tri\n,| M&Bs [sino Tengs [Ngddue57 cal EE 1°. Quay thude [Nha thude 56 1 (NAID 7]\ni Tén thudc | OvT (SL | Don_Gid -| Thanh_Tién { Céch ding i\ncoos OTC EY\n4\n| Sovenred a (ven st yoreneson sma) [vn | 20” | aa60/ 7 sa.o0 [rout sven oe? |]\n‘Youre ca a | Borel tarislsira uma\n[upon Pe 2 arti iy atone?\n| . ee\n4 : a mn eT\ni : ; ‘ \" hn ;\n\" 4 . a .\n\" ; ‘ : : “ a\n: Lai dan: Sd dung thudc thao dung chi dinh cua bae st.\nHy : 7 ‘ : ie, : \" : Xda thang tin ,\n. : ia 933 ee | Fe | sp tarase | Thoat\ni Lau So Xba\nfe 2 © “ey ais\n. 7 ° nee nate\nnent\n= ~\nee tee er\noN oy va \\\nft y",
+  "raw_text_preview": "BIO | > ding ty ché a9 5 | mn\nSan 0 | fr5 Tinh hinh Giueng - ga\nEO\nP Ké don thudc ie\nee oy\n= a cnet | St\nThéng tin don thude b>} |\n. rg én: 977.388— :\nMa fan Tén : :\nKhoa /P.Kh 1120 | Khoa P.K| Khoa Kham bénh-Th3m dé chtcn Hotén BN DOAN LE MINH QUAN [o] '\nam ham os raaaT : ;\n| Ngay ké don [f092022 >] $6. WPK l. 2200200593, Gigitinh «= [Nam Tudi | 7 {-\n\\ Chén doan Miémn hongMiém thanh quan : in \" ; oo Phuding 5 Thanh Phd déng Ha Quang\n{ a ce i Dia chi Tri\n,| M&Bs [sino Tengs [Ngddue57 cal EE 1°. Quay thude [Nha thude 56 1 (NAID 7]\ni Tén thudc | OvT (SL | Don_Gid -| Thanh_Tién { Céch ding i\ncoos OTC EY\n4\n| Sovenred a (ven st yoreneson sma) [vn | 20” | aa60/ 7 sa.o0 [rout sven oe? |]\n‘Youre ca a | Borel tarislsira uma\n[upon Pe 2 arti iy atone?\n| . ee\n4 : a mn eT\ni : ; ‘ \" hn ;\n\" 4 . a .\n\" ; ‘...",
+  "entities": [],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "The document was processed, but no strong structured clinical entities were detected."
+}

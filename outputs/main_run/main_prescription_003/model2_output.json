@@ -1,0 +1,15 @@
+{
+  "case_id": "main_prescription_003",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\22.jpg",
+  "raw_text": "5 2 ‘evtaaban Obke a es\nAddress $% e ~\n7g At ee, ae ON y=\ncen’ OY mA }\nSet ee ee",
+  "raw_text_preview": "5 2 ‘evtaaban Obke a es\nAddress $% e ~\n7g At ee, ae ON y=\ncen’ OY mA }\nSet ee ee",
+  "entities": [],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "The document was processed, but no strong structured clinical entities were detected."
+}

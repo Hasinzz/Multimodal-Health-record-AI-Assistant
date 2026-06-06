@@ -1,0 +1,99 @@
+{
+  "case_id": "main_lab_004",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0056064_Q-PARINALEPCHAQR_250424_1328@F.pdf_page_8.png",
+  "raw_text": ". i) . : at + an .\nAakash Healthcare viiti:|+: Aakash Pathlab =|. . 4 / is\nSuper Speciality Hospital seV Pe atte Om at : ,\nLABORATORY INVESTIGATION REPORT\nPatient Name 3 Ms. PARINA LEPCHA Age/Sex 324 Year(s)/Female\nUHID 3 AHDW.409773 Order Date 3 23/04/2025 18:50\nEpisode 71 3P/Bed 2129094 / L648\nRef. Doctor Dr, Int. Med. #1 (Or Vikramjeet/Dr Saroj /Dr Facility 3 Aakash Healthcare Delhl\nAnugrah}\nSerology\n(samme ho: o7222050 Catecton Dasa; ZUR 19g2” A Dee: asus 10397 Reon bare: 240yI5 Ga\nWIDAL (Slide Test)\nSalmonella Typhi 'O' Ag 1:320 Dilution\nSalmonella Typhi 'H’ Ag 1:20 Dilution\nSalmonella Paratyphl ‘AH’ Ag ; < 1: 20 Dilution\nSalmonella Paratyphl 'BH’ Ag < 1: 20 Ditution\nMathod : Side Aggiutination.\ninterpretation of the test results:-\nAn absohte egolutination titre of = 1:80 for TO and for = 1:780 for TH/ AH/ BH is.nérmally considered if A ising titre\nin case of a test repeated afar few days is also significant and sugzestirw tl enteric fever. in enteric fever, ies usually\n@ppeer in patient's blood after 6th day of fever. Sera for normal Individuals may aggtutinate these antigens fh dilutions upta\n1:80, In individuals who have received TAB vaccine, moderate rise in H antibodies may be seen.\nInterpretation of Widal test must be seen in light of clinical picture.\nThis test measures somatic O and flagellar H antibodies against Typhoid and Paratyphoid baci. The\n@gglutinins usually appear at the end of the first week of infection and increase sleadily till third / fourth week after which Ue\ndociine starts, A positive Widal test may occur because of typhoid vaccination or previous hohe!dicfnntion dad io contain\nautoimmune diseases. Non specific febrile disease may cause this ttre fo Incra xo\nfalsely negative in cases of Enteric fever trested with antibiotics in the earty\nweek after infection Is Blood Culture. |\nerrs Enid of Report Nii\n| Preal\nDr.Disha Bhatia, MBS, MD\nMicrodlology .\n‘Associate Conaultant,\nRegio: OMC/R/8239\na\n| D\n£7“\nian es\nPage loft",
+  "raw_text_preview": ". i) . : at + an .\nAakash Healthcare viiti:|+: Aakash Pathlab =|. . 4 / is\nSuper Speciality Hospital seV Pe atte Om at : ,\nLABORATORY INVESTIGATION REPORT\nPatient Name 3 Ms. PARINA LEPCHA Age/Sex 324 Year(s)/Female\nUHID 3 AHDW.409773 Order Date 3 23/04/2025 18:50\nEpisode 71 3P/Bed 2129094 / L648\nRef. Doctor Dr, Int. Med. #1 (Or Vikramjeet/Dr Saroj /Dr Facility 3 Aakash Healthcare Delhl\nAnugrah}\nSerology\n(samme ho: o7222050 Catecton Dasa; ZUR 19g2” A Dee: asus 10397 Reon bare: 240yI5 Ga\nWIDAL (Slide Test)\nSalmonella Typhi 'O' Ag 1:320 Dilution\nSalmonella Typhi 'H’ Ag 1:20 Dilution\nSalmonella Paratyphl ‘AH’ Ag ; < 1: 20 Dilution\nSalmonella Paratyphl 'BH’ Ag < 1: 20 Ditution\nMathod : Side Aggiutination.\ninterpretation of the test results:-\nAn absohte egolutination titre of = 1:80 for TO and f...",
+  "entities": [
+    {
+      "type": "DATE",
+      "text": "23/04/2025"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Episode 71 3P/Bed 2129094 / L648"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Mathod : Side Aggiutination."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "@ppeer in patient's blood after 6th day of fever. Sera for normal Individuals may aggtutinate these antigens fh dilutions upta"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "1:80, In individuals who have received TAB vaccine, moderate rise in H antibodies may be seen."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "This test measures somatic O and flagellar H antibodies against Typhoid and Paratyphoid baci. The"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "week after infection Is Blood Culture. |"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Microdlology ."
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "fever"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "infection"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [
+      {
+        "type": "DATE",
+        "text": "23/04/2025"
+      }
+    ],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Episode 71 3P/Bed 2129094 / L648"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Mathod : Side Aggiutination."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "@ppeer in patient's blood after 6th day of fever. Sera for normal Individuals may aggtutinate these antigens fh dilutions upta"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "1:80, In individuals who have received TAB vaccine, moderate rise in H antibodies may be seen."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "This test measures somatic O and flagellar H antibodies against Typhoid and Paratyphoid baci. The"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "week after infection Is Blood Culture. |"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Microdlology ."
+      }
+    ],
+    "clinical_keywords": [
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "fever"
+      },
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "infection"
+      }
+    ]
+  },
+  "patient_summary": "7 medication or dosage-related line(s) were detected. Clinical keywords found: fever, infection."
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "main_prescription_004",
+  "image_findings": null,
+  "text_findings": "3 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.19124389123073487,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    }
+  ],
+  "final_summary": "Case ID: main_prescription_004\n\nImage findings: No image input was provided.\n\nDocument findings: 3 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.191. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\n3 medication or dosage-related line(s) were detected.\nJ bs . , . . . —~ :\noi Fs . 7 ! . . an\n\"7 i i ” 4\nHOH Bing ky ché do an | Ghrae 7a\n£ ding ky ché dé an fra Tinh hinh Giang - Banh BS Bdo cdo ~ [Ee] thoat .\niia Nee 2 ee IS So ANTE ee TT\n@ Ké don thude ES\nan ni leet ete te | eda}\nThéng tin don thus : i fete if eof [fd - ee !\nMs Tan : 1 why i Veil ‘i ' te\nKhoa /P.Kh fiz0 .° Khoa ipK|ithoa Khémn bénh - Tham dé chien «/) Hotén BN [Mal NGOCTHAOTRANG [9]\nam i ham : ie fe i I ji f fi ee eee iit .\n| Ngay ké don [Reros2022 al S6 VWiPK r_ 2200200998 ie } Gigitinh [_na Tua | 7 Th\n1 ee Za mili hong TTT Pn er Phudng Hugng Sd Thanh PhéHusT. |\n| Chan doan . Pop a ia tite Het fe Dia chi Hus id \" ne :\n| Ma Bs [siNooT . ténes [Nos Bac sy Vion: CHP. Quy thude [Nha thudc 86 1 (NHI) 7]\n| | Tén thudc ; (vT | SL | on_G Thanh Tn | Gich dung |\n| EFooyi¥25org(Cefur...\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '£ ding ky ché dé an fra Tinh hinh Giang - Banh BS Bdo cdo ~ [Ee] thoat .'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '} [Babytrim-New Alpha 4,2mg(Alpha chymotry... | csi | io | i. 4,950 ngay udng 2 géi chia 2 [x |'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': ': | Bamyrol 150 sol(Paracetamol 150mg/5mi) [ang | 15 | 3,685] ie 55,275] cho tré udng Ein 2 6ng néu sot >38.... [x |'}"
+}

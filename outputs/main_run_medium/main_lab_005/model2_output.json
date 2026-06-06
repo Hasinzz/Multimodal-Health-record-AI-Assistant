@@ -1,0 +1,42 @@
+{
+  "case_id": "main_lab_005",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0045348_Q-FINALBILLWITHDISCHARGEDOCUMENTS_250411_1130@F.pdf_page_87.png",
+  "raw_text": "ad a . r : a\n. _. ¢ | VR aw\n- VAN ISO £90012 2015 & NABH ACCREDITED HOSPITAL a *\n° “ea\nTHISHWAR “usr @\\\n° HOSPITAL LAB {4(Go) he\n* , 7 A Na N .\na A unit of metro pathlabs A nacH\n* o a Fy\n- +e TB Hospltal Road, Near Jagadhri Gate, Ambala City.) Sr ovreg oti\n. . - AM HE\n1 | = ee | eee |\nE 2 Ishwar Hospital Cashless isampe Keceived ON : 05/Apr/2025 08:06AM\n2 20586006 Reporing Date/Time ¢ 05/Apr/2025 10:29AM\nE Sample Temperature : Maintained Sampie Type ? Serum\n5 \\\n5 | DEPARTMENT OF BIOCHEMISTRY :\ntet CC] CI _ TS |\nPROCALCITOKIN | 0.93 ng/ml 0.0-0.50\nComments I .\noO Procalcitonin (PCT) is a prohormone expressod by neuroendocrine cells (C cells of thyroid,\npulmenary and pancreatic tissues) present in very low levels in healthy individuals.\nMeasurement of PCT can be used as a marker of severe sepsis and generally grades well\nwith the degree of sepsis. Evidence is emerging that PCT levels can reduce unnecessary .\nantibiotic prescribing in ower respiratory tract infections.\nIncreased Levels |\nInfectious - Bacterial infections leading to Septic shock / Severe sepsis, Community\nacquired respiretory tract infections & Ventilatog kuced prcumonia .\nNon Infectious = Severe Cardiogenic shock, organ perfusion enomalics, Small cell hing\ncancet or Medullary C-cell carcinoms of thyroid, major trauma, surgical intervention &\nsevere bums, treatment which stimulate the release of pro-inflammatory cytokines &\nNeonates (<48 hrs. afler birth)\nAs a prognostic marker to support outcome prediction in sepsis patients.\nAs an indicatoe of severity and major complications in acute pancreatitis.\nAsa guide for the necessity of antibiotic therapy and to monitor success of treatments in\nOQ, roio0r }\na | mo UliDAR\nser |e a dt iadicne\ne5) Ishi sn\" 24942 \\ Dr, tea,\na PO SHAR HOSPITAL Mogens Ae\nra py Ma tt) Toe hi pays\nLN _. | Pegi PAO galt\n& (f= 9 “Mon eg7qg aN\nES E[ 5\n- a rf] ° ayy HOspyy “NT\nWee Pala cir AL Page tot\nty Ne - ; Fecilitice:\n° A\nNN | bene ally Antome\n= asmoseseremmnnererramn ceo smmmarvorerpesaeensenseenememantrmrment Hermeaal Assays\n| ISHWAR HOSPITAL i TAP) Hautopatbology\nMid Prt Chom, Spots Road, Meer Sabp Mandl, Cytopathology\nAmbala Civ. ’ PNAC",
+  "raw_text_preview": "ad a . r : a\n. _. ¢ | VR aw\n- VAN ISO £90012 2015 & NABH ACCREDITED HOSPITAL a *\n° “ea\nTHISHWAR “usr @\\\n° HOSPITAL LAB {4(Go) he\n* , 7 A Na N .\na A unit of metro pathlabs A nacH\n* o a Fy\n- +e TB Hospltal Road, Near Jagadhri Gate, Ambala City.) Sr ovreg oti\n. . - AM HE\n1 | = ee | eee |\nE 2 Ishwar Hospital Cashless isampe Keceived ON : 05/Apr/2025 08:06AM\n2 20586006 Reporing Date/Time ¢ 05/Apr/2025 10:29AM\nE Sample Temperature : Maintained Sampie Type ? Serum\n5 \\\n5 | DEPARTMENT OF BIOCHEMISTRY :\ntet CC] CI _ TS |\nPROCALCITOKIN | 0.93 ng/ml 0.0-0.50\nComments I .\noO Procalcitonin (PCT) is a prohormone expressod by neuroendocrine cells (C cells of thyroid,\npulmenary and pancreatic tissues) present in very low levels in healthy individuals.\nMeasurement of PCT can be used as a marker of severe se...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "PROCALCITOKIN | 0.93 ng/ml 0.0-0.50"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "oO Procalcitonin (PCT) is a prohormone expressod by neuroendocrine cells (C cells of thyroid,"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "infection"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "PROCALCITOKIN | 0.93 ng/ml 0.0-0.50"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "oO Procalcitonin (PCT) is a prohormone expressod by neuroendocrine cells (C cells of thyroid,"
+      }
+    ],
+    "clinical_keywords": [
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "infection"
+      }
+    ]
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected. Clinical keywords found: infection."
+}

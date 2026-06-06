@@ -1,0 +1,34 @@
+{
+  "case_id": "main_prescription_012",
+  "image_findings": null,
+  "text_findings": "The document was processed, but no strong structured clinical entities were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.18651282952278214,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.12046429317271488,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt",
+      "chunk_id": 0,
+      "score": 0.061781316982392864,
+      "text": "Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based mass with adjacent mass effect or calcification. Pituitary tumors may relate to sellar or suprasellar findings and can affect vision or hormone-related symptoms. No tumor does not replace radiology review; image quality, slice coverage, and clinical context still matter. Any automated MRI result should be reviewed by a qualified radiologist before clinical use."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt",
+      "chunk_id": 0,
+      "score": 0.04237408449958797,
+      "text": "Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, anemia, inflammation, liver injury, kidney dysfunction, or metabolic issues, depending on the pattern. Single values should not be over-interpreted without the full report and clinical context. OCR may misread digits, units, and abbreviations, so manual verification is required before any clinical decision."
+    }
+  ],
+  "final_summary": "Case ID: main_prescription_012\n\nImage findings: No image input was provided.\n\nDocument findings: The document was processed, but no strong structured clinical entities were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.187. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.120. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt, score=0.062. Relevant note: Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based m...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt, score=0.042. Relevant note: Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, a...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\nThe document was processed, but no strong structured clinical entities were detected.\naww — or me Tee eee ee OT a TS ST a ee\n~ OF eer era Sg le ~ 2 eT ae Se eet - ee NTS ae\net eT — ee SST eee wm ETE rr et ang 6 SR tare ae oe ee\nee et EE a pee eee ee Oe LE TE DE a a\n. _ oe woo! ae a ee ee RS AOS ie DEE eet eee\n- feet ce “ wo Ee eT ree See ee eet Fee ne nF at eT et\n— -- ee on a cee et ae wee Ts a : — = - - oe\no aK o set ne =\nare Ei 9 2 Zz 3 m me\nx 3 7 — 75s 5 * = ee\nake a a] Q@ me <2 = ot\n= 3 o ig Bix iw iB me oa\nea BP rl ic Rim iO is z< to ae\n- D2 AIS is is (im iS 4 ee\nre a} % io) Vin 2 iz gm Ew\n“a 3 Slo 3 sig iB is x = Lo.\n~<a b Q | w ;o te ist i= Cc ae\na i} a ig te it fo ed ™ css\n- a > i H ‘ H 1 ae\n—a Si: 2 ig ie iw is nT\n—~. “1 & Slo is te te il im En. ao\n4 8 S| is ‘Bi iB is - a =\n— a Qi x i ig iBia to : =\nao S| B i@ Bie; TS te.\n- 2 Se . i ton iO :o. =O eS\nSo<4 & cs] : 2 ..."
+}

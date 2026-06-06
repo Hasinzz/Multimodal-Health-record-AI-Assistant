@@ -1,0 +1,25 @@
+{
+  "case_id": "main_prescription_013",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\printed\\305449972_610049217329098_2505819887073282892_n.jpg",
+  "raw_text": "Ee tafe OP Be ede ge oe te ed he SQUk A Stk Be Pe Mba PTD Ee bb ae oral he ao\nah cane hits ee 4 ed ey bef ro oft! i! , {hay noes rinnge f vi 4 th oy. an\nPEERS IONS Sire S art yp Po Orn) Ce ne e D ee, LS SA ke ec Pe OS eet Vag ah oF .\nan oc poo\npy ND yl\nPools bt\nae a \\, . i ZT} avnzr KR moe,\nioe} BS BE EEE OY\nppg o feu So & zZhood,.-\n) c a:\nPea A, 3 SIO N a mF i ogo ft\nyee = = Lo ® o 7 subi; i\neR ee o wo |2 ‘ 2 2 a o 3 Rote.\nGe S. ela S Ss 8 q 2 ms ok\nte , > Q x os Qo - Q 4 : :\nhe LS. = BIZ s oP 2 2 Ps oe\n: Sid =e 3 jo. nN ox”? 8 7 '\n. ote rst) Qs c=) > aia DB : i\nre land a =|\" 1 g Zp Se o . 1\nt 1 = Slo . : Ga O 3g 3 prerme clog\noo ; > os bee are ‘og =r 4 POT sa ee\na a a |S . 2 Ze 3 rot\na ve 't [s) O10 : 2 :Q om. ‘ “oy\n. - 3 Q, [o- i os : PP: i } pb gs\n> a one Pd » oO : sat . yooh, :\n' : - =) : 2 2 oy : 2 bey\n‘ < e 1: 8 2 Bit Wty he\n\" g ~< : oS : &. 9 & ee\n‘ > “3 > ; 3 i $: Bea meet\n: py on\n? a om 4 3 ey: 0 5, '& Ry an .\n. a S = oS. Sle) > gia '& BRS} er\na z & = = Sle |S Sion 8a pio!\n. — . aa : fe] : .\n4 2 > . TTD => ‘ ZB \\e 5 e oO 3 t .\na — = oO |= > @ 3:3 ae) ,\nua ina oF . op |e] q @ o7 ft\n' o Q,& © Ble]. fs an | :\nan 9% -ole|, £3 po\nj = 3 : Pd 1,\ni Ss ce fer ene) : ‘2:9 y ‘\n(io) : . iq iD .\n: A3 . : oO wos ‘\n. 5 WJ = : me\n> ny\nIN) .",
+  "raw_text_preview": "Ee tafe OP Be ede ge oe te ed he SQUk A Stk Be Pe Mba PTD Ee bb ae oral he ao\nah cane hits ee 4 ed ey bef ro oft! i! , {hay noes rinnge f vi 4 th oy. an\nPEERS IONS Sire S art yp Po Orn) Ce ne e D ee, LS SA ke ec Pe OS eet Vag ah oF .\nan oc poo\npy ND yl\nPools bt\nae a \\, . i ZT} avnzr KR moe,\nioe} BS BE EEE OY\nppg o feu So & zZhood,.-\n) c a:\nPea A, 3 SIO N a mF i ogo ft\nyee = = Lo ® o 7 subi; i\neR ee o wo |2 ‘ 2 2 a o 3 Rote.\nGe S. ela S Ss 8 q 2 ms ok\nte , > Q x os Qo - Q 4 : :\nhe LS. = BIZ s oP 2 2 Ps oe\n: Sid =e 3 jo. nN ox”? 8 7 '\n. ote rst) Qs c=) > aia DB : i\nre land a =|\" 1 g Zp Se o . 1\nt 1 = Slo . : Ga O 3g 3 prerme clog\noo ; > os bee are ‘og =r 4 POT sa ee\na a a |S . 2 Ze 3 rot\na ve 't [s) O10 : 2 :Q om. ‘ “oy\n. - 3 Q, [o- i os : PP: i } pb gs\n> a one Pd » oO : sat . yooh, :\n' : - ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ppg o feu So & zZhood,.-"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ppg o feu So & zZhood,.-"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

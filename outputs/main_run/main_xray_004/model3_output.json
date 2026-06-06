@@ -1,0 +1,16 @@
+{
+  "case_id": "main_xray_004",
+  "image_findings": "Chest X-ray suggests possible findings: Infiltration (0.10), Consolidation (0.03), Effusion (0.01).",
+  "text_findings": null,
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.2786395942287497,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    }
+  ],
+  "final_summary": "Case ID: main_xray_004\n\nImage findings: Chest X-ray suggests possible findings: Infiltration (0.10), Consolidation (0.03), Effusion (0.01).\n\nDocument findings: No document input was provided.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.279. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. Image-based findings are probabilistic and should be verified with clinical context. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Image findings:\nChest X-ray suggests possible findings: Infiltration (0.10), Consolidation (0.03), Effusion (0.01).\nInfiltration: 0.10449657589197159\nConsolidation: 0.03198341280221939\nEffusion: 0.012975526973605156\nAtelectasis: 0.006233559921383858\nPneumothorax: 0.0014712155098095536"
+}

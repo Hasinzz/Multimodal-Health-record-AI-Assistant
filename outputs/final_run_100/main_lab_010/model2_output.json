@@ -1,0 +1,66 @@
+{
+  "case_id": "main_lab_010",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0057918_F-KYC_PC_KARUNA_1_250427_1321@G.pdf_page_41.png",
+  "raw_text": "care you can trust ™ |\nWWW SITARAM BHARTIA\nInstitute of Science & Research\nLABORATORY INVESTIGATION REPORT\nric —— oe | ee\nUHId : SBID.325941 —— : | a |\nEpisode rp | ox | + 1515162\nRef. Doctor Br. Medicine Unit /Pradeep Narayan Chauhan J oI\ncyl =\nBiochemistry\nTEST NAME RESULT UNIT BIOLOGICAL REF. INTERVA\n(sempie oy Collection Date C_) 09:51 Ack Date a | 10:02 Report Date | a | 12:37 )\nHbAic\nSample Type- Whole blood EDTA\nHbAic 6.1 a (H) % <5.7\nMethod - HPLC\nResult AIC\nNormal fess than 5.7 %\nPrediabetes 5.7% 106.4%\nDiabetes 6.5 % or higher\nInterpretations:\n1. HbAIC has been endorsed by clinical groups and American Diabetes Association guidelines 2017 for\ndiagnosing diabetes using a cut off point of 6.5%\n2. Low glycated haemoglobin in a non diabetic individual is often associated with systemic inflammatory\ndiseases, chronic anaemia (especially severe iron deficiency and haemolytic), chronic renal failure and liver\ndiseases. Clinical correlation suggested.\n3. In known diabetic patients, following values can be considered as a tool for monitoring the glycemic control.\nExcellent control-6-7 %\nFair to Good control — 7-8 %\nUnsatisfactory control — 8 to 10 %\nPoor Control - More than 10 %\nClinical Pathology\nTEST NAME RESULT UNIT BIOLOGICAL REF. INTERVA\n(sempie No 070095085 Collection Date C_)j 14:57 Ack Date a | 15:03 Report Date | a | 15:37 )\nUrine RE and ME (Routine and Microscopic)\nSample Type- Urine\nGross Examination\nColour Pale Yellow Pale Yellow\nMethod - Visual/Gross examination\nPrint DateTime: Fee\nrint DateTime: | oe | ee\nNeate)\nX es\ni7\\\nMC-2753",
+  "raw_text_preview": "care you can trust ™ |\nWWW SITARAM BHARTIA\nInstitute of Science & Research\nLABORATORY INVESTIGATION REPORT\nric —— oe | ee\nUHId : SBID.325941 —— : | a |\nEpisode rp | ox | + 1515162\nRef. Doctor Br. Medicine Unit /Pradeep Narayan Chauhan J oI\ncyl =\nBiochemistry\nTEST NAME RESULT UNIT BIOLOGICAL REF. INTERVA\n(sempie oy Collection Date C_) 09:51 Ack Date a | 10:02 Report Date | a | 12:37 )\nHbAic\nSample Type- Whole blood EDTA\nHbAic 6.1 a (H) % <5.7\nMethod - HPLC\nResult AIC\nNormal fess than 5.7 %\nPrediabetes 5.7% 106.4%\nDiabetes 6.5 % or higher\nInterpretations:\n1. HbAIC has been endorsed by clinical groups and American Diabetes Association guidelines 2017 for\ndiagnosing diabetes using a cut off point of 6.5%\n2. Low glycated haemoglobin in a non diabetic individual is often associated with systemic...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Episode rp | ox | + 1515162"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Sample Type- Whole blood EDTA"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method - HPLC"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Fair to Good control — 7-8 %"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method - Visual/Gross examination"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "diabetes"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Episode rp | ox | + 1515162"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Sample Type- Whole blood EDTA"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method - HPLC"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Fair to Good control — 7-8 %"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method - Visual/Gross examination"
+      }
+    ],
+    "clinical_keywords": [
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "diabetes"
+      }
+    ]
+  },
+  "patient_summary": "5 medication or dosage-related line(s) were detected. Clinical keywords found: diabetes."
+}

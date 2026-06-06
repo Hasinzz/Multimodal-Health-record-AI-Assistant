@@ -1,0 +1,8 @@
+scope,case_type,requested_cases,completed_cases,failed_cases,success_rate_pct,output_files_generated,notes
+overall,all,26,26,0,100,"main_run_summary.csv; main_run_report.txt; per-case model1_output.json/model2_output.json/model3_output.json; per-case embedding .npy","Inference-only batch completed with zero failures"
+case_type,brain_image_only,5,5,0,100,"model1_output.json; model3_output.json; embedding .npy","Brain MRI image-only cases"
+case_type,xray_image_only,5,5,0,100,"model1_output.json; model3_output.json; embedding .npy","Chest X-ray image-only cases"
+case_type,prescription_doc_only,5,5,0,100,"model2_output.json; model3_output.json","Prescription document-only cases"
+case_type,lab_doc_only,5,5,0,100,"model2_output.json; model3_output.json","Lab report document-only cases"
+case_type,brain_fusion,3,3,0,100,"model1_output.json; model2_output.json; model3_output.json; embedding .npy","Brain MRI + document fusion cases"
+case_type,xray_fusion,3,3,0,100,"model1_output.json; model2_output.json; model3_output.json; embedding .npy","Chest X-ray + document fusion cases"

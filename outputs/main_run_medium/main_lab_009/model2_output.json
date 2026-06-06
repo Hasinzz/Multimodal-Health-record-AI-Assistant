@@ -1,0 +1,57 @@
+{
+  "case_id": "main_lab_009",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\MUM-0125-PA-0001141_W2500438UNADKAT ASHWIN_27-04-2025_1002-19_AM.pdf_page_80.png",
+  "raw_text": ". . n\n=) = Grant Medical Foundation. (Foon\no ° fy *\nEy kay Hall Clinic 4 69)\nLV Ry ABH\nBAnowarie . —=\nbomen anareer nowt\na\nSe — ——| _——— |\n_—— i ee | ee\n—— | ——— Report Date: ——SYos:4o am\nReferred By Dr. { IGNATIUS AVINASH Specimen : WHOLE BLOOD\nWard / Bed * CRITICAL CARE/CC19\nPassport No 2\nEE\nDEPARTMENT OF LABORATORY MEDICINE-HAEMATOLOGY .\nInvestigation Result Units Biological Reference Interval ]\nHaemogram Report .\nMPV 29.54 fl 5.4-11.5\nMethod > Derived from Platelet Histogram .\nRBC MORPHOLOGY : Normocytic normochromic, mild anisocytosis, few macrocytes. Mild polychromasia and\nre] 2 NRBCs/100 WBCs. ‘\n. Method : MICROSCOPY ,\nWBC MORPHOLOGY : Neutrophilic leucocytosis.\nMethod : MICROSCOPY\nPLATELET : Thrombocytopenia.\nMethod : MICROSCOPY\n_ #8 End OF The Report =** ee ~\nVerified By \"\nDXHS60 je.\n_REMISOL_WANOWARIE Lr- .\n, Or.Anuradha Deole\n. Consultant Pathologist\nNOTE: )\n* Kindty Corelate clinically & discsuss if necessary. }\n© Results pertain to the specimen submitted, . q\n© For Terms and Conditians of Reporting’, kindly, q\nvisit our website ; www.Rubyhall.com\n. |\nPnnted By : MRD : Prnted On: en 2:14.31\n59/6, Azad Nagar, Wanowarie, Pune - 411 040 (INDIA). | Tel. : 020 - 66494982 / 83 / 84 Fax : 020 - 66494939\nPS-1044",
+  "raw_text_preview": ". . n\n=) = Grant Medical Foundation. (Foon\no ° fy *\nEy kay Hall Clinic 4 69)\nLV Ry ABH\nBAnowarie . —=\nbomen anareer nowt\na\nSe — ——| _——— |\n_—— i ee | ee\n—— | ——— Report Date: ——SYos:4o am\nReferred By Dr. { IGNATIUS AVINASH Specimen : WHOLE BLOOD\nWard / Bed * CRITICAL CARE/CC19\nPassport No 2\nEE\nDEPARTMENT OF LABORATORY MEDICINE-HAEMATOLOGY .\nInvestigation Result Units Biological Reference Interval ]\nHaemogram Report .\nMPV 29.54 fl 5.4-11.5\nMethod > Derived from Platelet Histogram .\nRBC MORPHOLOGY : Normocytic normochromic, mild anisocytosis, few macrocytes. Mild polychromasia and\nre] 2 NRBCs/100 WBCs. ‘\n. Method : MICROSCOPY ,\nWBC MORPHOLOGY : Neutrophilic leucocytosis.\nMethod : MICROSCOPY\nPLATELET : Thrombocytopenia.\nMethod : MICROSCOPY\n_ #8 End OF The Report =** ee ~\nVerified By \"\nDXHS60 ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Referred By Dr. { IGNATIUS AVINASH Specimen : WHOLE BLOOD"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method > Derived from Platelet Histogram ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ". Method : MICROSCOPY ,"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method : MICROSCOPY"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method : MICROSCOPY"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Referred By Dr. { IGNATIUS AVINASH Specimen : WHOLE BLOOD"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method > Derived from Platelet Histogram ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ". Method : MICROSCOPY ,"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method : MICROSCOPY"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method : MICROSCOPY"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "5 medication or dosage-related line(s) were detected."
+}

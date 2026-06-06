@@ -1,0 +1,40 @@
+{
+  "case_id": "main_fusion_xray_010",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0056519_discharge virendra_11zon_28-04-2025_1132-57_AM@G.pdf_page_13.png",
+  "raw_text": ". NW A Unit of Omsans Diagnostic Group . (ED\n; ‘USG; CT.SCAN!X-RAY.& PATHOLOGY? SER E>. ;\nC— © — :\nNEARM a a\nUNDIVA CHAURAHA) BAJPUR-263 401 (U.S: NAGAR) UTTARAKHAN\nBI\nration in/orssa UHID SKH/03530\nnt NY, .\nae seen tmewoen a\nee Sex 31 Years Male\nRef.\ncn ‘Doctor Or. RAVEENA Report Date | om b\nfontact No. 7289865111 Barcode No\nINVESTIGATION —= a —\nHEMATOLOGY ;\nESR ane _mmhr 10-15\nCBC - COMPLETE HEMOGRAM ... .\nHB% (HAEMOGLOBIN) 244 gd 115-16\nTc 195008 cells/cumm “oon\nRBC 43 x .\nPCV 32.9 % 35-45\nMCV 75 f 7 52.98\nMat 24.8. pa 26-34\nTACHC 373 anvdl 30-36\nPLATELET COUNT 194 a\nDLC\nNEUTROPHILS bs : sous\nLYMPHOCYTES o % Os ;\nF=cINOPHILS os x 27\nFB iocries Ps % 0-2\nBASOPHILS\nene tances a R PO COmpicto ecrecenecneweasenetweneecerensttecenntmeensierneatetryennrerrerenes\ntors only, not for medico legal cases.\nThis report ist he a nlon, it may Kindly be correlated clinically.\nris ison or ahe lavestgtalon|s] Isfare unexpected , the pationticonsullant Is adviced =—— ]\nfthe\n‘ora recheck,\nO- OR, ~g he os\nAGDUL MANAN ANSARI MB6S, MD (PATH)\nBSC HALT CONSULTANT PATHOLOGIST\n. CT econ 1 3060 Level IT Unesco | tence eeetierey ittemnaeey | Conceamwmogreniy 1 3D.TVE | BG Cubed PHACTaging” §\nI Lan ls Cans 8200782284 Semana Serology 1A Hermenal Stndian | Preprency Wemrooeeute Maer =\na Home Cone jcorsan fo cers hap or et 8 nel Gasrowe, Al machine! —— Not Valid For Medion Legal Purpose sam\nDischaimer t findings é0 nef correlate Inge. Drecrepencies due te ‘Own Envtrtions. Re-sxaminston and second opinion ls\nFEE Oa io compeneadoa Sebilty slanda. We strongly technical or typing error\nPenge 4 wea be apprecesied. NO Cecousege ted Uterpretation of Nr il! be reported for correction wArin seven days,\nCE Scanned with OKEN Scanner\n13",
+  "raw_text_preview": ". NW A Unit of Omsans Diagnostic Group . (ED\n; ‘USG; CT.SCAN!X-RAY.& PATHOLOGY? SER E>. ;\nC— © — :\nNEARM a a\nUNDIVA CHAURAHA) BAJPUR-263 401 (U.S: NAGAR) UTTARAKHAN\nBI\nration in/orssa UHID SKH/03530\nnt NY, .\nae seen tmewoen a\nee Sex 31 Years Male\nRef.\ncn ‘Doctor Or. RAVEENA Report Date | om b\nfontact No. 7289865111 Barcode No\nINVESTIGATION —= a —\nHEMATOLOGY ;\nESR ane _mmhr 10-15\nCBC - COMPLETE HEMOGRAM ... .\nHB% (HAEMOGLOBIN) 244 gd 115-16\nTc 195008 cells/cumm “oon\nRBC 43 x .\nPCV 32.9 % 35-45\nMCV 75 f 7 52.98\nMat 24.8. pa 26-34\nTACHC 373 anvdl 30-36\nPLATELET COUNT 194 a\nDLC\nNEUTROPHILS bs : sous\nLYMPHOCYTES o % Os ;\nF=cINOPHILS os x 27\nFB iocries Ps % 0-2\nBASOPHILS\nene tances a R PO COmpicto ecrecenecneweasenetweneecerensttecenntmeensierneatetryennrerrerenes\ntors only, not for medico legal...",
+  "entities": [
+    {
+      "type": "LAB_VALUE",
+      "name": "RBC",
+      "value": "43",
+      "unit": "x",
+      "text": "RBC 43 x"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "fontact No. 7289865111 Barcode No"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [
+      {
+        "type": "LAB_VALUE",
+        "name": "RBC",
+        "value": "43",
+        "unit": "x",
+        "text": "RBC 43 x"
+      }
+    ],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "fontact No. 7289865111 Barcode No"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 lab value(s) were detected from the document. 1 medication or dosage-related line(s) were detected."
+}

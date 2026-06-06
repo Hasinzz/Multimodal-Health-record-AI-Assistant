@@ -1,0 +1,31 @@
+{
+  "case_id": "main_lab_003",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\BLR-0425-PA-0042347_Mayuri_salve_pt_preaurth_form_26-04-2025_0411-17_PM@G.pdf_page_20.png",
+  "raw_text": "naw 7 CP eC Wed\non\nrk ASHRAYA DIAGNOSTICS\n| aay | Ashraya Hospital, Near bhoomkar chow\nNN Kala Khadak a\n— ES |\nSt | — — | fo —\nReferral Doctor: DRSANKET Le _—\nPetype / > : Direct HIME ) Lae\nW735\nHemoglobin 12.6 gms/dl 12.0 - 15.0\nTotal WBC Count 10900 ju 4500 - 11000\nDIFFERENTIAL COUNT\nNeutrophil 55 % 40-70\nLymphocytes 40 % 20-40\n| Eosinophil 02 % 1-6\nMonocytes 03 % 2-8\nBasophils 00 % o-1\nRBC Indices\nHaematocrit (HCT) . 38.6 % 37.0 - 47.0\nRBC Count 4.23 mil. /emm 4.5-6.5\nMCV 91.25, L 80 - 100\nMCH PL wed Pg 21-34\nMCHC 32.64 gm/dl 32-36\nRDW-CV 12.6 % 11-16\nRDW-SD 46.5 fL 36 - 56\nPlatelet Indices\nPlatelet Count 361000 /cmm. 150000 - 450000\nMPV 9.1 {L 65-12\nPDW 14.9 fL 9-17\nPCT 0.33 % 0.10 - 0.50\nRBC Morphology Normocytic Normochromic\nWBC Morphology Within Normal Limits\nPlatelet Adequate on smear\nDone on fully Automatic H3D Premier Hacmatology Analyser\naan ne\nSignature ie\nDr. Ayesha Siddique\n(MBBS,DCP)\ncam ~",
+  "raw_text_preview": "naw 7 CP eC Wed\non\nrk ASHRAYA DIAGNOSTICS\n| aay | Ashraya Hospital, Near bhoomkar chow\nNN Kala Khadak a\n— ES |\nSt | — — | fo —\nReferral Doctor: DRSANKET Le _—\nPetype / > : Direct HIME ) Lae\nW735\nHemoglobin 12.6 gms/dl 12.0 - 15.0\nTotal WBC Count 10900 ju 4500 - 11000\nDIFFERENTIAL COUNT\nNeutrophil 55 % 40-70\nLymphocytes 40 % 20-40\n| Eosinophil 02 % 1-6\nMonocytes 03 % 2-8\nBasophils 00 % o-1\nRBC Indices\nHaematocrit (HCT) . 38.6 % 37.0 - 47.0\nRBC Count 4.23 mil. /emm 4.5-6.5\nMCV 91.25, L 80 - 100\nMCH PL wed Pg 21-34\nMCHC 32.64 gm/dl 32-36\nRDW-CV 12.6 % 11-16\nRDW-SD 46.5 fL 36 - 56\nPlatelet Indices\nPlatelet Count 361000 /cmm. 150000 - 450000\nMPV 9.1 {L 65-12\nPDW 14.9 fL 9-17\nPCT 0.33 % 0.10 - 0.50\nRBC Morphology Normocytic Normochromic\nWBC Morphology Within Normal Limits\nPlatelet Adequate on sm...",
+  "entities": [
+    {
+      "type": "LAB_VALUE",
+      "name": "Hemoglobin",
+      "value": "12.6",
+      "unit": "gms/dl",
+      "text": "Hemoglobin 12.6 gms/dl"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [
+      {
+        "type": "LAB_VALUE",
+        "name": "Hemoglobin",
+        "value": "12.6",
+        "unit": "gms/dl",
+        "text": "Hemoglobin 12.6 gms/dl"
+      }
+    ],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 lab value(s) were detected from the document."
+}

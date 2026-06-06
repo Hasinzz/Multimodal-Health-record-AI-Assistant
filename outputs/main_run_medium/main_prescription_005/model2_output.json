@@ -1,0 +1,73 @@
+{
+  "case_id": "main_prescription_005",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\306571434_478609757271849_7196923760071016500_n.jpg",
+  "raw_text": "«ie 2 . . al ps\n> Ding ky ché 49 3n [55 Tinh hinh Giudng - Bénh | pe Bao cdo » | 10) Thodt .\nKa don thude a\n-Thong tin dén a tén: 790.598\nMa Tén . [NGUYEN NHUY [s]\nKhoa fPKh [120 Khoa k|Khoa Kham bénh-Thimddchden -HoténBN [NGUYENNHUY\nam ham\nNaay ke don Ih0972022 | Sd WiPK | 2200201020 Gidi tinh | Na tusi | 9\n: . VIEM MGI HONG oe Xa Phong Hai Huyén Phong Dién TT-\n“| Chan dodn ” Bia chi Hud\nMa Bs frap2se TéenBs [Pham V6 Phudng Thao Quay thude fra thudc sé 1 (NHI +]\nTén thudc | BVT {St | Bon_Gis_ i Thanh_Tién } Céch ding i\n| Fabrarnax S00 DTViei nea phan Eat CATmoEm (eMC ETN 2,472 24,720 | NGAY UGNG 2 VIEN CHIA 2 [x]\nBabytrim-tew Alpha 4,2mg(Alpha chymotry... | Gdi | 10 4,950 49,500 |NGAY UONG 2 GOI CHIA 2 [x]\nAvido Bio HQ gdi | 20 6,303 126,060, NGAY UGNG 2 GOI CHIA 2 [x]\nPartarnol 500mg(Paracetamol 500mg) vién | 10 552] _ 5,520 /UOHG.ensoKHI SOT sss CACH 4 ~ [x]\nZinc Plex Chai 1 281,438 281,438, NGAY UONG 10 ML CHIA 2 x\nATISYRUP ZINC 2omg/10mKKam sulfat hep... | Stic [. 30 - 10,112 | 803,380 GAY UGNG 1 ONG Xi\nLav dan: { Su dung thudc theo ‘dung chi dinh cua bac si\noo . an ey” 7 pen’\nees : . Mi a me, Ba. wes. AMET\n. {yy ah m Mabe os",
+  "raw_text_preview": "«ie 2 . . al ps\n> Ding ky ché 49 3n [55 Tinh hinh Giudng - Bénh | pe Bao cdo » | 10) Thodt .\nKa don thude a\n-Thong tin dén a tén: 790.598\nMa Tén . [NGUYEN NHUY [s]\nKhoa fPKh [120 Khoa k|Khoa Kham bénh-Thimddchden -HoténBN [NGUYENNHUY\nam ham\nNaay ke don Ih0972022 | Sd WiPK | 2200201020 Gidi tinh | Na tusi | 9\n: . VIEM MGI HONG oe Xa Phong Hai Huyén Phong Dién TT-\n“| Chan dodn ” Bia chi Hud\nMa Bs frap2se TéenBs [Pham V6 Phudng Thao Quay thude fra thudc sé 1 (NHI +]\nTén thudc | BVT {St | Bon_Gis_ i Thanh_Tién } Céch ding i\n| Fabrarnax S00 DTViei nea phan Eat CATmoEm (eMC ETN 2,472 24,720 | NGAY UGNG 2 VIEN CHIA 2 [x]\nBabytrim-tew Alpha 4,2mg(Alpha chymotry... | Gdi | 10 4,950 49,500 |NGAY UONG 2 GOI CHIA 2 [x]\nAvido Bio HQ gdi | 20 6,303 126,060, NGAY UGNG 2 GOI CHIA 2 [x]\nPartarnol 500mg(Par...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "> Ding ky ché 49 3n [55 Tinh hinh Giudng - Bénh | pe Bao cdo » | 10) Thodt ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ": . VIEM MGI HONG oe Xa Phong Hai Huyén Phong Dién TT-"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "“| Chan dodn ” Bia chi Hud"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Babytrim-tew Alpha 4,2mg(Alpha chymotry... | Gdi | 10 4,950 49,500 |NGAY UONG 2 GOI CHIA 2 [x]"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Partarnol 500mg(Paracetamol 500mg) vién | 10 552] _ 5,520 /UOHG.ensoKHI SOT sss CACH 4 ~ [x]"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Zinc Plex Chai 1 281,438 281,438, NGAY UONG 10 ML CHIA 2 x"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ATISYRUP ZINC 2omg/10mKKam sulfat hep... | Stic [. 30 - 10,112 | 803,380 GAY UGNG 1 ONG Xi"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "> Ding ky ché 49 3n [55 Tinh hinh Giudng - Bénh | pe Bao cdo » | 10) Thodt ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ": . VIEM MGI HONG oe Xa Phong Hai Huyén Phong Dién TT-"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "“| Chan dodn ” Bia chi Hud"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Babytrim-tew Alpha 4,2mg(Alpha chymotry... | Gdi | 10 4,950 49,500 |NGAY UONG 2 GOI CHIA 2 [x]"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Partarnol 500mg(Paracetamol 500mg) vién | 10 552] _ 5,520 /UOHG.ensoKHI SOT sss CACH 4 ~ [x]"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Zinc Plex Chai 1 281,438 281,438, NGAY UONG 10 ML CHIA 2 x"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ATISYRUP ZINC 2omg/10mKKam sulfat hep... | Stic [. 30 - 10,112 | 803,380 GAY UGNG 1 ONG Xi"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "7 medication or dosage-related line(s) were detected."
+}

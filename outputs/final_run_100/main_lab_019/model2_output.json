@@ -1,0 +1,121 @@
+{
+  "case_id": "main_lab_019",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0052234_Q-REPORTS_250422_1655@F.pdf_page_19.png",
+  "raw_text": ". t\nO NB\\:\n. s “\nWexacwanoas Bhagwan Das Hospital (So)\n~ Ks wy 4\npein neat . a =e : co ? i\n@ilpepartmentfof,Lab\\sciencesyR Rt |\n: : Mc-4795\nDiagnostics S.No. CUCL ACUTLTT HUTT rsa | MR/25/004852/311657 :\nPatient Cy | ee | im | a | :\n<= oar | ;\nDate : 16-Apr-2025 = pm IPD No. : 29802 .\nample Recelving Date : 16-Apr-2025 11:10 AM Panel =] a | a | :\nSample Collectlon Date ! 16-Apr-2025 11:10AM . : : .\ni\nMCHC L 30.5* 31.5-34.5 gm/dl . H\n(calculated) . :\nKFT (KIDNEY FUNCTION TEST (KFT / RET) (SERUM) oe :\nBLOOD UREA 24.3 19-44 mg/dl\n_-~fUrease-GLDH UV Method) .\nCREATININE,SERUM 0.91 0.7-1.3 mg/d! mo\n(Jaffe melhod w/o compensalion) : ' . ‘\n“> JRIC ACID 5.25 3.8-7.2 mg/di .\n(Enzymalic photometric test with TBHBA) :\nSODIUM 138.1 135-145 mmol/l\n(I.8.E.direct Method) : : :\nPOTASSIUM : L 3.40* 3.5-5.5 . mmol/l\n(LS, E.direct Method) :\nCALCIUM 8.95 8.6-10.3 mg/dl 3\n(Arsenazo III Mathod) :\nINORGANIC PHOSPHORUS 4.05 2.6-4.5 mg/di i\n(Molybdate UV Method with endpoint determination)) :\nTOTAL PROTEIN 7.05 6.6-8.8 gmidl\n- .\n(Biuret Method) .\nALBUMIN,SERUM 412 3.5-5.2 gm/dl :\n“—~omocreso! Green} t\nGLOBULIN 2.9 2-3.5 gm/d! :\n(Calculated) :\nAIG Ratio 1.4 0.8-2.0 .\n(Calculated)\n*** End Of Report *** : :\n. oP\n~/8\\-4oLo3a8\\\",\n: 07 25S Ey :\n- . .- = Gg .\n“n Crore helt\ni | es\nLf | .\noo)\n| = |",
+  "raw_text_preview": ". t\nO NB\\:\n. s “\nWexacwanoas Bhagwan Das Hospital (So)\n~ Ks wy 4\npein neat . a =e : co ? i\n@ilpepartmentfof,Lab\\sciencesyR Rt |\n: : Mc-4795\nDiagnostics S.No. CUCL ACUTLTT HUTT rsa | MR/25/004852/311657 :\nPatient Cy | ee | im | a | :\n<= oar | ;\nDate : 16-Apr-2025 = pm IPD No. : 29802 .\nample Recelving Date : 16-Apr-2025 11:10 AM Panel =] a | a | :\nSample Collectlon Date ! 16-Apr-2025 11:10AM . : : .\ni\nMCHC L 30.5* 31.5-34.5 gm/dl . H\n(calculated) . :\nKFT (KIDNEY FUNCTION TEST (KFT / RET) (SERUM) oe :\nBLOOD UREA 24.3 19-44 mg/dl\n_-~fUrease-GLDH UV Method) .\nCREATININE,SERUM 0.91 0.7-1.3 mg/d! mo\n(Jaffe melhod w/o compensalion) : ' . ‘\n“> JRIC ACID 5.25 3.8-7.2 mg/di .\n(Enzymalic photometric test with TBHBA) :\nSODIUM 138.1 135-145 mmol/l\n(I.8.E.direct Method) : : :\nPOTASSIUM : L 3.40* 3.5-5.5...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "BLOOD UREA 24.3 19-44 mg/dl"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "_-~fUrease-GLDH UV Method) ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CREATININE,SERUM 0.91 0.7-1.3 mg/d! mo"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(Jaffe melhod w/o compensalion) : ' . ‘"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "“> JRIC ACID 5.25 3.8-7.2 mg/di ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "SODIUM 138.1 135-145 mmol/l"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(I.8.E.direct Method) : : :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(LS, E.direct Method) :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CALCIUM 8.95 8.6-10.3 mg/dl 3"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(Arsenazo III Mathod) :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "INORGANIC PHOSPHORUS 4.05 2.6-4.5 mg/di i"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(Molybdate UV Method with endpoint determination)) :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "(Biuret Method) ."
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "BLOOD UREA 24.3 19-44 mg/dl"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "_-~fUrease-GLDH UV Method) ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CREATININE,SERUM 0.91 0.7-1.3 mg/d! mo"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(Jaffe melhod w/o compensalion) : ' . ‘"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "“> JRIC ACID 5.25 3.8-7.2 mg/di ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "SODIUM 138.1 135-145 mmol/l"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(I.8.E.direct Method) : : :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(LS, E.direct Method) :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CALCIUM 8.95 8.6-10.3 mg/dl 3"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(Arsenazo III Mathod) :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "INORGANIC PHOSPHORUS 4.05 2.6-4.5 mg/di i"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(Molybdate UV Method with endpoint determination)) :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "(Biuret Method) ."
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "13 medication or dosage-related line(s) were detected."
+}

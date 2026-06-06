@@ -1,0 +1,34 @@
+{
+  "case_id": "main_prescription_009",
+  "image_findings": null,
+  "text_findings": "The document was processed, but no strong structured clinical entities were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.18651282952278214,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.12046429317271488,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt",
+      "chunk_id": 0,
+      "score": 0.061781316982392864,
+      "text": "Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based mass with adjacent mass effect or calcification. Pituitary tumors may relate to sellar or suprasellar findings and can affect vision or hormone-related symptoms. No tumor does not replace radiology review; image quality, slice coverage, and clinical context still matter. Any automated MRI result should be reviewed by a qualified radiologist before clinical use."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt",
+      "chunk_id": 0,
+      "score": 0.04237408449958797,
+      "text": "Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, anemia, inflammation, liver injury, kidney dysfunction, or metabolic issues, depending on the pattern. Single values should not be over-interpreted without the full report and clinical context. OCR may misread digits, units, and abbreviations, so manual verification is required before any clinical decision."
+    }
+  ],
+  "final_summary": "Case ID: main_prescription_009\n\nImage findings: No image input was provided.\n\nDocument findings: The document was processed, but no strong structured clinical entities were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.187. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.120. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt, score=0.062. Relevant note: Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based m...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt, score=0.042. Relevant note: Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, a...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\nThe document was processed, but no strong structured clinical entities were detected.\nBIO | > ding ty ché a9 5 | mn\nSan 0 | fr5 Tinh hinh Giueng - ga\nEO\nP Ké don thudc ie\nee oy\n= a cnet | St\nThéng tin don thude b>} |\n. rg én: 977.388— :\nMa fan Tén : :\nKhoa /P.Kh 1120 | Khoa P.K| Khoa Kham bénh-Th3m dé chtcn Hotén BN DOAN LE MINH QUAN [o] '\nam ham os raaaT : ;\n| Ngay ké don [f092022 >] $6. WPK l. 2200200593, Gigitinh «= [Nam Tudi | 7 {-\n\\ Chén doan Miémn hongMiém thanh quan : in \" ; oo Phuding 5 Thanh Phd déng Ha Quang\n{ a ce i Dia chi Tri\n,| M&Bs [sino Tengs [Ngddue57 cal EE 1°. Quay thude [Nha thude 56 1 (NAID 7]\ni Tén thudc | OvT (SL | Don_Gid -| Thanh_Tién { Céch ding i\ncoos OTC EY\n4\n| Sovenred a (ven st yoreneson sma) [vn | 20” | aa60/ 7 sa.o0 [rout sven oe? |]\n‘Youre ca a | Borel tarislsira uma\n[upon Pe 2 arti iy atone?\n| . ee\n4 : a mn eT\ni : ; ‘ \" hn ;\n\" 4 . a .\n\" ; ‘..."
+}

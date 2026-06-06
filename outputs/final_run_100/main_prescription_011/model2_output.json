@@ -1,0 +1,33 @@
+{
+  "case_id": "main_prescription_011",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\27.jpg",
+  "raw_text": "JEW M | N 4 f R FW ora: Img,2mg,5mg.\nSay\nDear Mansur,\nWys-setleeny eleikchun!\ndust Finished 2 merningy werk at th\nKhaket sfre a Neve ~ ohare Eo ren work\nevery Fey deg wre y a Noe Tam ak Atel sig Pw\nGren bree (pardon th. stet Oo naey,)\nWe cre Aretting final stefenwte on «\nember of sobjecty Ar th evga wire tine sie\nof Big ill due sot in ian wa wth o¢ Se, sushellah ,\nZo wenk ints the Kearkeh Chapel A prectic,\nVers eee Prarchid | AS fe prepereteen Ay wr Eig\na steten cl en th °Filsile SFiaw Hess sor prised\nLowes when it wes yer beige ZL ctbeud & usted.\nae “J\nof Murs ike per Se f\nThe entive heart-felt & yearning ryivit oF\nSonship be Marshid come throng mr ech beowty\nqeetion ax a Ape t trams tes im Prew tte sphere ,\nrd helped me considerably Acs Finabive +t,\nstatement ot hand. att )\nThe above is an artistic rendition of the See Product Information on back cover\nmolecular structure of prazosin. for indications, dosage and administration,\nwarnings and adverse reactions. Before\nprescribing Minipress, WARNINGS and\nGED LABORATORIES DIVISION DOSAGE AND ADMINISTRATION\nPFIZER INC., NEW YORK, N.Y. 10017 sections should be carefully reviewed.",
+  "raw_text_preview": "JEW M | N 4 f R FW ora: Img,2mg,5mg.\nSay\nDear Mansur,\nWys-setleeny eleikchun!\ndust Finished 2 merningy werk at th\nKhaket sfre a Neve ~ ohare Eo ren work\nevery Fey deg wre y a Noe Tam ak Atel sig Pw\nGren bree (pardon th. stet Oo naey,)\nWe cre Aretting final stefenwte on «\nember of sobjecty Ar th evga wire tine sie\nof Big ill due sot in ian wa wth o¢ Se, sushellah ,\nZo wenk ints the Kearkeh Chapel A prectic,\nVers eee Prarchid | AS fe prepereteen Ay wr Eig\na steten cl en th °Filsile SFiaw Hess sor prised\nLowes when it wes yer beige ZL ctbeud & usted.\nae “J\nof Murs ike per Se f\nThe entive heart-felt & yearning ryivit oF\nSonship be Marshid come throng mr ech beowty\nqeetion ax a Ape t trams tes im Prew tte sphere ,\nrd helped me considerably Acs Finabive +t,\nstatement ot hand. att )\nThe above is ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "JEW M | N 4 f R FW ora: Img,2mg,5mg."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "The above is an artistic rendition of the See Product Information on back cover"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "JEW M | N 4 f R FW ora: Img,2mg,5mg."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "The above is an artistic rendition of the See Product Information on back cover"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected."
+}

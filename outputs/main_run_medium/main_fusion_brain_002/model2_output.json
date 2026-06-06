@@ -1,0 +1,58 @@
+{
+  "case_id": "main_fusion_brain_002",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0052974_claim love yadav_27-04-2025_0232-13_PM.pdf_page_28.png",
+  "raw_text": "e SNC SI eet\nwv. XS, 2, Y\na’ <¢ z &\nQY MULTI SPECIALITY HOSPITAL Ny\nCARE Vou DESERVE (A Unit of Shree Ram Health Care) aceasta\nISO 9004 = 2049\nRef. EJ :Dr. Paediatrics Team | a | 7119902/1PD-154 Req. At 17/04/2025 18:49:06\n+ Sampling Date Co d22:29:57 | a 1) $97/04/2025 22:3100\neee\nSample type: BLOOD Report Type: Final\na eeeeeeeeeSFSSSSSSSSSMMMSFSSFSFS Report Type: Final\n. BIOCHEMISTRY\nTR\nKIDNEY FUNCTION TEST\nS-Touanp Unnnnnennennenenennmenencnennmnennemeecen nai atelier ace\nTest Name Results Units Bio. Ref. interval\nx | Urea+Serum 179 e/a 10-50 .\nCreatinine - Serum 0.6 ing/dt. 07-12\n| Uric Ace =Serum al ar; er ae — —\nc. Sodium-Serum 133.0 “ra, 435-448 —— —\nPotassium- Serum 43 remot 35-54 — ™ —\n| Chloride «Serum 102 mmol 95-115 ~\nj Caldum-Serum 99 ww mgcl SCG 102 ” |\nPHOSPHORUS 44 wa 2teaAS ~~\nPlease Correlate Clinically\nsees\nEnd of Report\na :\nco\n3 Muy,\nEf Sa, Da\n. Fd eroticy) Al =|\nSa AAS LYS ses\nMrgis sh’ Kumar Or, Meenu Aggarwal\nNat iifated By M.B.B.5 (MD} (Path) Consultant Pathologist\n: Approved By\nv\nSs eee\nVikas Marg, Opposite OIDB Bhawan, Sector-70, Noida-201301\n(8. SS iw — CO TETOEOonnnwvTv_.\"_]\n, www.shriramsinghhospital.com SRSM0001",
+  "raw_text_preview": "e SNC SI eet\nwv. XS, 2, Y\na’ <¢ z &\nQY MULTI SPECIALITY HOSPITAL Ny\nCARE Vou DESERVE (A Unit of Shree Ram Health Care) aceasta\nISO 9004 = 2049\nRef. EJ :Dr. Paediatrics Team | a | 7119902/1PD-154 Req. At 17/04/2025 18:49:06\n+ Sampling Date Co d22:29:57 | a 1) $97/04/2025 22:3100\neee\nSample type: BLOOD Report Type: Final\na eeeeeeeeeSFSSSSSSSSSMMMSFSSFSFS Report Type: Final\n. BIOCHEMISTRY\nTR\nKIDNEY FUNCTION TEST\nS-Touanp Unnnnnennennenenennmenencnennmnennemeecen nai atelier ace\nTest Name Results Units Bio. Ref. interval\nx | Urea+Serum 179 e/a 10-50 .\nCreatinine - Serum 0.6 ing/dt. 07-12\n| Uric Ace =Serum al ar; er ae — —\nc. Sodium-Serum 133.0 “ra, 435-448 —— —\nPotassium- Serum 43 remot 35-54 — ™ —\n| Chloride «Serum 102 mmol 95-115 ~\nj Caldum-Serum 99 ww mgcl SCG 102 ” |\nPHOSPHORUS 44 wa 2teaA...",
+  "entities": [
+    {
+      "type": "DATE",
+      "text": "17/04/2025"
+    },
+    {
+      "type": "DATE",
+      "text": "97/04/2025"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Sample type: BLOOD Report Type: Final"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "c. Sodium-Serum 133.0 “ra, 435-448 —— —"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "j Caldum-Serum 99 ww mgcl SCG 102 ” |"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [
+      {
+        "type": "DATE",
+        "text": "17/04/2025"
+      },
+      {
+        "type": "DATE",
+        "text": "97/04/2025"
+      }
+    ],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Sample type: BLOOD Report Type: Final"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "c. Sodium-Serum 133.0 “ra, 435-448 —— —"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "j Caldum-Serum 99 ww mgcl SCG 102 ” |"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "3 medication or dosage-related line(s) were detected."
+}

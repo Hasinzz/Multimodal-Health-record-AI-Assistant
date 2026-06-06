@@ -1,0 +1,15 @@
+{
+  "case_id": "main_prescription_004",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\110.jpg",
+  "raw_text": "hah 2 POSEEMN S40 paved «\nOIE Ply\ncoe Pa hepenatal Wied peed\nwn AG hep Be\n| RT Bellin",
+  "raw_text_preview": "hah 2 POSEEMN S40 paved «\nOIE Ply\ncoe Pa hepenatal Wied peed\nwn AG hep Be\n| RT Bellin",
+  "entities": [],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "The document was processed, but no strong structured clinical entities were detected."
+}

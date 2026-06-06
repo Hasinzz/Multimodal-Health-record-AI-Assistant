@@ -1,0 +1,25 @@
+{
+  "case_id": "main_lab_007",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0051725_Q-DEVKI19.04.20250001compressed_250427_1059@F.pdf_page_47.png",
+  "raw_text": "WF Jhajjar Road, Bahadurgarh IL\nThe Shall Fo Heat SS )\n_———! as oO\n| J\nPHYSICAL EXAMINATION . [ |\nQUANTITY ; 30 mi. }\nCOLOUR PALE YELLOW V\nTRANSPARENCY CLEAR .\nSPECIFIC GRAVITY 1.030 4.005-1.025 .\nPH 6.0 5.56.5\nCHEMICAL EXAMINATION\nALBUMIN NIL NIL y\nREDUCING SUGAR NIL NIL we :\nBLOOD NIL NIL Oe, NE\nKETON NIL NIL OY\nBILIRUBIN NIL NIL a NIL\n| MICROSCOPIC EXAMINATION ; Ponce\n| PUS CELLS 5-6 IMPF 4-2 he. oy\nRBC'S NIL (HPF NIL: ;\n| CASTS NIL NIL ae\nCRYSTALS NIL NIL ‘\\,\nEPITHELIAL CELLS 4-2 [HPF 1-2\nBACTERIA NIL NIL\n| Z\\K HO\nEF vag Ot Yosh ane Pou a\n: * An a Int urencomaa a 2O,LEGANS EUROS meee] Computerised Lat",
+  "raw_text_preview": "WF Jhajjar Road, Bahadurgarh IL\nThe Shall Fo Heat SS )\n_———! as oO\n| J\nPHYSICAL EXAMINATION . [ |\nQUANTITY ; 30 mi. }\nCOLOUR PALE YELLOW V\nTRANSPARENCY CLEAR .\nSPECIFIC GRAVITY 1.030 4.005-1.025 .\nPH 6.0 5.56.5\nCHEMICAL EXAMINATION\nALBUMIN NIL NIL y\nREDUCING SUGAR NIL NIL we :\nBLOOD NIL NIL Oe, NE\nKETON NIL NIL OY\nBILIRUBIN NIL NIL a NIL\n| MICROSCOPIC EXAMINATION ; Ponce\n| PUS CELLS 5-6 IMPF 4-2 he. oy\nRBC'S NIL (HPF NIL: ;\n| CASTS NIL NIL ae\nCRYSTALS NIL NIL ‘\\,\nEPITHELIAL CELLS 4-2 [HPF 1-2\nBACTERIA NIL NIL\n| Z\\K HO\nEF vag Ot Yosh ane Pou a\n: * An a Int urencomaa a 2O,LEGANS EUROS meee] Computerised Lat",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "BLOOD NIL NIL Oe, NE"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "BLOOD NIL NIL Oe, NE"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

@@ -1,0 +1,40 @@
+{
+  "case_id": "smoke_lab_001",
+  "file": "data/documents/lab_reports/lbmaske/AHD-0425-PA-0007561_JITENDRA TRIVEDI DS_28-04-2025_1019-21_AM.pdf_page_9.png",
+  "raw_text": "PLATELET INDICES - 125000 {117000 | 209000\nPLATELET COUNT /cumm 1 feumm | /cumm\nPLATELET INDICES - 10.9 fL 113.7 12.2 fL\nPOW\nPLATELET INDICES - MPV | 10.6 fl. 10.8 1 | 10.41.\nPLATELET INDICES - P- 30.0% 132.3% 28.3%\nUCR .\nPLATELET INDICES - PCT | 0.13% 0.13% 0.22%\nPSSRMO Mild Mild Mild\nAntsocytosi , Anisocytosl | Anisocytost\ns,Mild | s, Mild s, Mild\nMicrocytosi ; Microcytos! | Microcytos!\ns, Mild 's, Mild s, Mild\nlypochrom : Hypochrom | Hypochroml\nia, few iia a, Few\npencil cells | pencil cells\nseen. | seen,\nPSSW.MO Within Mild | Mita\nNormal i leucocytosis Polymorpho\nLimits, io nuclear\nLeucocytosl\ns with mild\n, left shift.\nPERIPHERAL SMEAR Mild ; Mild Adequate\nSTUDY - PLATELETS Reduction. | Reduction.\nPERIPHERAL SMEAR Not ‘ Not | Not\nSTUDY - PARASITE detected {detected _ detected\nPERIPHERAL SMEAR : : Suggested - | -\nSTUDY - Note | Fe\n| supplement\n‘Close\n| Follow up\n‘ for Hb.\nHEMOGLOBIN | 11.0gm% ‘9.6gm% 9.6 gm%\nRBC COUNT 4.83 14.21 3.98\nmil/cumm =, milfeumm | mil/cumm\nPACKED CELL 35.3% 130.2% 295%\nVOLUME(PCY) ,\nRBC INDICES - MCV | 73.08 fL i 71,73 fl | 74.12 fl\nRBC INDICES - MCH | 22.77 pgm 22.80 pgm | 24.12 pgm\nRBC INDICES - MCHC | 31.16 g/dL; 31.79 g/dL | 32.54 g/dL\nRBC INDICES - R.D.W.- SD | 449 , 43.0 | 43.4\nRBC INDICES - R.D.W.- CV | 16.9 16.4 | 16.8\nRBC INDICES - WBC 6220 \"12580 14310\n/camm » fcumm | /cumm\nfe TY a so |",
+  "raw_text_preview": "PLATELET INDICES - 125000 {117000 | 209000\nPLATELET COUNT /cumm 1 feumm | /cumm\nPLATELET INDICES - 10.9 fL 113.7 12.2 fL\nPOW\nPLATELET INDICES - MPV | 10.6 fl. 10.8 1 | 10.41.\nPLATELET INDICES - P- 30.0% 132.3% 28.3%\nUCR .\nPLATELET INDICES - PCT | 0.13% 0.13% 0.22%\nPSSRMO Mild Mild Mild\nAntsocytosi , Anisocytosl | Anisocytost\ns,Mild | s, Mild s, Mild\nMicrocytosi ; Microcytos! | Microcytos!\ns, Mild 's, Mild s, Mild\nlypochrom : Hypochrom | Hypochroml\nia, few iia a, Few\npencil cells | pencil cells\nseen. | seen,\nPSSW.MO Within Mild | Mita\nNormal i leucocytosis Polymorpho\nLimits, io nuclear\nLeucocytosl\ns with mild\n, left shift.\nPERIPHERAL SMEAR Mild ; Mild Adequate\nSTUDY - PLATELETS Reduction. | Reduction.\nPERIPHERAL SMEAR Not ‘ Not | Not\nSTUDY - PARASITE detected {detected _ detected\nPERIPHERAL...",
+  "entities": [
+    {
+      "type": "LAB_VALUE",
+      "name": "WBC",
+      "value": "6220",
+      "unit": "",
+      "text": "WBC 6220 "
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "lypochrom : Hypochrom | Hypochroml"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [
+      {
+        "type": "LAB_VALUE",
+        "name": "WBC",
+        "value": "6220",
+        "unit": "",
+        "text": "WBC 6220 "
+      }
+    ],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "lypochrom : Hypochrom | Hypochroml"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 lab value(s) were detected from the document. 1 medication or dosage-related line(s) were detected."
+}

@@ -1,0 +1,33 @@
+{
+  "case_id": "main_prescription_017",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\printed\\306377689_2370372199776731_8618751705626245359_n.jpg",
+  "raw_text": "oe a oe ae Ve\ntd Ko\n47430 \\ .\n22.08 oN Ce\n. qnnot! ay \\ _\nA .f Y.\nQV! BOYTE , aN\nCTU - BENH VIEN TW HUE *2200778911« .\n. 2200775911\nue Oa: + . . Xe:\n. “vost, Tie héa - Dinh dugng - quay. Nha thudc 86 4 (NHI)\nDia chi: DOHOANG THIEN Tudi: 1 Gidi tinh: Nam_ —\nMs, * Ehwong Thugn Lc Thanh Phé Hué TT- Hub :\nChan doan: viém hono- vj tnttetecnntensnceneaseecenavrereaeaesnntnatescecerccneseaseneverscenesessarers oUBV-01\nEry Children 250mg (Erythromycin (dudi udng ngay 2 géi chia 2\nSang Erythromycin ethyl succinat) ) Goi ee TOLL\nLACTEOL 340mg(Lactobacillus LB) Géi udng ngay 4 géi .\nBeas:\n4+\"\n—_——.,;\n‘ 2Tuyén dis\n| cong Kno o re chi ginh cia bac st? Bove\nLoin: Str dung tu 9 nam 2022 sve\nA 13 thang\nNgey kc SI DIEU TRI” ~~\n| — ee\npAo TH TAM CHAU eeceeeeeenee\n4 enaanannegncsgegsepeesenee eee\nfal xin mang theo don 4 a eee eee —\nKe Cy Cig ig\nemcees RA Bef nen",
+  "raw_text_preview": "oe a oe ae Ve\ntd Ko\n47430 \\ .\n22.08 oN Ce\n. qnnot! ay \\ _\nA .f Y.\nQV! BOYTE , aN\nCTU - BENH VIEN TW HUE *2200778911« .\n. 2200775911\nue Oa: + . . Xe:\n. “vost, Tie héa - Dinh dugng - quay. Nha thudc 86 4 (NHI)\nDia chi: DOHOANG THIEN Tudi: 1 Gidi tinh: Nam_ —\nMs, * Ehwong Thugn Lc Thanh Phé Hué TT- Hub :\nChan doan: viém hono- vj tnttetecnntensnceneaseecenavrereaeaesnntnatescecerccneseaseneverscenesessarers oUBV-01\nEry Children 250mg (Erythromycin (dudi udng ngay 2 géi chia 2\nSang Erythromycin ethyl succinat) ) Goi ee TOLL\nLACTEOL 340mg(Lactobacillus LB) Géi udng ngay 4 géi .\nBeas:\n4+\"\n—_——.,;\n‘ 2Tuyén dis\n| cong Kno o re chi ginh cia bac st? Bove\nLoin: Str dung tu 9 nam 2022 sve\nA 13 thang\nNgey kc SI DIEU TRI” ~~\n| — ee\npAo TH TAM CHAU eeceeeeeenee\n4 enaanannegncsgegsepeesenee eee\nfal xin man...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Ery Children 250mg (Erythromycin (dudi udng ngay 2 géi chia 2"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "LACTEOL 340mg(Lactobacillus LB) Géi udng ngay 4 géi ."
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Ery Children 250mg (Erythromycin (dudi udng ngay 2 géi chia 2"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "LACTEOL 340mg(Lactobacillus LB) Géi udng ngay 4 géi ."
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected."
+}

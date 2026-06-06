@@ -1,0 +1,49 @@
+{
+  "case_id": "main_lab_010",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\CHE-0425-PA-0013889_ALL CLAIMS DOCM HARIPRIYA VIDAL_0001_27-04-2025_1124-43_AM.pdf_page_23.png",
+  "raw_text": "\\\\ kauvery\nhospital\n——\njUHID / PO I PHsoo0s9670(P)—S*S*S*«S@edNWardd 206/Single Room\nPatient I) aS —\nI] Cate 05:42 am\n— by (len K, MBBS , DRCOG(London) , MRCOG Report Date 0:13 AM\n(UMRAO ATA A OrderNo_: 6248040 - Final\nas\nCoyAnnic ROSE L, MBBS , DNB ( CONSULTANT\nSibiya PATHOLOGIST )\nValidated By Reg No:KMC 102865\nApproved By\n. Biochemistry\nOyestigation J a ~La ie CC) a —_) I\nELECTROLYTES[ J\nSodium 133 mmol/L 136-145\nMethod: Direct ISE - Potentiometric\nPotassium 3.3 mmol/L 3.5-5\nMethod: Direct ISE - Potentiometric\nChloride 110 mmol/L 98-107\nMethod: Direct ISE - Potentiometric\nSample Collected Details\nSerum /700231584 .\naos\nKSUANNIE ROSE L, MBBS , DNB ( CONSULTANT\nSibiya PATHOLOGIST )\nValidated By Reg No:KMC 102865\nApproved By\nO\ni\n[PD Sri Kauvery Medical Care (India) Limited\nesses ;",
+  "raw_text_preview": "\\\\ kauvery\nhospital\n——\njUHID / PO I PHsoo0s9670(P)—S*S*S*«S@edNWardd 206/Single Room\nPatient I) aS —\nI] Cate 05:42 am\n— by (len K, MBBS , DRCOG(London) , MRCOG Report Date 0:13 AM\n(UMRAO ATA A OrderNo_: 6248040 - Final\nas\nCoyAnnic ROSE L, MBBS , DNB ( CONSULTANT\nSibiya PATHOLOGIST )\nValidated By Reg No:KMC 102865\nApproved By\n. Biochemistry\nOyestigation J a ~La ie CC) a —_) I\nELECTROLYTES[ J\nSodium 133 mmol/L 136-145\nMethod: Direct ISE - Potentiometric\nPotassium 3.3 mmol/L 3.5-5\nMethod: Direct ISE - Potentiometric\nChloride 110 mmol/L 98-107\nMethod: Direct ISE - Potentiometric\nSample Collected Details\nSerum /700231584 .\naos\nKSUANNIE ROSE L, MBBS , DNB ( CONSULTANT\nSibiya PATHOLOGIST )\nValidated By Reg No:KMC 102865\nApproved By\nO\ni\n[PD Sri Kauvery Medical Care (India) Limited\nesses ;",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Sodium 133 mmol/L 136-145"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method: Direct ISE - Potentiometric"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method: Direct ISE - Potentiometric"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method: Direct ISE - Potentiometric"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Sodium 133 mmol/L 136-145"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method: Direct ISE - Potentiometric"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method: Direct ISE - Potentiometric"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method: Direct ISE - Potentiometric"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "4 medication or dosage-related line(s) were detected."
+}

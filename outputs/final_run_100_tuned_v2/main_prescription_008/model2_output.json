@@ -1,0 +1,15 @@
+{
+  "case_id": "main_prescription_008",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\3.jpg",
+  "raw_text": "autine EO Gaged .\nBy demetta,",
+  "raw_text_preview": "autine EO Gaged .\nBy demetta,",
+  "entities": [],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "The document was processed, but no strong structured clinical entities were detected."
+}

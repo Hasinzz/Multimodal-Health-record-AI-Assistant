@@ -1,0 +1,41 @@
+{
+  "case_id": "main_lab_001",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\BLR-0425-PA-0041660_KAUSHAL REPORTS_27-04-2025_0924-48_AM.pdf_page_11.png",
+  "raw_text": "Mr. KAUSHAL H VACHHANI Reference: Dr. Mayur Rai Order No: —===j\n==] Do Carex WEST Reaistered On:\n==] WINGS 406, KAMBALA CROSS ROAD, [— Sample Collected At: Co12:51:48 pm\n=| ALAKE, AJ HOSPITAL & RESEARCH Collected On:\n== MANGALORE, ALAKE,DAKSHINA CENTRE MANGALORE, C21:31:32 Pm\n— KANNADA 575004\n—! Reported On:\n~~ Tel No: J 03:13:21 Pm\nPIN No: 575001 :\nUHID : MR651016 \\5C\nTest Cc] C_] | a | Biological Reference\nHEMATOLOGY :\n42d - AP.1.T- Plasma\nAPTT Activated Partial Thromboplastin Time\naPTT- (Test) 32.8 Seconds 22.7-32.3\n(Optical clot detection{Turbidimetry))\nInterpretation:\nTest done on Fully Automated Coagulometer (Clotting)\nOnterpretation:\nThe activated partial thromboplastin time (APTT) test measures the functionality of the intrinsic and common pathways of\nthe coagulation cascade.\nProlonged APTT tests may be due to: :\n1. Pre-analytical problems: |\n- Insufficient sample\n- Patients with high hematocrit levels\n~ Heparin contamination (from IV lines)\n- Clotted blood samples :\n2. Inherited or acquired factor deficiencies\n3. Anonspecific inhibitor such as the lupus anticoagulant (LA) :\n4. Aspecific inhibitor, Although these are relatively rare, these are antibodies that attack a particular factor\n5. DIC :\n6. Cirrhosis, Malabsorption :\n7. This APTT assay is not established to monitor Heparin Therapeutic Range. In case of monitoring patients on Heparin a\ntest result of 2-3.5 times of control value may likely be preferred.\n8. Warfarin (Coumadin) anticoagulation therapy. The PTT is not used to monitor warfarin therapy, but it may be affected\nby it\n9. Leukemia\nQeri-contal (Normal pooled Plasma) 29.3 Seconds\n(Optical cot detection(Turbidimetry))\n=o\n“*\" Highlighted Results to be considered as Critical Report for immediate Intervention by Doctors/Nurses.\nUnderlined Highlighted values Indicate abnormat range / out of range values.\n“ax\n(eno &y\neasy ;\noc ener Hospital ra\n&@Research | 122145\nCentre w\na t a",
+  "raw_text_preview": "Mr. KAUSHAL H VACHHANI Reference: Dr. Mayur Rai Order No: —===j\n==] Do Carex WEST Reaistered On:\n==] WINGS 406, KAMBALA CROSS ROAD, [— Sample Collected At: Co12:51:48 pm\n=| ALAKE, AJ HOSPITAL & RESEARCH Collected On:\n== MANGALORE, ALAKE,DAKSHINA CENTRE MANGALORE, C21:31:32 Pm\n— KANNADA 575004\n—! Reported On:\n~~ Tel No: J 03:13:21 Pm\nPIN No: 575001 :\nUHID : MR651016 \\5C\nTest Cc] C_] | a | Biological Reference\nHEMATOLOGY :\n42d - AP.1.T- Plasma\nAPTT Activated Partial Thromboplastin Time\naPTT- (Test) 32.8 Seconds 22.7-32.3\n(Optical clot detection{Turbidimetry))\nInterpretation:\nTest done on Fully Automated Coagulometer (Clotting)\nOnterpretation:\nThe activated partial thromboplastin time (APTT) test measures the functionality of the intrinsic and common pathways of\nthe coagulation cascade.\nProlo...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "- Clotted blood samples :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "4. Aspecific inhibitor, Although these are relatively rare, these are antibodies that attack a particular factor"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "7. This APTT assay is not established to monitor Heparin Therapeutic Range. In case of monitoring patients on Heparin a"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "- Clotted blood samples :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "4. Aspecific inhibitor, Although these are relatively rare, these are antibodies that attack a particular factor"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "7. This APTT assay is not established to monitor Heparin Therapeutic Range. In case of monitoring patients on Heparin a"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "3 medication or dosage-related line(s) were detected."
+}

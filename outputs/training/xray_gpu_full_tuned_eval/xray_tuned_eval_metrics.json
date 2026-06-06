@@ -1,0 +1,125 @@
+{
+  "thresholds_source": "outputs\\training\\xray_gpu_full_threshold_tuning\\xray_tuned_thresholds.json",
+  "macro_auroc": 0.7890380795500657,
+  "micro_auroc": 0.785962198276122,
+  "macro_f1": 0.18391062807755862,
+  "micro_f1": 0.2039345679901996,
+  "macro_precision": 0.11410256845041351,
+  "micro_precision": 0.11949121232912863,
+  "macro_recall": 0.7148000285964492,
+  "micro_recall": 0.6952889871629507,
+  "per_class_table": [
+    {
+      "class_name": "Atelectasis",
+      "threshold": 0.5,
+      "auroc": 0.7528866452621014,
+      "f1": 0.3132033008252063,
+      "precision": 0.2012775702060986,
+      "recall": 0.7055344317701732
+    },
+    {
+      "class_name": "Cardiomegaly",
+      "threshold": 0.5,
+      "auroc": 0.8869168302647528,
+      "f1": 0.18029350104821804,
+      "precision": 0.10211351222987414,
+      "recall": 0.7692307692307693
+    },
+    {
+      "class_name": "Effusion",
+      "threshold": 0.5,
+      "auroc": 0.8422924539076503,
+      "f1": 0.43615841983271186,
+      "precision": 0.3011830201809325,
+      "recall": 0.7903579254930606
+    },
+    {
+      "class_name": "Infiltration",
+      "threshold": 0.5,
+      "auroc": 0.6828908098231917,
+      "f1": 0.37808993172722277,
+      "precision": 0.27412380518889395,
+      "recall": 0.609102402022756
+    },
+    {
+      "class_name": "Mass",
+      "threshold": 0.5,
+      "auroc": 0.7565424223989182,
+      "f1": 0.19545929018789143,
+      "precision": 0.11473651960784313,
+      "recall": 0.659330985915493
+    },
+    {
+      "class_name": "Nodule",
+      "threshold": 0.5,
+      "auroc": 0.6713969022139238,
+      "f1": 0.15624379591026405,
+      "precision": 0.0891683661907999,
+      "recall": 0.6306089743589743
+    },
+    {
+      "class_name": "Pneumonia",
+      "threshold": 0.5,
+      "auroc": 0.712182605630031,
+      "f1": 0.04267953238077565,
+      "precision": 0.021957040572792363,
+      "recall": 0.759075907590759
+    },
+    {
+      "class_name": "Pneumothorax",
+      "threshold": 0.5,
+      "auroc": 0.8345778252059813,
+      "f1": 0.241183879093199,
+      "precision": 0.14441930618401205,
+      "recall": 0.7309160305343512
+    },
+    {
+      "class_name": "Consolidation",
+      "threshold": 0.5,
+      "auroc": 0.777449790063831,
+      "f1": 0.14651299081851923,
+      "precision": 0.0803944688605424,
+      "recall": 0.8250825082508251
+    },
+    {
+      "class_name": "Edema",
+      "threshold": 0.5,
+      "auroc": 0.8823041611044546,
+      "f1": 0.11003056404556821,
+      "precision": 0.058623242042931165,
+      "recall": 0.8939051918735892
+    },
+    {
+      "class_name": "Emphysema",
+      "threshold": 0.5,
+      "auroc": 0.8300851135864912,
+      "f1": 0.15116000956708922,
+      "precision": 0.08638600328048114,
+      "recall": 0.6042065009560229
+    },
+    {
+      "class_name": "Fibrosis",
+      "threshold": 0.5,
+      "auroc": 0.773488663072389,
+      "f1": 0.06782892944701716,
+      "precision": 0.03556634766461934,
+      "recall": 0.7302052785923754
+    },
+    {
+      "class_name": "Pleural_Thickening",
+      "threshold": 0.5,
+      "auroc": 0.7510539715292978,
+      "f1": 0.13523000184740439,
+      "precision": 0.07700399747527877,
+      "recall": 0.5545454545454546
+    },
+    {
+      "class_name": "Hernia",
+      "threshold": 0.5,
+      "auroc": 0.8924649196379039,
+      "f1": 0.020674646354733407,
+      "precision": 0.010482758620689656,
+      "recall": 0.7450980392156863
+    }
+  ]
+}

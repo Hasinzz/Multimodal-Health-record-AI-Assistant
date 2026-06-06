@@ -1,0 +1,67 @@
+{
+  "best_epoch": 20,
+  "best_val_accuracy": 0.9375,
+  "best_val_loss": 0.3513893797248602,
+  "class_names": [
+    "glioma_tumor",
+    "meningioma_tumor",
+    "no_tumor",
+    "pituitary_tumor"
+  ],
+  "checkpoint_path": "checkpoints\\model1\\brain_best_model_gpu_final_v2.pt",
+  "history_csv": "outputs\\training\\brain_mri_gpu_final_v2\\brain_training_history.csv",
+  "metrics": {
+    "accuracy": 0.9375,
+    "precision": 0.9415540567221262,
+    "recall": 0.9375,
+    "macro_f1": 0.9359121874001712,
+    "per_class": {
+      "glioma_tumor": {
+        "precision": 0.99375,
+        "recall": 0.795,
+        "f1": 0.8833333333333333
+      },
+      "meningioma_tumor": {
+        "precision": 0.8871331828442438,
+        "recall": 0.9825,
+        "f1": 0.9323843416370107
+      },
+      "no_tumor": {
+        "precision": 0.9307875894988067,
+        "recall": 0.975,
+        "f1": 0.9523809523809523
+      },
+      "pituitary_tumor": {
+        "precision": 0.9545454545454546,
+        "recall": 0.9975,
+        "f1": 0.9755501222493888
+      }
+    },
+    "confusion_matrix": [
+      [
+        318,
+        39,
+        28,
+        15
+      ],
+      [
+        2,
+        393,
+        1,
+        4
+      ],
+      [
+        0,
+        10,
+        390,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        399
+      ]
+    ]
+  }
+}

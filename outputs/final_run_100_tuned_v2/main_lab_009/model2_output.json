@@ -1,0 +1,15 @@
+{
+  "case_id": "main_lab_009",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\CHE-0425-PA-0014385_E-INDOORCASEPAPER_250428_1152@E.pdf_page_31.png",
+  "raw_text": "ee) ee . SU Oh ho Oh) 8 hl 2\n2\nss SURENDRA\nMULTISPECIALITY HOSPITAL\n) (a (Camdars TANNA TI aL CK CATA\nee _ 9, Imporial Road, Cuddaloro « 407 rit\nae a eA\n‘patient :YAYARAMAN.MK IP/OP No:IP/26000210 Collect! On FII/.00. 4M\n—_ | ee | a =—\nOF oo —_——Tr) ——— i — 1 ———\n. i\nz ElnaLRonart\n“Bpecimen Test Description Rosult / Units Biological Roforence Rano\nm gemonpe porno A 982108, aa\nsessnenusanteoesasnsnresersvanecceveneneerne LTTE Of ROP Of leresesenerssstinerscanenenananensnenercnecures\ni .\n\\, )\n*.\n! can\n36999 / 237333 Cell : 91500 23851 / 52 Ck .",
+  "raw_text_preview": "ee) ee . SU Oh ho Oh) 8 hl 2\n2\nss SURENDRA\nMULTISPECIALITY HOSPITAL\n) (a (Camdars TANNA TI aL CK CATA\nee _ 9, Imporial Road, Cuddaloro « 407 rit\nae a eA\n‘patient :YAYARAMAN.MK IP/OP No:IP/26000210 Collect! On FII/.00. 4M\n—_ | ee | a =—\nOF oo —_——Tr) ——— i — 1 ———\n. i\nz ElnaLRonart\n“Bpecimen Test Description Rosult / Units Biological Roforence Rano\nm gemonpe porno A 982108, aa\nsessnenusanteoesasnsnresersvanecceveneneerne LTTE Of ROP Of leresesenerssstinerscanenenananensnenercnecures\ni .\n\\, )\n*.\n! can\n36999 / 237333 Cell : 91500 23851 / 52 Ck .",
+  "entities": [],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "The document was processed, but no strong structured clinical entities were detected."
+}

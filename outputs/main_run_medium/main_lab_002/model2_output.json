@@ -1,0 +1,41 @@
+{
+  "case_id": "main_lab_002",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\DEL-0425-PA-0052208_F-1745734467763VENKATNARAYANAPREAUTH0001_250427_1150@G.pdf_page_18.png",
+  "raw_text": ": . O\n| Hes\ne\n4 KARA\neink car LY\n° HOSPITALS\n. A Unit of Venkateshwara Ortho Healthcare Pvt Ltd.\nUHID NO/IP No ~ : SRHO127550 7 MIP23009163 Bill DateTime 26-Apr-2025 04:48 PM\n—_ —SSSSSS=] ——.————\n. PUCHAKAYALA\n[_— | ——_—._\nred No :CREDIT / 303A Bill No : SERO354200\n| Doctor\n: DEPARTMENT OF PATHOLOGY\n| LAB NO Cy\n: Parameter Result Values UOM Biological Reference\nCOMPLETE BLOOD PICTURE, Whole Blood\nHaemoglobin (SLS METHOD ) 13.5 g/dl 13.0- 17.0\ni re) RBC ( Impedence ) 5.05 mil/emm 4.5-5.5\n: PCV ( Impedence ) 41,3 % 40-50\nMCV (Impedence } 81.8 fl 83-101\nMCH ( Impedence ) 26.7 pg 27 = 32\n; MCHC (impedence ) 32.7 g/dl 31.5 + 34.5\nRDW-CV ( HB-Colorimelry ,TLC Electrical i) 11.8 % 11.6 - 14.0\nWBC Total Count ( impedence } 12500 cells/eumm 4000 - 11000\nPlatelet Count ( Impedence } 3.4 . takhs/Cumm 1.5°4.5\nDIFFRENITAL COUNT\nNeutrophils (VCS/LM } 74 % 40-70\nLymphocytes (VCS/LM ) 16 % 20 - 40\nMonocytes (VCS/LM ) 08 % 02-10\nEosinophils ( VCS/LM } 02 % 01-06\nBasophils (VCS/LM ) oo % 00 - 02\nPERIPHERAL SMEAR\nRBC NORMOCYTIC NORMOCHROMIC\n: Wwec NEUTROPHILIC LEUCOCYTOSIS. .\nO PLATELETS ADEQUATE\n. IMPRESSION NEUTROPHILIC LEUCOCYTOSIS.\n: *** End Of Report ***\nLAB INCHARGE Dr, SWETHA M D\n' CONSULTANT PATHOLOGIST “a>\nSuggested Clinical Correlation * If neccessary, Please discuss Test results related only to\nthe item tested.No part of the report can be reproduced without written permission of the \\\nlaboratory \\\nVerified By é\nUser : D ANJANEYULU\n| Print Ot : 26-Apr-2025 07:01 PM MIYAPUR ce\n1 o# 222 & 223, T: +91 40 4747 0000 cok\n| Phase #2222 f'228agor, M: 4B >8890 4767 000 EX:\n| Madhel aA ro E +f mht Wn :\ni Hyderd tar YORU, E: mph : a j jt\neee ., MBSBEae— nmstaiccad",
+  "raw_text_preview": ": . O\n| Hes\ne\n4 KARA\neink car LY\n° HOSPITALS\n. A Unit of Venkateshwara Ortho Healthcare Pvt Ltd.\nUHID NO/IP No ~ : SRHO127550 7 MIP23009163 Bill DateTime 26-Apr-2025 04:48 PM\n—_ —SSSSSS=] ——.————\n. PUCHAKAYALA\n[_— | ——_—._\nred No :CREDIT / 303A Bill No : SERO354200\n| Doctor\n: DEPARTMENT OF PATHOLOGY\n| LAB NO Cy\n: Parameter Result Values UOM Biological Reference\nCOMPLETE BLOOD PICTURE, Whole Blood\nHaemoglobin (SLS METHOD ) 13.5 g/dl 13.0- 17.0\ni re) RBC ( Impedence ) 5.05 mil/emm 4.5-5.5\n: PCV ( Impedence ) 41,3 % 40-50\nMCV (Impedence } 81.8 fl 83-101\nMCH ( Impedence ) 26.7 pg 27 = 32\n; MCHC (impedence ) 32.7 g/dl 31.5 + 34.5\nRDW-CV ( HB-Colorimelry ,TLC Electrical i) 11.8 % 11.6 - 14.0\nWBC Total Count ( impedence } 12500 cells/eumm 4000 - 11000\nPlatelet Count ( Impedence } 3.4 . takhs/Cumm...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "COMPLETE BLOOD PICTURE, Whole Blood"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Haemoglobin (SLS METHOD ) 13.5 g/dl 13.0- 17.0"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "the item tested.No part of the report can be reproduced without written permission of the \\"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "COMPLETE BLOOD PICTURE, Whole Blood"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Haemoglobin (SLS METHOD ) 13.5 g/dl 13.0- 17.0"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "the item tested.No part of the report can be reproduced without written permission of the \\"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "3 medication or dosage-related line(s) were detected."
+}

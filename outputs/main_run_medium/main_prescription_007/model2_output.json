@@ -1,0 +1,25 @@
+{
+  "case_id": "main_prescription_007",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\307962116_771740984058007_373533710413860947_n.jpg",
+  "raw_text": ": 40 C40 Théng tin t ‘ St\nnang Bae is) sah Giyena - Benh Fedo cao * [e] tr ee\nann Wi ché dé a Tinh hinh Giuang - Be —_\nreer Dang ky ché dé an | Tra\nhan nghi viéc hung BHXH P ding : =\n= ee ee)\n2 Re dom na ern Téng sen: 656.035— |\n‘Théng tin ddn thude j [d] ‘\n\\ a Ten Ho tén BN DANG HAIDANG i\n1] ehoa xn {120 tie ox Rtoo Km inh Tm db cen . |\n\\| am ~ : ‘TNar | on\n\\ oa ae Nam i\nNoiyké don fro0e7022 =I ssvwpK | 2200201213 6 Giditioh\n\\ WiEM MOI HONG / ROI LOAN TIEU HOAJHACH PHAN “Siecht Xa Pha Xudn Huyén Phé Vang TT- Hué\nL) Chaéndoan |GNGVIEM : : _Diachl ,\n‘| vaps [OuD002 Tens [Bang Phude Minh Duc Quay thude [fiha thude 36 1 (NHI) =] }\nTén thudc BVT |SL Bon_Gié Thinh_Tin | Cach ding\nZeromrax Pos Sus 200mg/ Sm\\ 15mi(Azthro... 121,787] \"121,787;\nJwmciom oenonnasmeeis [as [aa | aissel sae) wT\nfiche fom a | nana] zanaep a\nLai dan: dang HOS\n‘ean ; Su dung thudc theo dung chi dinh cua bac sf\n‘a | 3 Me fo) a\nuu Xéa ln Tim phiéy Xea théng tin rc) .\n- GE nhip moat Theat\n) = ;\nSJ Qteer Vs bsaae\na! me |\nee\nwere ome, : . . a _- -",
+  "raw_text_preview": ": 40 C40 Théng tin t ‘ St\nnang Bae is) sah Giyena - Benh Fedo cao * [e] tr ee\nann Wi ché dé a Tinh hinh Giuang - Be —_\nreer Dang ky ché dé an | Tra\nhan nghi viéc hung BHXH P ding : =\n= ee ee)\n2 Re dom na ern Téng sen: 656.035— |\n‘Théng tin ddn thude j [d] ‘\n\\ a Ten Ho tén BN DANG HAIDANG i\n1] ehoa xn {120 tie ox Rtoo Km inh Tm db cen . |\n\\| am ~ : ‘TNar | on\n\\ oa ae Nam i\nNoiyké don fro0e7022 =I ssvwpK | 2200201213 6 Giditioh\n\\ WiEM MOI HONG / ROI LOAN TIEU HOAJHACH PHAN “Siecht Xa Pha Xudn Huyén Phé Vang TT- Hué\nL) Chaéndoan |GNGVIEM : : _Diachl ,\n‘| vaps [OuD002 Tens [Bang Phude Minh Duc Quay thude [fiha thude 36 1 (NHI) =] }\nTén thudc BVT |SL Bon_Gié Thinh_Tin | Cach ding\nZeromrax Pos Sus 200mg/ Sm\\ 15mi(Azthro... 121,787] \"121,787;\nJwmciom oenonnasmeeis [as [aa | aissel sae) wT\nfiche f...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Zeromrax Pos Sus 200mg/ Sm\\ 15mi(Azthro... 121,787] \"121,787;"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Zeromrax Pos Sus 200mg/ Sm\\ 15mi(Azthro... 121,787] \"121,787;"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

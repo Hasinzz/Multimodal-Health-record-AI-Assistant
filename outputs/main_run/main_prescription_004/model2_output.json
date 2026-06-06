@@ -1,0 +1,41 @@
+{
+  "case_id": "main_prescription_004",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\306801134_469946118524801_1696934241823454547_n.jpg",
+  "raw_text": "J bs . , . . . —~ :\noi Fs . 7 ! . . an\n\"7 i i ” 4\nHOH Bing ky ché do an | Ghrae 7a\n£ ding ky ché dé an fra Tinh hinh Giang - Banh BS Bdo cdo ~ [Ee] thoat .\niia Nee 2 ee IS So ANTE ee TT\n@ Ké don thude ES\nan ni leet ete te | eda}\nThéng tin don thus : i fete if eof [fd - ee !\nMs Tan : 1 why i Veil ‘i ' te\nKhoa /P.Kh fiz0 .° Khoa ipK|ithoa Khémn bénh - Tham dé chien «/) Hotén BN [Mal NGOCTHAOTRANG [9]\nam i ham : ie fe i I ji f fi ee eee iit .\n| Ngay ké don [Reros2022 al S6 VWiPK r_ 2200200998 ie } Gigitinh [_na Tua | 7 Th\n1 ee Za mili hong TTT Pn er Phudng Hugng Sd Thanh PhéHusT. |\n| Chan doan . Pop a ia tite Het fe Dia chi Hus id \" ne :\n| Ma Bs [siNooT . ténes [Nos Bac sy Vion: CHP. Quy thude [Nha thudc 86 1 (NHI) 7]\n| | Tén thudc ; (vT | SL | on_G Thanh Tn | Gich dung |\n| EFooyi¥25org(Cefuroxin) aA 1! 9,630 ngay udng 2 gdi chia 2 [x |\n} [Babytrim-New Alpha 4,2mg(Alpha chymotry... | csi | io | i. 4,950 ngay udng 2 géi chia 2 [x |\n| cetmed sona(cetan dhe) TT 4st logiy ina 2 vin owe]\n: | Bamyrol 150 sol(Paracetamol 150mg/5mi) [ang | 15 | 3,685] ie 55,275] cho tré udng Ein 2 6ng néu sot >38.... [x |\n: Pe ena nF\n: f : it . eT ee ree :\n: : - ua i : : vif ote hee ee /\n: ; : : ; \" te , \" i i. I i : il ; .\n_ i a im : i It ffl nat i\n|, taidin! [1 Ss Su dyng thude theo dang chidinh cua bac st\noo en ti “I i i a fi ‘ . :\ny Luu | \\ i i Xa hy te tn . Tim phiéu e@ nhip mai\nof oa &\nape a .\n. ; / AN\nv y\n’ \\",
+  "raw_text_preview": "J bs . , . . . —~ :\noi Fs . 7 ! . . an\n\"7 i i ” 4\nHOH Bing ky ché do an | Ghrae 7a\n£ ding ky ché dé an fra Tinh hinh Giang - Banh BS Bdo cdo ~ [Ee] thoat .\niia Nee 2 ee IS So ANTE ee TT\n@ Ké don thude ES\nan ni leet ete te | eda}\nThéng tin don thus : i fete if eof [fd - ee !\nMs Tan : 1 why i Veil ‘i ' te\nKhoa /P.Kh fiz0 .° Khoa ipK|ithoa Khémn bénh - Tham dé chien «/) Hotén BN [Mal NGOCTHAOTRANG [9]\nam i ham : ie fe i I ji f fi ee eee iit .\n| Ngay ké don [Reros2022 al S6 VWiPK r_ 2200200998 ie } Gigitinh [_na Tua | 7 Th\n1 ee Za mili hong TTT Pn er Phudng Hugng Sd Thanh PhéHusT. |\n| Chan doan . Pop a ia tite Het fe Dia chi Hus id \" ne :\n| Ma Bs [siNooT . ténes [Nos Bac sy Vion: CHP. Quy thude [Nha thudc 86 1 (NHI) 7]\n| | Tén thudc ; (vT | SL | on_G Thanh Tn | Gich dung |\n| EFooyi¥25org(Cefur...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "£ ding ky ché dé an fra Tinh hinh Giang - Banh BS Bdo cdo ~ [Ee] thoat ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "} [Babytrim-New Alpha 4,2mg(Alpha chymotry... | csi | io | i. 4,950 ngay udng 2 géi chia 2 [x |"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ": | Bamyrol 150 sol(Paracetamol 150mg/5mi) [ang | 15 | 3,685] ie 55,275] cho tré udng Ein 2 6ng néu sot >38.... [x |"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "£ ding ky ché dé an fra Tinh hinh Giang - Banh BS Bdo cdo ~ [Ee] thoat ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "} [Babytrim-New Alpha 4,2mg(Alpha chymotry... | csi | io | i. 4,950 ngay udng 2 géi chia 2 [x |"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ": | Bamyrol 150 sol(Paracetamol 150mg/5mi) [ang | 15 | 3,685] ie 55,275] cho tré udng Ein 2 6ng néu sot >38.... [x |"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "3 medication or dosage-related line(s) were detected."
+}

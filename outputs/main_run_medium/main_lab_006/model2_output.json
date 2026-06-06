@@ -1,0 +1,104 @@
+{
+  "case_id": "main_lab_006",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\MUM-0425-PA-0003769_E-BodakheParvatiDischargeSummary_250427_1201@E.pdf_page_5.png",
+  "raw_text": "PLT hy \"1\n(OTRO RT iy & sae a a & Cnboctig Ne\nOo. ye SO at\neh, Ge > NABH A Ae\nsavitaalBNPOS aeatteaen la cpecti\nvine Healthcare & Research Pvt, Ltd. /\nREPORTS\nINVESTIGATION ES om | | os | | | om | | om |\nBLOOD SUGAR EE J 1626 BLOOD UREA J 404\n08:39 AM mp/di 08:39 AM mg/dl\nESR — 111 HBsAG I hon.\n08:39 AM mm/h 08:39 AM Reactive\nProcalcitonin (Quantitative) ed) 2.6 ng/mt\n04:47 AM\nARG (ARTERIAL BLOOD =. 13-APR CREATININE SERUM 13-APR 15-APR\nGAS ANATYSIS} 08:39 AM 08:39AM = 01:59 PM\nArterial blood pH 7.65 CREATININE SERUM 1.25 + 4.22\n. ” mg/dl ‘mg/dl\nPPOCD( 32.2nm ‘\nHe GRP 13-APR ——-23-APR\nPartial pressure of 291 mm _ORRIAM 09:28AM .\noxygen (PaQ2) “Hg CRP 175.3 B4.9 mg/L\n. ” . ng/L\nChloride (Cl) +10]\n“mmol/L\n: . ELECTROLYTES -SERUM 13-APR 15-APR 16-APR\nHematocrit (HCT) 39% OB:39AM «OLS PM 10:03 AM\n. nese . “s . . SODIUM 136 135 141\nBicarbonate (HCO3) , a3 mmol/L mmol/L. mmol/L.\nmmol/l, .\n' . ue . “POTASSIUM 32 . 2,0 27\nOxygen saturation ( 99.8 % mmol/i. mmol/L mmol/l.\nSa02) :\n; \" Sts ” CHLORIDE 95 96 104\nLactate : 14 mmol/L mmol/L | mmol/L.\nmol/L .\nuo . “ ELECTROLYTES - : 24-Apr 25-Apr\nSERUM 10:30AM = 10:33 AM\nSODIUM 138 *140\nmmol/L mmol/L\nPOTASSIUM 29 \"3.5\nmmol/L mmol/L\nCHLORIDE 96 99\nmmol/L minol/L\nLET (TOTAL} 13-APR COMPLETE BLOOD L3B-APR 1LS*APR T7-AFR\n18:39 AM . . COUNT {CBC} . 08:39 AM 01:17 PM 10:37 AM\nASPARTATE 106GU/L . HAEMOGLOBIN 113 on 419\nAMINOTRANSFERASE ‘ . gm/dh grafdl gin/dl\n(SGOT) .\n: : ‘ . RWDNE 86.9 % 51.6% 9.2 %\nALANINE 68 /L . ’ oo\nTRANSAMINASE RWOLY 6.5% 33% 53%\n(SGPT) . .\n. . RWDEO 0.9% “02% o%\nALKALINE -1i7u/. . “\nPHOSPHATASE (ALP) ; RWDMO 3.3% 2.9% 34%\nRWDBA 0.4% O1% 1%\nft gt ct",
+  "raw_text_preview": "PLT hy \"1\n(OTRO RT iy & sae a a & Cnboctig Ne\nOo. ye SO at\neh, Ge > NABH A Ae\nsavitaalBNPOS aeatteaen la cpecti\nvine Healthcare & Research Pvt, Ltd. /\nREPORTS\nINVESTIGATION ES om | | os | | | om | | om |\nBLOOD SUGAR EE J 1626 BLOOD UREA J 404\n08:39 AM mp/di 08:39 AM mg/dl\nESR — 111 HBsAG I hon.\n08:39 AM mm/h 08:39 AM Reactive\nProcalcitonin (Quantitative) ed) 2.6 ng/mt\n04:47 AM\nARG (ARTERIAL BLOOD =. 13-APR CREATININE SERUM 13-APR 15-APR\nGAS ANATYSIS} 08:39 AM 08:39AM = 01:59 PM\nArterial blood pH 7.65 CREATININE SERUM 1.25 + 4.22\n. ” mg/dl ‘mg/dl\nPPOCD( 32.2nm ‘\nHe GRP 13-APR ——-23-APR\nPartial pressure of 291 mm _ORRIAM 09:28AM .\noxygen (PaQ2) “Hg CRP 175.3 B4.9 mg/L\n. ” . ng/L\nChloride (Cl) +10]\n“mmol/L\n: . ELECTROLYTES -SERUM 13-APR 15-APR 16-APR\nHematocrit (HCT) 39% OB:39AM «OLS PM 10:03...",
+  "entities": [
+    {
+      "type": "LAB_VALUE",
+      "name": "CRP",
+      "value": "175.3",
+      "unit": "B",
+      "text": "CRP 175.3 B"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "BLOOD SUGAR EE J 1626 BLOOD UREA J 404"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "08:39 AM mp/di 08:39 AM mg/dl"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ARG (ARTERIAL BLOOD =. 13-APR CREATININE SERUM 13-APR 15-APR"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Arterial blood pH 7.65 CREATININE SERUM 1.25 + 4.22"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ". ” mg/dl ‘mg/dl"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "oxygen (PaQ2) “Hg CRP 175.3 B4.9 mg/L"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ". nese . “s . . SODIUM 136 135 141"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "SODIUM 138 *140"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "LET (TOTAL} 13-APR COMPLETE BLOOD L3B-APR 1LS*APR T7-AFR"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [
+      {
+        "type": "LAB_VALUE",
+        "name": "CRP",
+        "value": "175.3",
+        "unit": "B",
+        "text": "CRP 175.3 B"
+      }
+    ],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "BLOOD SUGAR EE J 1626 BLOOD UREA J 404"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "08:39 AM mp/di 08:39 AM mg/dl"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ARG (ARTERIAL BLOOD =. 13-APR CREATININE SERUM 13-APR 15-APR"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Arterial blood pH 7.65 CREATININE SERUM 1.25 + 4.22"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ". ” mg/dl ‘mg/dl"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "oxygen (PaQ2) “Hg CRP 175.3 B4.9 mg/L"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ". nese . “s . . SODIUM 136 135 141"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "SODIUM 138 *140"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "LET (TOTAL} 13-APR COMPLETE BLOOD L3B-APR 1LS*APR T7-AFR"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 lab value(s) were detected from the document. 9 medication or dosage-related line(s) were detected."
+}

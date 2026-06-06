@@ -1,0 +1,25 @@
+{
+  "case_id": "main_fusion_xray_005",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\printed\\305411489_632498158220592_9215244969560779035_n.jpg",
+  "raw_text": "a o ‘\nEC m ose ez B\na D> 2 ° Zz\nFa fe) 1 > 9 & © = : 4\ng B18 iz a mF zp\n= 3 : o- : s\n= ge es is SPR ia mo\nx x LD ia “21: » :9 2 t\n= ald mo fs ;2 i<¢ G3 :8 4 :\n5 18. pel Dp imi: A) am '\n3 Q [5 p> =< | Do 13°98 aA ig. \\\n3 =|\" my [BS 3 242 3 z= :\n2 S/o 2 i= ig zis ft 1\n5 |= ro f= is @ BG iz ,;\n8 i ex |B] i ig 13:9 ig \\\nol> ~ ci ia ‘Bip 'Z [a 1\na O16 2 iD isis @:\ng 3 |e 15 | :B gO Fy | .\nas s|>° oO [ci Big: i\n& ; i -\n= = H poor i\n= | ~ fod: H : oid. i\ng | ON ee |\n3 ik S| DP i\neee, m™ ‘ ; 1 Oe : 1\n2 Aa cee ; : iB [2] an {\no Hi i oo: Cc\n, | & cA |\nlog : t nn <\na H oy, > o>\nnc tee soa\nz= & fo. RA EB\nKe} 72 10 t : lo —=\no. +S |o : : do :2Z >\nwo $2 |9 Poot c :§. ——| :\n° os coin Pe ee S :\nSs On ie@je lio: co .& x i\naK 28 ‘a|e} : ° is See\n> :@ {s : : i= o=—= :\n| Ga . : ‘Sleli i og & ° 3\nB io : a @ ‘3 =\n‘3 ca i2@ ye yi: = 2 i — ane\n23 i 5 io 3 7 = /\n: 8 : 2 : : ™ + —=| '\neee — nn oye cent oe Ee rt mera em ee soe",
+  "raw_text_preview": "a o ‘\nEC m ose ez B\na D> 2 ° Zz\nFa fe) 1 > 9 & © = : 4\ng B18 iz a mF zp\n= 3 : o- : s\n= ge es is SPR ia mo\nx x LD ia “21: » :9 2 t\n= ald mo fs ;2 i<¢ G3 :8 4 :\n5 18. pel Dp imi: A) am '\n3 Q [5 p> =< | Do 13°98 aA ig. \\\n3 =|\" my [BS 3 242 3 z= :\n2 S/o 2 i= ig zis ft 1\n5 |= ro f= is @ BG iz ,;\n8 i ex |B] i ig 13:9 ig \\\nol> ~ ci ia ‘Bip 'Z [a 1\na O16 2 iD isis @:\ng 3 |e 15 | :B gO Fy | .\nas s|>° oO [ci Big: i\n& ; i -\n= = H poor i\n= | ~ fod: H : oid. i\ng | ON ee |\n3 ik S| DP i\neee, m™ ‘ ; 1 Oe : 1\n2 Aa cee ; : iB [2] an {\no Hi i oo: Cc\n, | & cA |\nlog : t nn <\na H oy, > o>\nnc tee soa\nz= & fo. RA EB\nKe} 72 10 t : lo —=\no. +S |o : : do :2Z >\nwo $2 |9 Poot c :§. ——| :\n° os coin Pe ee S :\nSs On ie@je lio: co .& x i\naK 28 ‘a|e} : ° is See\n> :@ {s : : i= o=—= :\n| Ga . : ‘Sleli i og & ° 3\nB io : a @ ‘3...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "= | ~ fod: H : oid. i"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "= | ~ fod: H : oid. i"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

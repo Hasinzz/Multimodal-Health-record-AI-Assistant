@@ -1,0 +1,25 @@
+{
+  "case_id": "main_prescription_004",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\mixed\\305975182_1145789669351141_6573088440914248894_n.jpg",
+  "raw_text": "ya BOY TE |\nCY sek Bove EN\n— DON TU VAN mn\nKhoa: Khoa Nhi Tiéu héa - Dinh duéng - Fauay: Nha thude s6 4 (NAD) | |\nNo ur Hoten: TRUONG THANH TRUG Tudi: 5 Giditinn: NO. |\nqe Frente [st [etch ang, au ctng | |\nam [1 | FERMENTIX ZeroGusto G6 UONG SANG 1 601 |\ncoe |F [Caplan 260m [us wy Saf Ah |\nAY sees i\noi nha Le\nOBE\ncin [y . i\nNiza\nJ ww Loi dan: Sue dung thudéc theo dting ch dinh cia bac sT\n——— Ngay 13 thang 9 ndm 2022\n— O- BAC SI DIEU TRI\nLD)... Kham lai xin mang theo don nay TRAN TH] HANH CHAN \"\nSara iy ae eas rae “| | ind. | 4 Bon Kem theo scsesessssesesnsnesesessseonenneenstenesssanesnsrey | i",
+  "raw_text_preview": "ya BOY TE |\nCY sek Bove EN\n— DON TU VAN mn\nKhoa: Khoa Nhi Tiéu héa - Dinh duéng - Fauay: Nha thude s6 4 (NAD) | |\nNo ur Hoten: TRUONG THANH TRUG Tudi: 5 Giditinn: NO. |\nqe Frente [st [etch ang, au ctng | |\nam [1 | FERMENTIX ZeroGusto G6 UONG SANG 1 601 |\ncoe |F [Caplan 260m [us wy Saf Ah |\nAY sees i\noi nha Le\nOBE\ncin [y . i\nNiza\nJ ww Loi dan: Sue dung thudéc theo dting ch dinh cia bac sT\n——— Ngay 13 thang 9 ndm 2022\n— O- BAC SI DIEU TRI\nLD)... Kham lai xin mang theo don nay TRAN TH] HANH CHAN \"\nSara iy ae eas rae “| | ind. | 4 Bon Kem theo scsesessssesesnsnesesessseonenneenstenesssanesnsrey | i",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "coe |F [Caplan 260m [us wy Saf Ah |"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "coe |F [Caplan 260m [us wy Saf Ah |"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

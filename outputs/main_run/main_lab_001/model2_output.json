@@ -1,0 +1,42 @@
+{
+  "case_id": "main_lab_001",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\BLR-0425-PA-0039192_E-PareshwarFinalBill_250427_1337@E.pdf_page_99.png",
+  "raw_text": "— 7 — ISOZIS001-2008')\n(8) DaemOSuie POUT Painctasy iat\nTAGMOSUTE POWAE ratnciasr iz\n- (gp Wile ten S IAOUWOUL Patinolasy lads\neaten EQUIPPED WITH COMPUTERISED AUTO CHEMISTRY, BLOOD GAS_& HAEMATOLOGY, ANALYSERS}\n01%1027107A108X109.\\1 ef Floor, Agarwal, Tower, Pkt, O & BMktDilshad.G\nSARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path\nKJ-7, Kavi Nagar, Ghaziabad (U:P.) I. No, MCI 3458\n[v | a | SriNo. 1019 . . RECEIPT 1D104194\nJ oo +o fa... -..\ncz CHyerna 0223/391503 [===JNosp-25 : “\nSs | a | 16:13:21\nine\nTest} | oO —=\n: oo HAEMATOLOGY a .\n_x.. PERIPHERAL SMEAR oO re ,\n- RBC'S:- Mild Anisocytosis Mild hypochromia, few micro and macrocytes\nno nucleated RBCs.No target cells seen.\nW.B.C'S:- .No immature cells seen. .\n_ ‘PLATELETS:- platelets are adequate. ‘ . . . . :\n* End Of Report ****\no\nv —— Cyt a\nit is computer generated Report Signatures Not Required hee\nFACILITIES : FOR HORMONES ASSAYS, FNAC, HISTOPATHOLOGY, BONE MARROW ASPIRATION & BIOPSY WITH MICRO PHOTOGRAPHS.\nNOTE : ABOVE MENTIONED FINDINGS ARE A PROFESSIONAL OPINION AND NOT A FINAL DIAGNOSIS, ALL LABORATORY TESTS & OTHER\nINVESTIGATION RESULTS ARE TO BE CORELATED CLINIC-PATHOLOGICALLY, DISCREPANCIES, IF ANY, NECESSITATE REVIEW/REPEAT OF THE TESTS.\neported by-—RO NO]GVAILD FOR MEDICOLEGAISPURPOS\nCLINICAL’ CORELATION 1S MANDATOR",
+  "raw_text_preview": "— 7 — ISOZIS001-2008')\n(8) DaemOSuie POUT Painctasy iat\nTAGMOSUTE POWAE ratnciasr iz\n- (gp Wile ten S IAOUWOUL Patinolasy lads\neaten EQUIPPED WITH COMPUTERISED AUTO CHEMISTRY, BLOOD GAS_& HAEMATOLOGY, ANALYSERS}\n01%1027107A108X109.\\1 ef Floor, Agarwal, Tower, Pkt, O & BMktDilshad.G\nSARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path\nKJ-7, Kavi Nagar, Ghaziabad (U:P.) I. No, MCI 3458\n[v | a | SriNo. 1019 . . RECEIPT 1D104194\nJ oo +o fa... -..\ncz CHyerna 0223/391503 [===JNosp-25 : “\nSs | a | 16:13:21\nine\nTest} | oO —=\n: oo HAEMATOLOGY a .\n_x.. PERIPHERAL SMEAR oO re ,\n- RBC'S:- Mild Anisocytosis Mild hypochromia, few micro and macrocytes\nno nucleated RBCs.No target cells seen.\nW.B.C'S:- .No immature cells seen. .\n_ ‘PLATELETS:- platelets are adequate. ‘ . . . . :\n* End Of Report ****\no...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "eaten EQUIPPED WITH COMPUTERISED AUTO CHEMISTRY, BLOOD GAS_& HAEMATOLOGY, ANALYSERS}"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "SARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path"
+    },
+    {
+      "type": "CLINICAL_KEYWORD",
+      "text": "pain"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "eaten EQUIPPED WITH COMPUTERISED AUTO CHEMISTRY, BLOOD GAS_& HAEMATOLOGY, ANALYSERS}"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "SARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path"
+      }
+    ],
+    "clinical_keywords": [
+      {
+        "type": "CLINICAL_KEYWORD",
+        "text": "pain"
+      }
+    ]
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected. Clinical keywords found: pain."
+}

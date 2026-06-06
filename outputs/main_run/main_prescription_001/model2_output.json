@@ -1,0 +1,33 @@
+{
+  "case_id": "main_prescription_001",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\307295026_2128301694018751_2169853445404863164_n.jpg",
+  "raw_text": "1 Théng tin .\n. . rey\nng BUH | J Ding by ché ad an | £53 Tih hin Giuzng - én [P80 co + {Le} treat .\n\\PThéng tin ddn ee ite b8n: 112.350\nMa Tén |khoa Kham bane é [HO THI MINA HANG [9]\nKhoa Ph fiz0 Khoa J». |Khoa Kham bénh - Tham dé chien Ho tén BN\narn ham\nNoaay ké dan [voazoz2 > sow | 2200202273 Gigitnh [Na tsi J 13\n- S6t xUat huyét/ thiéu mau X4 Phd Thanh Thanh Phd Hud TT- Hud\nCh&n dodn Bia chi\nM3 Bs frrPar2 Tén BS [Ths Bs Pham Hau Tri Quay thudc froma thude si 1 (NHI) ~]\nTan thude {ovT [se Don_Gid | Thanh Tien | Gach ding af\nSO 1D ZAOOULNS SRE fe 1s | 7,490] 112,350 ugng ngay 3 6ng the 3 x\n| a | a} i\nLordan. | Sd dung thude to ding chi dah cas bac st\n. ae Me PQ te\nBf) 2] A} ate] —_@|\na , *\n. « ‘\n. 4\nA csr aE sane .\na ¢ q at vee\n‘wm Te ws a we BN ee coat\nif . sg y mee ce ee a — aoe en OD . NRX ae\n76 7 7H ~8 ~O ~ oO - ass ut eran Ven\n: ‘ : \" . ; 0 i : . Le ney ac ‘\ni [Fr : Do.",
+  "raw_text_preview": "1 Théng tin .\n. . rey\nng BUH | J Ding by ché ad an | £53 Tih hin Giuzng - én [P80 co + {Le} treat .\n\\PThéng tin ddn ee ite b8n: 112.350\nMa Tén |khoa Kham bane é [HO THI MINA HANG [9]\nKhoa Ph fiz0 Khoa J». |Khoa Kham bénh - Tham dé chien Ho tén BN\narn ham\nNoaay ké dan [voazoz2 > sow | 2200202273 Gigitnh [Na tsi J 13\n- S6t xUat huyét/ thiéu mau X4 Phd Thanh Thanh Phd Hud TT- Hud\nCh&n dodn Bia chi\nM3 Bs frrPar2 Tén BS [Ths Bs Pham Hau Tri Quay thudc froma thude si 1 (NHI) ~]\nTan thude {ovT [se Don_Gid | Thanh Tien | Gach ding af\nSO 1D ZAOOULNS SRE fe 1s | 7,490] 112,350 ugng ngay 3 6ng the 3 x\n| a | a} i\nLordan. | Sd dung thude to ding chi dah cas bac st\n. ae Me PQ te\nBf) 2] A} ate] —_@|\na , *\n. « ‘\n. 4\nA csr aE sane .\na ¢ q at vee\n‘wm Te ws a we BN ee coat\nif . sg y mee ce ee a — aoe en OD ....",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Ch&n dodn Bia chi"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "if . sg y mee ce ee a — aoe en OD . NRX ae"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Ch&n dodn Bia chi"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "if . sg y mee ce ee a — aoe en OD . NRX ae"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "2 medication or dosage-related line(s) were detected."
+}

@@ -1,0 +1,45 @@
+{
+  "case_id": "main_fusion_xray_009",
+  "modality": "xray",
+  "image_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\images\\xray\\images_011\\images\\00025127_000.png",
+  "top_predictions": [
+    {
+      "label": "Infiltration",
+      "probability": 0.1315901279449463
+    },
+    {
+      "label": "Consolidation",
+      "probability": 0.018094725906848907
+    },
+    {
+      "label": "Effusion",
+      "probability": 0.0052525741048157215
+    },
+    {
+      "label": "Atelectasis",
+      "probability": 0.0028145660180598497
+    },
+    {
+      "label": "Pneumothorax",
+      "probability": 0.0006526040961034596
+    }
+  ],
+  "probabilities": {
+    "Atelectasis": 0.0028145660180598497,
+    "Cardiomegaly": 4.212681233184412e-06,
+    "Effusion": 0.0052525741048157215,
+    "Infiltration": 0.1315901279449463,
+    "Mass": 0.00040991080459207296,
+    "Nodule": 0.00016536490875296295,
+    "Pneumonia": 4.4199146032042336e-06,
+    "Pneumothorax": 0.0006526040961034596,
+    "Consolidation": 0.018094725906848907,
+    "Edema": 0.0003446896735113114,
+    "Emphysema": 3.2159990951186046e-05,
+    "Fibrosis": 1.5352978266491846e-07,
+    "Pleural_Thickening": 6.408315584849333e-06,
+    "Hernia": 4.195074723156722e-07
+  },
+  "embedding_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\outputs\\final_run_100\\main_fusion_xray_009\\main_fusion_xray_009_xray_embedding.npy",
+  "patient_summary_text": "Chest X-ray suggests possible findings: Infiltration (0.13), Consolidation (0.02), Effusion (0.01)."
+}

@@ -1,0 +1,153 @@
+{
+  "case_id": "main_lab_018",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\BLR-0425-PA-0042494_Malathi_Sudheendra_LAB_26-04-2025_0923-40_PM@G.pdf_page_4.png",
+  "raw_text": "TEL:\nDiagnostic Report\nService = — | —— |\nLab No: 72302128 IP (GENERAL Study Date- EJ 10:17AM\nWA/MBM -040)\nReferred By: Dr. NEPHROLOGY TEAM\nCULTURE, AEROBIC, PUS Result Finalized Released Date: [=====J 5:20pm\nCULTURE METHOD <OBX.5.1><OBX.5. |null\n1.1>Aerobic\nCulture, ID\n</OBX.5.1.1><OBX\n.5.1.2> AST\nperformed by\nVITEK 2\nCompact.</OBX.5.\n1.2></OBX.5.1>\nSPECIMEN TYPE : Pus null\nlorder pate — —E_ 7:36=m Bill No. - IP7/CR25/84230\nLab No: 72301016 IP (GENERAL Study Date- EJ 7:44PM\nWA/MBM -040)\nReferred By: Dr. NEPHROLOGY TEAM\nRENAL PROFILE 1 Result Finalized Released Date: [======J 8:24am\nCALCIUM 7.4 mg/d1 Cord blood : 8.2-11.2\nmg/dLNewborn,Premature : 6.2-11.0\nmg/dLChildren (0-10 days) : 7.6-10.4 mg/dL\nChildren (10 days-2 years): 9.0-11.0\nmg/dLChildren (2-12 years) : 8.8-10.8\nmg/dLChildren (12-18 years) : 8.4-10.2\nmg/dL Adults (18-60 years) : 8.6-10.0\nmg/dLAdults (60-90 years) : 8.8-10.2\nmg/dLAdults (> 90 years) : 8.2-9.6 mg/dL\nCALCIUM 7.4 mg/d1 Cord blood : 8.2-11.2\nmg/dLNewborn,Premature : 6.2-11.0\nmg/dLChildren (0-10 days) : 7.6-10.4 mg/dL\nChildren (10 days-2 years): 9.0-11.0\nmg/dLChildren (2-12 years) : 8.8-10.8\nmg/dLChildren (12-18 years) : 8.4-10.2\nmg/dL Adults (18-60 years) : 8.6-10.0\nmg/dLAdults (60-90 years) : 8.8-10.2\nmg/dLAdults (> 90 years) : 8.2-9.6 mg/dL\ncoin",
+  "raw_text_preview": "TEL:\nDiagnostic Report\nService = — | —— |\nLab No: 72302128 IP (GENERAL Study Date- EJ 10:17AM\nWA/MBM -040)\nReferred By: Dr. NEPHROLOGY TEAM\nCULTURE, AEROBIC, PUS Result Finalized Released Date: [=====J 5:20pm\nCULTURE METHOD <OBX.5.1><OBX.5. |null\n1.1>Aerobic\nCulture, ID\n</OBX.5.1.1><OBX\n.5.1.2> AST\nperformed by\nVITEK 2\nCompact.</OBX.5.\n1.2></OBX.5.1>\nSPECIMEN TYPE : Pus null\nlorder pate — —E_ 7:36=m Bill No. - IP7/CR25/84230\nLab No: 72301016 IP (GENERAL Study Date- EJ 7:44PM\nWA/MBM -040)\nReferred By: Dr. NEPHROLOGY TEAM\nRENAL PROFILE 1 Result Finalized Released Date: [======J 8:24am\nCALCIUM 7.4 mg/d1 Cord blood : 8.2-11.2\nmg/dLNewborn,Premature : 6.2-11.0\nmg/dLChildren (0-10 days) : 7.6-10.4 mg/dL\nChildren (10 days-2 years): 9.0-11.0\nmg/dLChildren (2-12 years) : 8.8-10.8\nmg/dLChildren (12-...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CULTURE METHOD <OBX.5.1><OBX.5. |null"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CALCIUM 7.4 mg/d1 Cord blood : 8.2-11.2"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLNewborn,Premature : 6.2-11.0"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLChildren (0-10 days) : 7.6-10.4 mg/dL"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLChildren (2-12 years) : 8.8-10.8"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLChildren (12-18 years) : 8.4-10.2"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dL Adults (18-60 years) : 8.6-10.0"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLAdults (60-90 years) : 8.8-10.2"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLAdults (> 90 years) : 8.2-9.6 mg/dL"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CALCIUM 7.4 mg/d1 Cord blood : 8.2-11.2"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLNewborn,Premature : 6.2-11.0"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLChildren (0-10 days) : 7.6-10.4 mg/dL"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLChildren (2-12 years) : 8.8-10.8"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLChildren (12-18 years) : 8.4-10.2"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dL Adults (18-60 years) : 8.6-10.0"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLAdults (60-90 years) : 8.8-10.2"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "mg/dLAdults (> 90 years) : 8.2-9.6 mg/dL"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CULTURE METHOD <OBX.5.1><OBX.5. |null"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CALCIUM 7.4 mg/d1 Cord blood : 8.2-11.2"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLNewborn,Premature : 6.2-11.0"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLChildren (0-10 days) : 7.6-10.4 mg/dL"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLChildren (2-12 years) : 8.8-10.8"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLChildren (12-18 years) : 8.4-10.2"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dL Adults (18-60 years) : 8.6-10.0"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLAdults (60-90 years) : 8.8-10.2"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLAdults (> 90 years) : 8.2-9.6 mg/dL"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CALCIUM 7.4 mg/d1 Cord blood : 8.2-11.2"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLNewborn,Premature : 6.2-11.0"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLChildren (0-10 days) : 7.6-10.4 mg/dL"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLChildren (2-12 years) : 8.8-10.8"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLChildren (12-18 years) : 8.4-10.2"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dL Adults (18-60 years) : 8.6-10.0"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLAdults (60-90 years) : 8.8-10.2"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "mg/dLAdults (> 90 years) : 8.2-9.6 mg/dL"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "17 medication or dosage-related line(s) were detected."
+}

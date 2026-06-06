@@ -1,0 +1,28 @@
+{
+  "case_id": "main_brain_001",
+  "image_findings": "Brain MRI suggests: no_tumor with confidence 0.98.",
+  "text_findings": null,
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt",
+      "chunk_id": 0,
+      "score": 0.23433702384861052,
+      "text": "Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based mass with adjacent mass effect or calcification. Pituitary tumors may relate to sellar or suprasellar findings and can affect vision or hormone-related symptoms. No tumor does not replace radiology review; image quality, slice coverage, and clinical context still matter. Any automated MRI result should be reviewed by a qualified radiologist before clinical use."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.20161795655870163,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.19988438553084154,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    }
+  ],
+  "final_summary": "Case ID: main_brain_001\n\nImage findings: Brain MRI suggests: no_tumor with confidence 0.98.\n\nDocument findings: No document input was provided.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt, score=0.234. Relevant note: Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based m...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.202. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.200. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. Image-based findings are probabilistic and should be verified with clinical context. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Image findings:\nBrain MRI suggests: no_tumor with confidence 0.98.\nPositive X-ray labels: none\nno_tumor: 0.9797627329826355\npituitary_tumor: 0.01627219468355179\nmeningioma_tumor: 0.002853723242878914\nglioma_tumor: 0.0011113685322925448"
+}

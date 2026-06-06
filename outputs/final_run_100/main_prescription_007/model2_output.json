@@ -1,0 +1,41 @@
+{
+  "case_id": "main_prescription_007",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\printed\\305339163_528384399056285_8520891831713502459_n.jpg",
+  "raw_text": "y 14 ye\n*2200232671* .\nr BOYTE 22\nA acyl ViEN TW HUE . 2200232671 bo\nvl - PON THUOC ;\n| | Go Tentube st | Cach ding, ligu ding |\nDevodil 50mg(Sulpirid) Vien 30 |udng sang 01 vién, tdi 01 vie a] ayak\nry vecenesnesucseecunscecaucnensaccsenaescenssnnananscrer ee eeeT ee aepeeeeee vn aeneeneann ce cece ene ner en eee eee ae eee ee ee 27a hs of.\n, te, Net\n‘} ’ Medi - Neuro Ultra (Vitamin 3B 250mg; | 10 udng sang 01 vién, t6i 01 vie a\nOEE MEN effec] NY\nf: Opecalcium 10 |udng sang 014 6ng i‘? tial\nye (1400mg#+100mg+50mg)/10mKCatci i. aoe\ni glucoheptonat, Acid ascorbic; Nicotinamid) yy H\n- On eeceeentenntennne een erneneetenenesnnt m2 TY\nLoidan: Sir dung thuéc theo dting chi dinh cia bac st .\n. '\nr\nNoay 14 thang 4 n&m 2022\nBAC ST DIE\n, .\n: 7 , . ‘ mor . ,* \" - Vay Tok -“ yo,\n\\ af Me ff any : a ve ‘ ‘ ate ‘ an . yy\n. 7 ry dd La b",
+  "raw_text_preview": "y 14 ye\n*2200232671* .\nr BOYTE 22\nA acyl ViEN TW HUE . 2200232671 bo\nvl - PON THUOC ;\n| | Go Tentube st | Cach ding, ligu ding |\nDevodil 50mg(Sulpirid) Vien 30 |udng sang 01 vién, tdi 01 vie a] ayak\nry vecenesnesucseecunscecaucnensaccsenaescenssnnananscrer ee eeeT ee aepeeeeee vn aeneeneann ce cece ene ner en eee eee ae eee ee ee 27a hs of.\n, te, Net\n‘} ’ Medi - Neuro Ultra (Vitamin 3B 250mg; | 10 udng sang 01 vién, t6i 01 vie a\nOEE MEN effec] NY\nf: Opecalcium 10 |udng sang 014 6ng i‘? tial\nye (1400mg#+100mg+50mg)/10mKCatci i. aoe\ni glucoheptonat, Acid ascorbic; Nicotinamid) yy H\n- On eeceeentenntennne een erneneetenenesnnt m2 TY\nLoidan: Sir dung thuéc theo dting chi dinh cia bac st .\n. '\nr\nNoay 14 thang 4 n&m 2022\nBAC ST DIE\n, .\n: 7 , . ‘ mor . ,* \" - Vay Tok -“ yo,\n\\ af Me ff any : a ve ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Devodil 50mg(Sulpirid) Vien 30 |udng sang 01 vién, tdi 01 vie a] ayak"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "‘} ’ Medi - Neuro Ultra (Vitamin 3B 250mg; | 10 udng sang 01 vién, t6i 01 vie a"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ye (1400mg#+100mg+50mg)/10mKCatci i. aoe"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Devodil 50mg(Sulpirid) Vien 30 |udng sang 01 vién, tdi 01 vie a] ayak"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "‘} ’ Medi - Neuro Ultra (Vitamin 3B 250mg; | 10 udng sang 01 vién, t6i 01 vie a"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ye (1400mg#+100mg+50mg)/10mKCatci i. aoe"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "3 medication or dosage-related line(s) were detected."
+}

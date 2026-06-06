@@ -1,0 +1,22 @@
+{
+  "case_id": "main_lab_002",
+  "image_findings": null,
+  "text_findings": "Patient information found: age: 1. 2 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 1,
+      "score": 0.36486384901556534,
+      "text": "l to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.2083175629543057,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    }
+  ],
+  "final_summary": "Case ID: main_lab_002\n\nImage findings: No image input was provided.\n\nDocument findings: Patient information found: age: 1. 2 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.365. Relevant note: l to produce a more complete patient overview....\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.208. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\nPatient information found: age: 1. 2 medication or dosage-related line(s) were detected.\na = Dro 1S OFI9001-2003)\n| (@)) Diacmostie Point Pathologvlabs\na pay SS — —_ ay An\nwn! EQUIPPED WITH COMPUTERISED AUTO CHEMISTR BLOOD GAS & HAEMATOLOGY, ANALYSERS\n01910291 077108109 tial Floor, Agarwal, lower, PRL ab Mkt. Dilshad Gardens Oeihl-35.P!\nSARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path\nKJ-7, Kavi Nagar, Ghaziabad (U°P.} 1H 1]\noe SE) oe | Wem\nPatient 1)\nReferred—] LluvVeRMA .\nLab SerialNo: 07 . . Receiving Le 6:00:30AM\nWard No SP -25 Reporting Date : pel 9:29:07AM\nCR/UHD No : 0223 / 391503 Date TAT : 2 Hours 29 Minute\nInvestigation . Observed Value Unit Biological Ref Interval .\n; . HEMATOLOGY\n_~PLLPROTHROMBIN TIME ) .: OC ; . .\nNORMAL CONTROL VALUE 13.0 second(s) °\nPATIENT VALUE 17.5 second(s)\nInternational Normalized Ratio 1.37 .\nSpecimen : PT PLASMA\nComment :\n1. INR ...\n{'type': 'PATIENT_INFO', 'field': 'age', 'text': '1'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'wn! EQUIPPED WITH COMPUTERISED AUTO CHEMISTR BLOOD GAS & HAEMATOLOGY, ANALYSERS'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'SARVODAYA HOSPITAL Dr. (Capt) Atul Kapila (Retd.) MD Path'}"
+}

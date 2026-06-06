@@ -1,0 +1,31 @@
+{
+  "case_id": "main_fusion_brain_001",
+  "modality": "brain_mri",
+  "image_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\images\\brain_mri\\Training\\meningioma\\Tr-me_764.jpg",
+  "top_predictions": [
+    {
+      "label": "meningioma_tumor",
+      "probability": 0.7381948232650757
+    },
+    {
+      "label": "glioma_tumor",
+      "probability": 0.13080494105815887
+    },
+    {
+      "label": "pituitary_tumor",
+      "probability": 0.07074642181396484
+    },
+    {
+      "label": "no_tumor",
+      "probability": 0.060253825038671494
+    }
+  ],
+  "probabilities": {
+    "glioma_tumor": 0.13080494105815887,
+    "meningioma_tumor": 0.7381948232650757,
+    "no_tumor": 0.060253825038671494,
+    "pituitary_tumor": 0.07074642181396484
+  },
+  "embedding_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\outputs\\main_run\\main_fusion_brain_001\\main_fusion_brain_001_brain_mri_embedding.npy",
+  "patient_summary_text": "Brain MRI suggests: meningioma_tumor with confidence 0.74."
+}

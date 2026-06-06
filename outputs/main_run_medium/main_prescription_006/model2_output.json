@@ -1,0 +1,25 @@
+{
+  "case_id": "main_prescription_006",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_2_prescription_pages\\74.jpg",
+  "raw_text": "i @D _\n° ° J“\naw shee aya mas\neH eee lp ra sz =:\noe ese Soop. 7 Ras. _\nrate q arises No, 2 A 3.\npark une 1 2001 tHe a\nmo, P. 8/0) a\n*, . ad s a ob a ll\n: a ae . FG 0 em 976 6 ace\na “is ar cents\na q ° Vv MB. isle\n™ . ar aha me\noa wal ed =\noe | - “4 p92 saan\not iy ao 00 0: oe\nak | M5 50. one\nee ° ° Lad 3 ee\nam L ’ an\nan 2? ‘ye od Sox\n: 4 ——— :\nve 4 - f / as\n“ a AL ot ‘ » \"\nQt jl ; J -\na “ . 3 an ( ety\n— ‘L tts ~\n“os ok\na —-_",
+  "raw_text_preview": "i @D _\n° ° J“\naw shee aya mas\neH eee lp ra sz =:\noe ese Soop. 7 Ras. _\nrate q arises No, 2 A 3.\npark une 1 2001 tHe a\nmo, P. 8/0) a\n*, . ad s a ob a ll\n: a ae . FG 0 em 976 6 ace\na “is ar cents\na q ° Vv MB. isle\n™ . ar aha me\noa wal ed =\noe | - “4 p92 saan\not iy ao 00 0: oe\nak | M5 50. one\nee ° ° Lad 3 ee\nam L ’ an\nan 2? ‘ye od Sox\n: 4 ——— :\nve 4 - f / as\n“ a AL ot ‘ » \"\nQt jl ; J -\na “ . 3 an ( ety\n— ‘L tts ~\n“os ok\na —-_",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "an 2? ‘ye od Sox"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "an 2? ‘ye od Sox"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

@@ -1,0 +1,17 @@
+Main Run Report
+Timestamp: 2026-05-30 21:19:59
+Output folder: C:\Users\T2520824\thesis_multimodal_ai\outputs\main_run_medium
+Seed: 42
+Total cases requested: 50
+Total cases completed: 50
+Total cases failed: 0
+
+Counts by case type:
+- brain_fusion: 5
+- brain_image_only: 10
+- lab_doc_only: 10
+- prescription_doc_only: 10
+- xray_fusion: 5
+- xray_image_only: 10
+
+Note: inference-only run; no training was performed.

@@ -1,0 +1,40 @@
+{
+  "case_id": "main_lab_007",
+  "image_findings": null,
+  "text_findings": "1 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt",
+      "chunk_id": 0,
+      "score": 0.2134773297053858,
+      "text": "Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, anemia, inflammation, liver injury, kidney dysfunction, or metabolic issues, depending on the pattern. Single values should not be over-interpreted without the full report and clinical context. OCR may misread digits, units, and abbreviations, so manual verification is required before any clinical decision."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 1,
+      "score": 0.0980874951918941,
+      "text": "l to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.0838305922414708,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.04902758228136669,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt",
+      "chunk_id": 0,
+      "score": 0.042317791384899286,
+      "text": "Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ambiguous medication names. Medication safety requires checking for contraindications, duplicate therapy, allergies, and age-appropriate dosing. Automated prescription OCR should support documentation and review, not replace pharmacist or physician verification."
+    }
+  ],
+  "final_summary": "Case ID: main_lab_007\n\nImage findings: No image input was provided.\n\nDocument findings: 1 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt, score=0.213. Relevant note: Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, a...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.098. Relevant note: l to produce a more complete patient overview....\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.084. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.049. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...\nEvidence 5: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt, score=0.042. Relevant note: Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\n1 medication or dosage-related line(s) were detected.\nAy i Test Report\nFaun SHREE DIAGNOSTIC “K.P. Patil Building,\nQues, \" a Near Shivaji Maharaj Statue,\nfram CLINIGALLABORATORY, - Mohopada, Tal. Khalapur,\ngore ereeney — Dist. Ralgad - 410 222.\n24 HOURS PATHOLOGY: SERVICER FRIGITACCRAY, MOBI7937 2696387\n$2 HOURS PATUOCOGY SER Moby193 72619630450\nratien og —S bac\noO Tt\" Geniler : a i ee | —|\nESytypoctor : p, Ram sender 3 Male Report Print Time; 27-Apr-2025 10:18 AM\nCet — es — one!\neee eee ee\n7, Complete Bland coun =]\neu mn |\n| om | Unit\nBLOOD COUNT (CRC) ~\nHemoglobin\nPhotemetry 11.6 qin/dl 13.0-17.0\n~ Packed Cell Volume (HCT\nOccareutated (uct) 45.2 % 40-50\nRBC Count\nElectrical impedence 5.10 mil/emm 45-55\nMean Cell Valume(MCV\nCalcurates # 8B.G fl 83-101\nMean Cell Hemoplobin( MCH) 22.7 pe 27-33\nCascuisted\nMean Cell Hb Conc(MCHC) 28.7 nN 32-38\nC...\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'BLOOD COUNT (CRC) ~'}"
+}

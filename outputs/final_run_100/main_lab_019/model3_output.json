@@ -1,0 +1,40 @@
+{
+  "case_id": "main_lab_019",
+  "image_findings": null,
+  "text_findings": "13 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt",
+      "chunk_id": 0,
+      "score": 0.1566535595583773,
+      "text": "Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ambiguous medication names. Medication safety requires checking for contraindications, duplicate therapy, allergies, and age-appropriate dosing. Automated prescription OCR should support documentation and review, not replace pharmacist or physician verification."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt",
+      "chunk_id": 0,
+      "score": 0.05675470997789648,
+      "text": "Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, anemia, inflammation, liver injury, kidney dysfunction, or metabolic issues, depending on the pattern. Single values should not be over-interpreted without the full report and clinical context. OCR may misread digits, units, and abbreviations, so manual verification is required before any clinical decision."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.04969098799182471,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 1,
+      "score": 0.035429944293187986,
+      "text": "l to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.024844823226595272,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    }
+  ],
+  "final_summary": "Case ID: main_lab_019\n\nImage findings: No image input was provided.\n\nDocument findings: 13 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt, score=0.157. Relevant note: Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt, score=0.057. Relevant note: Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, a...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.050. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.035. Relevant note: l to produce a more complete patient overview....\nEvidence 5: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.025. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\n13 medication or dosage-related line(s) were detected.\n. t\nO NB\\:\n. s “\nWexacwanoas Bhagwan Das Hospital (So)\n~ Ks wy 4\npein neat . a =e : co ? i\n@ilpepartmentfof,Lab\\sciencesyR Rt |\n: : Mc-4795\nDiagnostics S.No. CUCL ACUTLTT HUTT rsa | MR/25/004852/311657 :\nPatient Cy | ee | im | a | :\n<= oar | ;\nDate : 16-Apr-2025 = pm IPD No. : 29802 .\nample Recelving Date : 16-Apr-2025 11:10 AM Panel =] a | a | :\nSample Collectlon Date ! 16-Apr-2025 11:10AM . : : .\ni\nMCHC L 30.5* 31.5-34.5 gm/dl . H\n(calculated) . :\nKFT (KIDNEY FUNCTION TEST (KFT / RET) (SERUM) oe :\nBLOOD UREA 24.3 19-44 mg/dl\n_-~fUrease-GLDH UV Method) .\nCREATININE,SERUM 0.91 0.7-1.3 mg/d! mo\n(Jaffe melhod w/o compensalion) : ' . ‘\n“> JRIC ACID 5.25 3.8-7.2 mg/di .\n(Enzymalic photometric test with TBHBA) :\nSODIUM 138.1 135-145 mmol/l\n(I.8.E.direct Method) : : :\nPOTASSIUM : L 3.40* 3.5-5.5...\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'BLOOD UREA 24.3 19-44 mg/dl'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '_-~fUrease-GLDH UV Method) .'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'CREATININE,SERUM 0.91 0.7-1.3 mg/d! mo'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': \"(Jaffe melhod w/o compensalion) : ' . ‘\"}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '“> JRIC ACID 5.25 3.8-7.2 mg/di .'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'SODIUM 138.1 135-145 mmol/l'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '(I.8.E.direct Method) : : :'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '(LS, E.direct Method) :'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'CALCIUM 8.95 8.6-10.3 mg/dl 3'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '(Arsenazo III Mathod) :'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'INORGANIC PHOSPHORUS 4.05 2.6-4.5 mg/di i'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '(Molybdate UV Method with endpoint determination)) :'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '(Biuret Method) .'}"
+}

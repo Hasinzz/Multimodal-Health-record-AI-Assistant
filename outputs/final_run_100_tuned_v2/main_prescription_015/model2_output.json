@@ -1,0 +1,57 @@
+{
+  "case_id": "main_prescription_015",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\mixed\\305563143_484200333281264_526727035891576001_n.jpg",
+  "raw_text": "° BT ee mame ment Ee Se Teme SN ee Le te ie” -_——-\nomen BOY TE \\ =aee\nee VIEN TW HUE *220077125%\" eas\nee 2200771251 aig\n——— DON THUOC ae\nee Hotén: HOANG VIETBACH THOS Git tinh: ‘Nam arian\nmae] Bia chi: Phuong They Dueng Ih x& Huong Thay TT: Hue —Z\nSa] Chan dodn: HEN PHE QUAN\noo Er] tenthube | st. [cach ding. leu ding =\nnn EFODYL 250mg(Cefuroxim) Goi 40 |NGAY UONG 2 GOI CHIA 2 a\nSet Guacanyl 1.5mg/5ml+ 40 INGAY UONG 2 ONG CHIA 3 bo\n7 ee 66.5mg/5mKTerbutalin sulfat + aoe\na Guaiphenesin) Ong epee ne? eras —_\noo ee Denk - Air Junior 5mg(Montelukast 5mg) | 30 |NGAY UONG 1 6NG LUC —\n=—{ \\- Cr 4\n—_ : NGO goacrelen Mena] ] AO ring aula Woo } Es\ngers eee\nTec lemeeet Bo\n— ——e nee\nen. Céng khoan: 03 khoan ol ee 3\ncee oe | Loi dan: Su dung thudéc theo ding chi dinh cua bac sT 7\nve Ngay 12 théng 9 nam 2022 ;\neee AK BAC SI DIEU TRI\na eae —\n| \\e6 7 Oa PHU\n— . 7 ; Kham tai xin mang theo don nay _ ———",
+  "raw_text_preview": "° BT ee mame ment Ee Se Teme SN ee Le te ie” -_——-\nomen BOY TE \\ =aee\nee VIEN TW HUE *220077125%\" eas\nee 2200771251 aig\n——— DON THUOC ae\nee Hotén: HOANG VIETBACH THOS Git tinh: ‘Nam arian\nmae] Bia chi: Phuong They Dueng Ih x& Huong Thay TT: Hue —Z\nSa] Chan dodn: HEN PHE QUAN\noo Er] tenthube | st. [cach ding. leu ding =\nnn EFODYL 250mg(Cefuroxim) Goi 40 |NGAY UONG 2 GOI CHIA 2 a\nSet Guacanyl 1.5mg/5ml+ 40 INGAY UONG 2 ONG CHIA 3 bo\n7 ee 66.5mg/5mKTerbutalin sulfat + aoe\na Guaiphenesin) Ong epee ne? eras —_\noo ee Denk - Air Junior 5mg(Montelukast 5mg) | 30 |NGAY UONG 1 6NG LUC —\n=—{ \\- Cr 4\n—_ : NGO goacrelen Mena] ] AO ring aula Woo } Es\ngers eee\nTec lemeeet Bo\n— ——e nee\nen. Céng khoan: 03 khoan ol ee 3\ncee oe | Loi dan: Su dung thudéc theo ding chi dinh cua bac sT 7\nve Ngay 12 théng 9 nam ...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Sa] Chan dodn: HEN PHE QUAN"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "nn EFODYL 250mg(Cefuroxim) Goi 40 |NGAY UONG 2 GOI CHIA 2 a"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Set Guacanyl 1.5mg/5ml+ 40 INGAY UONG 2 ONG CHIA 3 bo"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "7 ee 66.5mg/5mKTerbutalin sulfat + aoe"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "oo ee Denk - Air Junior 5mg(Montelukast 5mg) | 30 |NGAY UONG 1 6NG LUC —"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Sa] Chan dodn: HEN PHE QUAN"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "nn EFODYL 250mg(Cefuroxim) Goi 40 |NGAY UONG 2 GOI CHIA 2 a"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Set Guacanyl 1.5mg/5ml+ 40 INGAY UONG 2 ONG CHIA 3 bo"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "7 ee 66.5mg/5mKTerbutalin sulfat + aoe"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "oo ee Denk - Air Junior 5mg(Montelukast 5mg) | 30 |NGAY UONG 1 6NG LUC —"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "5 medication or dosage-related line(s) were detected."
+}

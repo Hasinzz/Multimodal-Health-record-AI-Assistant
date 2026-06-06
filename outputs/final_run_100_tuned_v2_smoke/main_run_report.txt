@@ -1,0 +1,17 @@
+Main Run Report
+Timestamp: 2026-05-31 19:50:26
+Output folder: C:\Users\T2520824\thesis_multimodal_ai\outputs\final_run_100_tuned_v2_smoke
+Seed: 42
+Total cases requested: 6
+Total cases completed: 6
+Total cases failed: 0
+
+Counts by case type:
+- brain_fusion: 1
+- brain_image_only: 1
+- lab_doc_only: 1
+- prescription_doc_only: 1
+- xray_fusion: 1
+- xray_image_only: 1
+
+Note: inference-only run; no training was performed.

@@ -1,0 +1,40 @@
+{
+  "case_id": "main_lab_015",
+  "image_findings": null,
+  "text_findings": "3 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt",
+      "chunk_id": 0,
+      "score": 0.14653979503255066,
+      "text": "Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ambiguous medication names. Medication safety requires checking for contraindications, duplicate therapy, allergies, and age-appropriate dosing. Automated prescription OCR should support documentation and review, not replace pharmacist or physician verification."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt",
+      "chunk_id": 0,
+      "score": 0.10968444879943355,
+      "text": "Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, anemia, inflammation, liver injury, kidney dysfunction, or metabolic issues, depending on the pattern. Single values should not be over-interpreted without the full report and clinical context. OCR may misread digits, units, and abbreviations, so manual verification is required before any clinical decision."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.05315268713112755,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.031085880131811114,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt",
+      "chunk_id": 0,
+      "score": 0.024811085888242934,
+      "text": "Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based mass with adjacent mass effect or calcification. Pituitary tumors may relate to sellar or suprasellar findings and can affect vision or hormone-related symptoms. No tumor does not replace radiology review; image quality, slice coverage, and clinical context still matter. Any automated MRI result should be reviewed by a qualified radiologist before clinical use."
+    }
+  ],
+  "final_summary": "Case ID: main_lab_015\n\nImage findings: No image input was provided.\n\nDocument findings: 3 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt, score=0.147. Relevant note: Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt, score=0.110. Relevant note: Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, a...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.053. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.031. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...\nEvidence 5: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt, score=0.025. Relevant note: Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based m...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\n3 medication or dosage-related line(s) were detected.\neo\n- Ne 5, KOTHARI MEDICAL & RESEARCH INSTITUTE ;\nMe a KOTHARI HOSPITAL MARG, BANGLA NAGAR, BIKANER-334004 \\ —\ny oe - ~\ny ites. LAXMI Reg. No. cc) Pro. 1P2501385 \\\noy .29 ViFemale Lab No. | ee a |\nex\n“89.9 ° :SEMI \\\nMen pr. V.K. ASWAL OPD/IPD:IPD Bed.No PRIVATE \\\n77, Ney Pnsultant\n8 \" ROOM,11\n: ly, q, \\\n(J at: Sample Collected at: 4\ntg, % 4 forests pM 2ei0an02s “08-00 em\nbia be *4, mu BIOCHEMISTRY TM\nOp ye VF sion No\nIn acces! ——— |\n%, AMPLE TYPE SERUM.\ney oO OBSERVED VALUE Unit REFERENCE RANGE\nLattin uveR Ly TEST LT) oo\nNy “ Serum Biarubin {Tota!) 7 0.3 mg/dl upto 1.2 \\\nSerum Bérubin (Direct) o1 mg/dl 00-04\n) a Serum Bilirubin {Indirect} 0.20 mg/dl 0.0-1.0 |\nMi sGoT (AST) 23 UL. . $34\n‘n SGPT (ALT) 29 VIL 10-35\n“a Akaline Phosphatase 86 : UL §3-128\nTotal Protein 65 gid 6.083 \\\nAlbumin 47 ...\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'Ny “ Serum Biarubin {Tota!) 7 0.3 mg/dl upto 1.2 \\\\'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'Serum Bérubin (Direct) o1 mg/dl 00-04'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': ') a Serum Bilirubin {Indirect} 0.20 mg/dl 0.0-1.0 |'}"
+}

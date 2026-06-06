@@ -1,0 +1,34 @@
+{
+  "case_id": "main_fusion_brain_007",
+  "image_findings": "Brain MRI suggests: glioma_tumor with confidence 0.98.",
+  "text_findings": "1 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.23814754875282154,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt",
+      "chunk_id": 0,
+      "score": 0.22529176263018355,
+      "text": "Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based mass with adjacent mass effect or calcification. Pituitary tumors may relate to sellar or suprasellar findings and can affect vision or hormone-related symptoms. No tumor does not replace radiology review; image quality, slice coverage, and clinical context still matter. Any automated MRI result should be reviewed by a qualified radiologist before clinical use."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.2169964083436454,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt",
+      "chunk_id": 0,
+      "score": 0.06380926017784791,
+      "text": "Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ambiguous medication names. Medication safety requires checking for contraindications, duplicate therapy, allergies, and age-appropriate dosing. Automated prescription OCR should support documentation and review, not replace pharmacist or physician verification."
+    }
+  ],
+  "final_summary": "Case ID: main_fusion_brain_007\n\nImage findings: Brain MRI suggests: glioma_tumor with confidence 0.98.\n\nDocument findings: 1 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.238. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\brain_tumor_notes.txt, score=0.225. Relevant note: Brain MRI tumor labels such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic outputs from a classifier. Glioma often requires correlation with lesion location, edema, mass effect, and contrast enhancement patterns. Meningioma is commonly extra-axial and may show a dural-based m...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.217. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt, score=0.064. Relevant note: Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. Image-based findings are probabilistic and should be verified with clinical context. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Image findings:\nBrain MRI suggests: glioma_tumor with confidence 0.98.\nPositive X-ray labels: none\nglioma_tumor: 0.9819933176040649\nmeningioma_tumor: 0.017453502863645554\npituitary_tumor: 0.0004857362655457109\nno_tumor: 6.741118704667315e-05\nDocument findings:\n1 medication or dosage-related line(s) were detected.\nya BOY TE |\nCY sek Bove EN\n— DON TU VAN mn\nKhoa: Khoa Nhi Tiéu héa - Dinh duéng - Fauay: Nha thude s6 4 (NAD) | |\nNo ur Hoten: TRUONG THANH TRUG Tudi: 5 Giditinn: NO. |\nqe Frente [st [etch ang, au ctng | |\nam [1 | FERMENTIX ZeroGusto G6 UONG SANG 1 601 |\ncoe |F [Caplan 260m [us wy Saf Ah |\nAY sees i\noi nha Le\nOBE\ncin [y . i\nNiza\nJ ww Loi dan: Sue dung thudéc theo dting ch dinh cia bac sT\n——— Ngay 13 thang 9 ndm 2022\n— O- BAC SI DIEU TRI\nLD)... Kham lai xin mang theo don nay TRAN TH] HANH CHAN \"\nSara iy ae eas rae “| | ind. | 4 Bon Kem theo scsesessssesesnsnesesessseonenneenstenesssanesnsrey | i\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'coe |F [Caplan 260m [us wy Saf Ah |'}"
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "main_lab_007",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\AHD-0425-PA-0008061_E-mahendrasinghdischargecard_250427_1114@E.pdf_page_13.png",
+  "raw_text": "Ay i Test Report\nFaun SHREE DIAGNOSTIC “K.P. Patil Building,\nQues, \" a Near Shivaji Maharaj Statue,\nfram CLINIGALLABORATORY, - Mohopada, Tal. Khalapur,\ngore ereeney — Dist. Ralgad - 410 222.\n24 HOURS PATHOLOGY: SERVICER FRIGITACCRAY, MOBI7937 2696387\n$2 HOURS PATUOCOGY SER Moby193 72619630450\nratien og —S bac\noO Tt\" Geniler : a i ee | —|\nESytypoctor : p, Ram sender 3 Male Report Print Time; 27-Apr-2025 10:18 AM\nCet — es — one!\neee eee ee\n7, Complete Bland coun =]\neu mn |\n| om | Unit\nBLOOD COUNT (CRC) ~\nHemoglobin\nPhotemetry 11.6 qin/dl 13.0-17.0\n~ Packed Cell Volume (HCT\nOccareutated (uct) 45.2 % 40-50\nRBC Count\nElectrical impedence 5.10 mil/emm 45-55\nMean Cell Valume(MCV\nCalcurates # 8B.G fl 83-101\nMean Cell Hemoplobin( MCH) 22.7 pe 27-33\nCascuisted\nMean Cell Hb Conc(MCHC) 28.7 nN 32-38\nCaiculiated ;\nTotal WBC Count 9200 cells/cumm 4000-11000\nFlow Cytocetry\nDifferential % WBCs count\nNeutrophils : 66 % 50-70\nFOM/ Micresecpy\nLymphocytes 24° % 20-40\nFCH/ Microscopy\nC Eosinophils 4 % 1-6\ntCH/ HKicroscepy\nMonocytes 06 % 0-10\nFoH/ Microscopy\nAbsolute Differential Count :\nAbsolute Neutrophils Count 6072 f/eumm 2000-7000\nAbsolute Lymphocytes Count 2208 /cumm 1000-3000\nAbsolute Monocytes Caunt 552 /coumm 200-1000\nAbsolute Eosinophils Count, AEC 368 /cumm 20-500\nPlatelet Count 398000 cells/eumm |\nElectrinal lepedence\noa ———_- END OF REPORT ———_—-\nOF ARS or Map sean.\n“ole . a ET oe\nBoe ; wee a 2 ~ an ¢ an fhe, Dr. Swapnil V.Sirmukaddam\n& ec nO eer a eer yes\n[+ {is -Trese are only Laboratory & Technical Taek Renita So vc: 2 Toe tony Taal tesuft should be interpevted in corrsiation with cinical $9009 \"2\nvate Une resutt should be conferned wit fresh specimens /¢ heed + re ANS Sean ca NAD ih eke mn Poem\n13",
+  "raw_text_preview": "Ay i Test Report\nFaun SHREE DIAGNOSTIC “K.P. Patil Building,\nQues, \" a Near Shivaji Maharaj Statue,\nfram CLINIGALLABORATORY, - Mohopada, Tal. Khalapur,\ngore ereeney — Dist. Ralgad - 410 222.\n24 HOURS PATHOLOGY: SERVICER FRIGITACCRAY, MOBI7937 2696387\n$2 HOURS PATUOCOGY SER Moby193 72619630450\nratien og —S bac\noO Tt\" Geniler : a i ee | —|\nESytypoctor : p, Ram sender 3 Male Report Print Time; 27-Apr-2025 10:18 AM\nCet — es — one!\neee eee ee\n7, Complete Bland coun =]\neu mn |\n| om | Unit\nBLOOD COUNT (CRC) ~\nHemoglobin\nPhotemetry 11.6 qin/dl 13.0-17.0\n~ Packed Cell Volume (HCT\nOccareutated (uct) 45.2 % 40-50\nRBC Count\nElectrical impedence 5.10 mil/emm 45-55\nMean Cell Valume(MCV\nCalcurates # 8B.G fl 83-101\nMean Cell Hemoplobin( MCH) 22.7 pe 27-33\nCascuisted\nMean Cell Hb Conc(MCHC) 28.7 nN 32-38\nC...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "BLOOD COUNT (CRC) ~"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "BLOOD COUNT (CRC) ~"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

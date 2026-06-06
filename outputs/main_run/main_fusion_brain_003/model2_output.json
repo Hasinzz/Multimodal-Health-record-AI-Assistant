@@ -1,0 +1,41 @@
+{
+  "case_id": "main_fusion_brain_003",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\306526498_1021269495207835_4895677967766007860_n.jpg",
+  "raw_text": ". 3\n. . . . ee\nhing tin uo Botts ee .\nHK | O Ding ky ché do an | Tinh hinh Giuéng - Bénh [gs Bao cdo.» |) treet .\n2 Ké dan thudc : : es ‘ : a\ni CThéng tin ddn BR rag tn: 461.996\n‘| Khoa kh [120 Khoa i Khoa Kham bénh=Thamde chen - wip Hetén BN PHAN NGOC AN NHIEN [9]\nNoay ké don [MEvo9/2022 +] sowirk [2200201088 | Giaitinh [Na tusi J 2\n: Fs loan tigéu hoa ‘ : ; a Pho é i a\nChén dodn Hoan teu hoa . , * Bia chi ya Pha Duong Huyén Phu Vang TT-\n{ Ma Bs [sinood Tén BS |Ngé Buc SF Quay thuée {iuna thudc s6 1 (NHI) ~]\nnn eee ci eee tects ee crt ine cette i ge ete ee ee\nTén thudc | DVT | SL | Don_Ga, LThanh_Tién | Céch ding {\n} DOMPENIGH OMG(Domperidon) AIAIMNIBN (eit Mrs ses] 41,725 ngay udng 1 ng cha 2\nGuna Bio gai 207 S17 080 ngay udng 2 gdi cha 2 [x |\nLUXHEA : lo | 4 | 273,191| 273,191 |séng uéng 5 mi x\nof ee\nLai dan: Su dung thude thea dung chi dinh cua bac si\n_ . <?\na S33 2 P senate © |\nLou Mea Inw Tim ph Eu _ié arin ms Test\neee ere rE Se\n| [ao\nna ere SC\n. a attr netaan —taratien yee talinesrengir panes trae Pam\ncana cece i j\né\n: .",
+  "raw_text_preview": ". 3\n. . . . ee\nhing tin uo Botts ee .\nHK | O Ding ky ché do an | Tinh hinh Giuéng - Bénh [gs Bao cdo.» |) treet .\n2 Ké dan thudc : : es ‘ : a\ni CThéng tin ddn BR rag tn: 461.996\n‘| Khoa kh [120 Khoa i Khoa Kham bénh=Thamde chen - wip Hetén BN PHAN NGOC AN NHIEN [9]\nNoay ké don [MEvo9/2022 +] sowirk [2200201088 | Giaitinh [Na tusi J 2\n: Fs loan tigéu hoa ‘ : ; a Pho é i a\nChén dodn Hoan teu hoa . , * Bia chi ya Pha Duong Huyén Phu Vang TT-\n{ Ma Bs [sinood Tén BS |Ngé Buc SF Quay thuée {iuna thudc s6 1 (NHI) ~]\nnn eee ci eee tects ee crt ine cette i ge ete ee ee\nTén thudc | DVT | SL | Don_Ga, LThanh_Tién | Céch ding {\n} DOMPENIGH OMG(Domperidon) AIAIMNIBN (eit Mrs ses] 41,725 ngay udng 1 ng cha 2\nGuna Bio gai 207 S17 080 ngay udng 2 gdi cha 2 [x |\nLUXHEA : lo | 4 | 273,191| 273,191 |séng uén...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Chén dodn Hoan teu hoa . , * Bia chi ya Pha Duong Huyén Phu Vang TT-"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "{ Ma Bs [sinood Tén BS |Ngé Buc SF Quay thuée {iuna thudc s6 1 (NHI) ~]"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "} DOMPENIGH OMG(Domperidon) AIAIMNIBN (eit Mrs ses] 41,725 ngay udng 1 ng cha 2"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Chén dodn Hoan teu hoa . , * Bia chi ya Pha Duong Huyén Phu Vang TT-"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "{ Ma Bs [sinood Tén BS |Ngé Buc SF Quay thuée {iuna thudc s6 1 (NHI) ~]"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "} DOMPENIGH OMG(Domperidon) AIAIMNIBN (eit Mrs ses] 41,725 ngay udng 1 ng cha 2"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "3 medication or dosage-related line(s) were detected."
+}

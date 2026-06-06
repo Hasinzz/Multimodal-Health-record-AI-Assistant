@@ -1,0 +1,61 @@
+[Startup] For live GPU output, use: conda run --no-capture-output -n thesis_gpu python -m src.model1.train_xray ...
+[Data] Indexed 112120 image files under C:\Users\T2520824\thesis_multimodal_ai\data\images\xray
+[Data] Metadata columns detected: Image Index, Finding Labels
+[Data] Valid samples found: 112120
+[Data] Missing images skipped: 0
+[Data] Max samples applied: 10000
+[Data] Training samples: 8000
+[Data] Validation samples: 2000
+[Data] Class names: Atelectasis, Cardiomegaly, Effusion, Infiltration, Mass, Nodule, Pneumonia, Pneumothorax, Consolidation, Edema, Emphysema, Fibrosis, Pleural_Thickening, Hernia
+[Device] Using cuda
+[AMP] Enabled
+[Loss] BCEWithLogitsLoss pos_weight prepared from training labels
+[Train] Epoch 1/5
+  Batch   25/125 | loss=1.2550
+  Batch   50/125 | loss=1.2625
+  Batch   75/125 | loss=1.2851
+  Batch  100/125 | loss=1.3050
+  Batch  125/125 | loss=1.3015
+[Validation] Epoch 1/5 | loss=1.3008 | macro_auroc=0.5892 | micro_auroc=0.5483 | macro_f1=0.1113 | micro_f1=0.1102 | macro_precision=0.0673 | macro_recall=0.6694
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_10k.pt using macro_auroc=0.5892
+[Train] Epoch 2/5
+  Batch   25/125 | loss=1.2806
+  Batch   50/125 | loss=1.2644
+  Batch   75/125 | loss=1.2520
+  Batch  100/125 | loss=1.2662
+  Batch  125/125 | loss=1.2590
+[Validation] Epoch 2/5 | loss=1.2685 | macro_auroc=0.6268 | micro_auroc=0.6257 | macro_f1=0.1204 | micro_f1=0.1275 | macro_precision=0.0717 | macro_recall=0.6644
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_10k.pt using macro_auroc=0.6268
+[Train] Epoch 3/5
+  Batch   25/125 | loss=1.2312
+  Batch   50/125 | loss=1.2423
+  Batch   75/125 | loss=1.2479
+  Batch  100/125 | loss=1.2383
+  Batch  125/125 | loss=1.2370
+[Validation] Epoch 3/5 | loss=1.2460 | macro_auroc=0.6452 | micro_auroc=0.6405 | macro_f1=0.1241 | micro_f1=0.1362 | macro_precision=0.0756 | macro_recall=0.6148
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_10k.pt using macro_auroc=0.6452
+[Train] Epoch 4/5
+  Batch   25/125 | loss=1.1903
+  Batch   50/125 | loss=1.1938
+  Batch   75/125 | loss=1.2134
+  Batch  100/125 | loss=1.2164
+  Batch  125/125 | loss=1.2235
+[Validation] Epoch 4/5 | loss=1.2727 | macro_auroc=0.6457 | micro_auroc=0.6525 | macro_f1=0.1260 | micro_f1=0.1337 | macro_precision=0.0756 | macro_recall=0.6708
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_10k.pt using macro_auroc=0.6457
+[Train] Epoch 5/5
+  Batch   25/125 | loss=1.2167
+  Batch   50/125 | loss=1.1795
+  Batch   75/125 | loss=1.1913
+  Batch  100/125 | loss=1.1935
+  Batch  125/125 | loss=1.2004
+[Validation] Epoch 5/5 | loss=1.2742 | macro_auroc=0.6534 | micro_auroc=0.6651 | macro_f1=0.1281 | micro_f1=0.1408 | macro_precision=0.0781 | macro_recall=0.5996
+[Checkpoint] Saved best model to checkpoints\model1\xray_best_model_gpu_10k.pt using macro_auroc=0.6534
+[Output] Training history saved to outputs\training\xray_gpu_10k\xray_training_history.csv
+[Output] Metrics JSON saved to outputs\training\xray_gpu_10k\xray_metrics.json
+[Output] AUROC table saved to outputs\training\xray_gpu_10k\xray_auc_table.csv
+[Output] F1 table saved to outputs\training\xray_gpu_10k\xray_f1_table.csv
+[Output] Threshold table saved to outputs\training\xray_gpu_10k\xray_threshold_table.csv
+[Output] Loss curve saved to outputs\training\xray_gpu_10k\xray_loss_curve.png
+[Output] Macro AUROC curve saved to outputs\training\xray_gpu_10k\xray_macro_auc_curve.png
+[Output] Macro F1 curve saved to outputs\training\xray_gpu_10k\xray_macro_f1_curve.png
+[Done] Chest X-ray training finished. Best score: macro_auroc=0.6534 at epoch 5

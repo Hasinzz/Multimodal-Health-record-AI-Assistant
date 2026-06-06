@@ -1,0 +1,15 @@
+{
+  "case_id": "smoke_prescription_001",
+  "file": "data/documents/prescriptions/archive_2_prescription_pages/1.jpg",
+  "raw_text": "Dr B. Who\nFarmstreet 12\nKirkville\ntel. 3876\nR/ date | wav 1994\nDiyowin ONT ny\nG&ttch de wot\nSot dd 4 bMet\nMs/Mr Patent 30\naddress;\nage: Ayo years",
+  "raw_text_preview": "Dr B. Who\nFarmstreet 12\nKirkville\ntel. 3876\nR/ date | wav 1994\nDiyowin ONT ny\nG&ttch de wot\nSot dd 4 bMet\nMs/Mr Patent 30\naddress;\nage: Ayo years",
+  "entities": [],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [],
+    "clinical_keywords": []
+  },
+  "patient_summary": "The document was processed, but no strong structured clinical entities were detected."
+}

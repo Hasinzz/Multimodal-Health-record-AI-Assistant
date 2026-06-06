@@ -1,0 +1,98 @@
+{
+  "case_id": "main_lab_008",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0055868_F-DOCUMENTAMRITPAL_250423_1639@G.pdf_page_19.png",
+  "raw_text": "Dy WAVES DIAGNOSTIC LARORATORY ; a\nns; HAVEN DIAGNOSTIC LABORATORY: / <2 >\nFULLY AUTOMATED COMPUTERISED LAB.‘ CFF\noo oom oO '\nCor ~—s = DEEPAK SHARMA “a, ; Date 731 PM\nSerial No 40185 . i — ate =: 21/04/2025 06:01 PM\n— BIOCHEM B\n’ Test J\na o_o\nTandon\neres ee\nBlood Sugar Random 93.0 ‘ mg/dl 80-150\nHAEMOGRAM ON CELL COUNTER wy,\nrr SSS\nHaemo “he .\nei] / ASE Co co\nes i 4.30 milvemm | 4.5-6.5\no oy 35.8 L % 36 - 52\nsO 82.7 ; fL * 80.0 - 96.0\nMCH 26.6.0 poms ss @7.0 - 32.0\nMCHC 32. — % 315-345\nWBC Count ’ *.\nTotal WBC count \" 47100H /emm “4000 - 10000\n. ee are\nDifferential count y :\nNeutrophil 78.0H % 40-70 a\nLymphocytes 23,0\" % 20-45 .\n, Eosinophils 1.0 % 00 - 06\nMonocytes i 1.0 % 00 - 08\n. Platelet Count 197000* /cmm *150000 - 450000\nPeripheral Smear Examination ,\n- Interpretation :\nThe Te! a\" V TOE J ——)\nhence as per Li fi sf oO\nC ]U_Jdifferential leucocyte counts are reported as absolute number of each cell type per unit\nvolume of blood.\nSERUM ELECTROLYTES\nSerum Sodium 139.6 Meq/L 135 - 155\nby ISE (JON SELECTIVE ELECTRODE) .\nCalcium lonized 4.62 mg/dL 4.6-5.3\nby ISE (ION SELECTIVE ELECTRODE) : ° : ;\nSerum Potassium 3.79 Meq/L 3.5 - 5.6 :\nby ISE (iON SELECTIVE ELECTRODE) 4 :\nSerum Chlorides 102.8 Meq/L »* 99-108 ‘\nby ISE (JON SELECTIVE ELECTRODE) ‘ . ; oe\nInstrument Used ECS-2000 SM Diagnostic .\n. a q ~\nRENAL FUNCTION TEST ‘ °\nBlood Urea 37 . mg/dl 10 to 40\nby SPECTROPHOTOMETRY . vo ,\ne\nKindly Corelate Clinically “Routine Service 24hrs\nhe Diagnoses. Kindly Corelate .\ntc fe Only Professional Opinion, Not The Oicerepaney Pleaso Feel ToContact Us.",
+  "raw_text_preview": "Dy WAVES DIAGNOSTIC LARORATORY ; a\nns; HAVEN DIAGNOSTIC LABORATORY: / <2 >\nFULLY AUTOMATED COMPUTERISED LAB.‘ CFF\noo oom oO '\nCor ~—s = DEEPAK SHARMA “a, ; Date 731 PM\nSerial No 40185 . i — ate =: 21/04/2025 06:01 PM\n— BIOCHEM B\n’ Test J\na o_o\nTandon\neres ee\nBlood Sugar Random 93.0 ‘ mg/dl 80-150\nHAEMOGRAM ON CELL COUNTER wy,\nrr SSS\nHaemo “he .\nei] / ASE Co co\nes i 4.30 milvemm | 4.5-6.5\no oy 35.8 L % 36 - 52\nsO 82.7 ; fL * 80.0 - 96.0\nMCH 26.6.0 poms ss @7.0 - 32.0\nMCHC 32. — % 315-345\nWBC Count ’ *.\nTotal WBC count \" 47100H /emm “4000 - 10000\n. ee are\nDifferential count y :\nNeutrophil 78.0H % 40-70 a\nLymphocytes 23,0\" % 20-45 .\n, Eosinophils 1.0 % 00 - 06\nMonocytes i 1.0 % 00 - 08\n. Platelet Count 197000* /cmm *150000 - 450000\nPeripheral Smear Examination ,\n- Interpretation :\nThe Te! a\" ...",
+  "entities": [
+    {
+      "type": "DATE",
+      "text": "21/04/2025"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Blood Sugar Random 93.0 ‘ mg/dl 80-150"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "volume of blood."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Serum Sodium 139.6 Meq/L 135 - 155"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "by ISE (JON SELECTIVE ELECTRODE) ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Calcium lonized 4.62 mg/dL 4.6-5.3"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "by ISE (ION SELECTIVE ELECTRODE) : ° : ;"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "by ISE (iON SELECTIVE ELECTRODE) 4 :"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "by ISE (JON SELECTIVE ELECTRODE) ‘ . ; oe"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Blood Urea 37 . mg/dl 10 to 40"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [
+      {
+        "type": "DATE",
+        "text": "21/04/2025"
+      }
+    ],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Blood Sugar Random 93.0 ‘ mg/dl 80-150"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "volume of blood."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Serum Sodium 139.6 Meq/L 135 - 155"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "by ISE (JON SELECTIVE ELECTRODE) ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Calcium lonized 4.62 mg/dL 4.6-5.3"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "by ISE (ION SELECTIVE ELECTRODE) : ° : ;"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "by ISE (iON SELECTIVE ELECTRODE) 4 :"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "by ISE (JON SELECTIVE ELECTRODE) ‘ . ; oe"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Blood Urea 37 . mg/dl 10 to 40"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "9 medication or dosage-related line(s) were detected."
+}

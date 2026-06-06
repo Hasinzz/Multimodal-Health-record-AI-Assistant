@@ -1,0 +1,48 @@
+{
+  "case_id": "main_lab_006",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\GUR-0425-PA-0056422_CASHLESS CLAIM FILE GAURAB PATHAK_0001_compressed_27-04-2025_0804-45_PM@E.pdf_page_37.png",
+  "raw_text": "\\ spiro lalo\n[Patient MA GAURAVPATHAK_—‘{Collected T24/Apr/2025 06:23M CS\nAge/Gender :39YOMOD/M | Received 2 24/Apr/2025 06:23PM\nVisit {1D : SPIL917 Reported ¢ 24/Apr/2025 06:51PM\nUHID/No | Status + Final Report\nRef, BY : Dr.DR KUNAL | Client Code 2001\n[Panel Name : MEOLIX HOSPITAL Barcode No + 10001965 _\nDEPARTMENT OF SEROLOGY\nTestNane Result Unt Bo. Ref Range\n“SCRUB TYPHUS -IghiIgG/gA.\nSample Type : SERUM\nScrud Typhus igh! NEGATIVE NEGATIVE ~POSITIVE\nRAPD DIMUNOCHROMATOGRAPIIC ASSAY\nScrub Typhus IgG NEGATIVE NEGATIVE-POSITVE\nRAPID DMIMUNOCHROMATOGRAPEOC ASSAY\noe End Of Report ***\n. f= |\nmages ep a\na Lee br. Pankay Sharma\na (Microbiologie)\nNOTE: This di\nAll reports ve conired. encaty for edicoega! purpese © Ee) 0124-45 70082\nV the resu@t are alarming or wnerparad BB customercarngsprolad.in\n1 You are kindly requested tc\na, Wistwng you @ 8p4ed) 9 2.",
+  "raw_text_preview": "\\ spiro lalo\n[Patient MA GAURAVPATHAK_—‘{Collected T24/Apr/2025 06:23M CS\nAge/Gender :39YOMOD/M | Received 2 24/Apr/2025 06:23PM\nVisit {1D : SPIL917 Reported ¢ 24/Apr/2025 06:51PM\nUHID/No | Status + Final Report\nRef, BY : Dr.DR KUNAL | Client Code 2001\n[Panel Name : MEOLIX HOSPITAL Barcode No + 10001965 _\nDEPARTMENT OF SEROLOGY\nTestNane Result Unt Bo. Ref Range\n“SCRUB TYPHUS -IghiIgG/gA.\nSample Type : SERUM\nScrud Typhus igh! NEGATIVE NEGATIVE ~POSITIVE\nRAPD DIMUNOCHROMATOGRAPIIC ASSAY\nScrub Typhus IgG NEGATIVE NEGATIVE-POSITVE\nRAPID DMIMUNOCHROMATOGRAPEOC ASSAY\noe End Of Report ***\n. f= |\nmages ep a\na Lee br. Pankay Sharma\na (Microbiologie)\nNOTE: This di\nAll reports ve conired. encaty for edicoega! purpese © Ee) 0124-45 70082\nV the resu@t are alarming or wnerparad BB customercarngsprolad.i...",
+  "entities": [
+    {
+      "type": "PATIENT_INFO",
+      "field": "name",
+      "text": "MEOLIX HOSPITAL Barcode No"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Age/Gender :39YOMOD/M | Received 2 24/Apr/2025 06:23PM"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Ref, BY : Dr.DR KUNAL | Client Code 2001"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "[Panel Name : MEOLIX HOSPITAL Barcode No + 10001965 _"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {
+      "name": "MEOLIX HOSPITAL Barcode No"
+    },
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Age/Gender :39YOMOD/M | Received 2 24/Apr/2025 06:23PM"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Ref, BY : Dr.DR KUNAL | Client Code 2001"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "[Panel Name : MEOLIX HOSPITAL Barcode No + 10001965 _"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "Patient information found: name: MEOLIX HOSPITAL Barcode No. 3 medication or dosage-related line(s) were detected."
+}

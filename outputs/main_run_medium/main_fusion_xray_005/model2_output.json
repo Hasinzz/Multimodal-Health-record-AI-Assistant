@@ -1,0 +1,65 @@
+{
+  "case_id": "main_fusion_xray_005",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\prescriptions\\archive_3_prescription_dataset\\screencapture\\306866346_610229534090354_5633302826088586344_n.jpg",
+  "raw_text": "? e ° ‘\nat Sener oe nn ct eet rate ae op ann Eat netnedishesoresnaneion ete hee\nThéng tin rs er .\n: we x ott : - oa . ao 7 :\n) BHXH LO ding ky ché 46 an Res Tinh hinh Giang - Bénh [Bs Bdo cdo ~ | LQ) those ; .\n‘7 ThGng tin ddn BR tg t8n: 367,981\ntrom Pn | Khoa wx “enh-Thimabehien Honen | : [o]\nKhoa iP.kh [120 Khoa Pk [Khoa Kham bénh mm déchiicn < Hgtén BN |TRAN NGUYEN PHUGNG NHI\nam ham 4 ul iF [PE ale fats io\nNgay ké dn [HBo9r2022 =] sévupK [2200200905 we Gigi tinh [na tua | 3\n\" : H | ee we\n« . Miém mii hongViém phé quan/Thigu mau ; hi ve ie Thi trdn Phong Dién Huyén Phong Dién\nChan dodn ; vile te ws Dia chi TT- Hud\nMa Bs [Snood _Tén BS |Ngé Ouc S¥ : “ me '* Quay thude [Nha thudc sd 1 (NHI) 7\nTén thudc i BVT | SL | Ban Gis! Thanh_Ten_{ Cach dung i\nbee sl | | 9,630] 48,150 |[ngay uéng 1 gai cha 2 [x]\nSovepred Smg ( Vién shi }(Prednisolon Smg) | vi. 10 4,399 | 43,990 (ngay udng 2 vidn cha 2 [x]\nSeal A lida tinea lncaAlls-s Ne Rddal {ie EO\nCetimed 10mg(Cetirzin dihydroclorid) \\ Vién 5 4,444 | 22,220 Ingay udng 1 vién cha 2 [x]\nPret neared anthem tet, 22220 Ingay Un,\nTOSSEQUE(Bromhexn 160mg) joa) a | aisasol _ 114,450 Ingay u6ng 15 mi cha 2 [x]\nIZYZIRON chal jaf J3ea7t) 139.171 [sing udng 2m x\nft | ) [ Q or {x\na ce ee a | a 2 ae ee\nte\nLoy dan: { Su dung thude theo dung chi dinh cua bac si\n-. we\n| 3 | 2 Pol saan| © |\n‘Lou Xa In Tom pheéu férrap ma Theat\ni i, is * al ae\nSL er i pe\nape nner ——-t arama BAPE CA ra\nV4 5 \\_\nf \\\n! a4\nSS - oo . ee eee",
+  "raw_text_preview": "? e ° ‘\nat Sener oe nn ct eet rate ae op ann Eat netnedishesoresnaneion ete hee\nThéng tin rs er .\n: we x ott : - oa . ao 7 :\n) BHXH LO ding ky ché 46 an Res Tinh hinh Giang - Bénh [Bs Bdo cdo ~ | LQ) those ; .\n‘7 ThGng tin ddn BR tg t8n: 367,981\ntrom Pn | Khoa wx “enh-Thimabehien Honen | : [o]\nKhoa iP.kh [120 Khoa Pk [Khoa Kham bénh mm déchiicn < Hgtén BN |TRAN NGUYEN PHUGNG NHI\nam ham 4 ul iF [PE ale fats io\nNgay ké dn [HBo9r2022 =] sévupK [2200200905 we Gigi tinh [na tua | 3\n\" : H | ee we\n« . Miém mii hongViém phé quan/Thigu mau ; hi ve ie Thi trdn Phong Dién Huyén Phong Dién\nChan dodn ; vile te ws Dia chi TT- Hud\nMa Bs [Snood _Tén BS |Ngé Ouc S¥ : “ me '* Quay thude [Nha thudc sd 1 (NHI) 7\nTén thudc i BVT | SL | Ban Gis! Thanh_Ten_{ Cach dung i\nbee sl | | 9,630] 48,150 |[ngay uéng 1 gai...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": ") BHXH LO ding ky ché 46 an Res Tinh hinh Giang - Bénh [Bs Bdo cdo ~ | LQ) those ; ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Chan dodn ; vile te ws Dia chi TT- Hud"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Ma Bs [Snood _Tén BS |Ngé Ouc S¥ : “ me '* Quay thude [Nha thudc sd 1 (NHI) 7"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Sovepred Smg ( Vién shi }(Prednisolon Smg) | vi. 10 4,399 | 43,990 (ngay udng 2 vidn cha 2 [x]"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Cetimed 10mg(Cetirzin dihydroclorid) \\ Vién 5 4,444 | 22,220 Ingay udng 1 vién cha 2 [x]"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "TOSSEQUE(Bromhexn 160mg) joa) a | aisasol _ 114,450 Ingay u6ng 15 mi cha 2 [x]"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": ") BHXH LO ding ky ché 46 an Res Tinh hinh Giang - Bénh [Bs Bdo cdo ~ | LQ) those ; ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Chan dodn ; vile te ws Dia chi TT- Hud"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Ma Bs [Snood _Tén BS |Ngé Ouc S¥ : “ me '* Quay thude [Nha thudc sd 1 (NHI) 7"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Sovepred Smg ( Vién shi }(Prednisolon Smg) | vi. 10 4,399 | 43,990 (ngay udng 2 vidn cha 2 [x]"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Cetimed 10mg(Cetirzin dihydroclorid) \\ Vién 5 4,444 | 22,220 Ingay udng 1 vién cha 2 [x]"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "TOSSEQUE(Bromhexn 160mg) joa) a | aisasol _ 114,450 Ingay u6ng 15 mi cha 2 [x]"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "6 medication or dosage-related line(s) were detected."
+}

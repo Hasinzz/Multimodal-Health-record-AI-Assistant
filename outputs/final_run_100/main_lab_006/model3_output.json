@@ -1,0 +1,40 @@
+{
+  "case_id": "main_lab_006",
+  "image_findings": null,
+  "text_findings": "Patient information found: name: MEOLIX HOSPITAL Barcode No. 3 medication or dosage-related line(s) were detected.",
+  "retrieved_evidence": [
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 1,
+      "score": 0.15452844965516824,
+      "text": "l to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt",
+      "chunk_id": 0,
+      "score": 0.14964744234899774,
+      "text": "Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ambiguous medication names. Medication safety requires checking for contraindications, duplicate therapy, allergies, and age-appropriate dosing. Automated prescription OCR should support documentation and review, not replace pharmacist or physician verification."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt",
+      "chunk_id": 0,
+      "score": 0.14614450651099245,
+      "text": "Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model outputs and should not be treated as final diagnosis without radiologist confirmation. OCR-extracted prescriptions and laboratory reports may contain recognition errors. Medication names, doses, and lab values should be checked manually before clinical use. Multimodal health record summarization combines image-based evidence, document-based evidence, and knowledge-base retrieval to produce a more complete patient overview."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt",
+      "chunk_id": 0,
+      "score": 0.1127284108529663,
+      "text": "Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, anemia, inflammation, liver injury, kidney dysfunction, or metabolic issues, depending on the pattern. Single values should not be over-interpreted without the full report and clinical context. OCR may misread digits, units, and abbreviations, so manual verification is required before any clinical decision."
+    },
+    {
+      "source": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt",
+      "chunk_id": 0,
+      "score": 0.07951796368664368,
+      "text": "Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. Effusion may indicate pleural fluid and should be correlated with cardiopulmonary findings. Cardiomegaly can be associated with cardiac disease, fluid overload, or projectional factors. Automated X-ray outputs are supportive findings and are not a final diagnosis."
+    }
+  ],
+  "final_summary": "Case ID: main_lab_006\n\nImage findings: No image input was provided.\n\nDocument findings: Patient information found: name: MEOLIX HOSPITAL Barcode No. 3 medication or dosage-related line(s) were detected.\n\nRetrieved evidence: Evidence 1: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.155. Relevant note: l to produce a more complete patient overview....\nEvidence 2: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\prescription_safety_notes.txt, score=0.150. Relevant note: Prescriptions should be checked carefully for patient identity, drug name, dose, frequency, and duration. Common prescription abbreviations include tablet, capsule, syrup, injection, mg, ml, daily, bd, tds, and od. Handwritten or scanned prescriptions can contain OCR errors, missing characters, and ...\nEvidence 3: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\basic_medical_notes.txt, score=0.146. Relevant note: Chest X-ray findings such as infiltration, effusion, consolidation, and cardiomegaly may require clinical correlation with symptoms, laboratory results, and physician evaluation. Brain MRI tumor classification outputs such as glioma, meningioma, pituitary tumor, and no tumor are probabilistic model ...\nEvidence 4: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\lab_report_interpretation_notes.txt, score=0.113. Relevant note: Laboratory reports should be interpreted using reference ranges, symptoms, prior results, and the ordering context. Hemoglobin, WBC, RBC, platelet count, glucose, creatinine, bilirubin, AST, ALT, CRP, and ESR are common values that may appear in reports. Abnormal lab values can indicate infection, a...\nEvidence 5: source=C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\kb\\chest_xray_findings_notes.txt, score=0.080. Relevant note: Chest X-ray findings should be interpreted with clinical symptoms, history, and laboratory data. Infiltration may reflect infection, inflammation, or other lung parenchymal abnormality. Consolidation can suggest pneumonia, atelectatic change, or another focal air-space process depending on context. ...",
+  "doctor_feedback": "This AI-generated output should be reviewed by a qualified clinician. OCR-extracted document findings may contain recognition errors, especially with scanned or handwritten reports. Retrieved knowledge-base evidence was used to provide additional context.",
+  "fused_query": "Document findings:\nPatient information found: name: MEOLIX HOSPITAL Barcode No. 3 medication or dosage-related line(s) were detected.\n\\ spiro lalo\n[Patient MA GAURAVPATHAK_—‘{Collected T24/Apr/2025 06:23M CS\nAge/Gender :39YOMOD/M | Received 2 24/Apr/2025 06:23PM\nVisit {1D : SPIL917 Reported ¢ 24/Apr/2025 06:51PM\nUHID/No | Status + Final Report\nRef, BY : Dr.DR KUNAL | Client Code 2001\n[Panel Name : MEOLIX HOSPITAL Barcode No + 10001965 _\nDEPARTMENT OF SEROLOGY\nTestNane Result Unt Bo. Ref Range\n“SCRUB TYPHUS -IghiIgG/gA.\nSample Type : SERUM\nScrud Typhus igh! NEGATIVE NEGATIVE ~POSITIVE\nRAPD DIMUNOCHROMATOGRAPIIC ASSAY\nScrub Typhus IgG NEGATIVE NEGATIVE-POSITVE\nRAPID DMIMUNOCHROMATOGRAPEOC ASSAY\noe End Of Report ***\n. f= |\nmages ep a\na Lee br. Pankay Sharma\na (Microbiologie)\nNOTE: This di\nAll reports ve conired. encaty for edicoega! purpese © Ee) 0124-45 70082\nV the resu@t are alarming or wnerparad BB customercarngsprolad.i...\n{'type': 'PATIENT_INFO', 'field': 'name', 'text': 'MEOLIX HOSPITAL Barcode No'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'Age/Gender :39YOMOD/M | Received 2 24/Apr/2025 06:23PM'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': 'Ref, BY : Dr.DR KUNAL | Client Code 2001'}\n{'type': 'MEDICATION_OR_DOSAGE_LINE', 'text': '[Panel Name : MEOLIX HOSPITAL Barcode No + 10001965 _'}"
+}

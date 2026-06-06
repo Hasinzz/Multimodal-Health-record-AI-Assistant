@@ -1,0 +1,49 @@
+{
+  "case_id": "main_lab_011",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\BLR-0425-PA-0041313_F-sudhirpreauth_250424_1309@G.pdf_page_14.png",
+  "raw_text": "saline Jupiter Hospital\n; Patient First\nHAEMATOLOGY Ce a, a |\n| om | a=) = eg ee ee |\na eI | |———\nC_] : Whole Blood Received On Cd | 01:16:51 PM\nReferred By: Dr. Dushyant Wamanrao Khedikar - Reg No. Reported On Cy / 01:21:55 PM\n| ee | MR No. 3289551\n: Bill No. : O8B-2025-000348\nInvestigations Methods Result Unit Biological Ref, Interval\nComplete Blood Count .\nHemoglobin Colorimetric 14.1 g/dl 13.00 - 18.00\nRed Cell Count Light Scattering 4,95 1046/ul 4,50 - 6.50\nHematocrit . Light Scattering 44.7 % 40.00 - 54.00 “\n. MCV Calculated 90.3 f 76.00 - 96.00\nMCH Calculated 28.6 pg 27.00 - 32.00\nMCHC Calculated 31.6 g/dl 30,00 - 35.00\nRDW - Calculated 13.9 ” 11.50 - 14.50\nWBC Count Light Scattering 9.44 1043/ul 4.00 - 11.00\n; Platelet Count Light Scattering 183 10*3/ul 150.00 - 450.00\nDiff. WBC Count , L: ~\nNeutrophils Light Scattezing 67 % 40.00 - 70.00\nLymphocytes Light Scattering 26 % 15.00 - 40.00\nEosinophils Light Scattering 02 % 2.00 - 6,00\nMonocytes Light Scattering 05 % 2.00 - 8.00\nBasophils Light Scattering 00 % 0.00 - 2.00 “\nAbsolute Neutrophils Calculated 6.32 1043/ul 1.60 -7.70\nAbsolute Lymphocytes Calculated 2.45 1043/ul 0.60 - 4.40\nAbsolute Eosinophils Calculated 0.19 1043/ul 0.00 - 0.45\nAbsolute Monocytes Calculated 0.47 Ou 0.08 - 0.88\nPeripheral Smear\nRBC Menual Normocytic Normocytic\nNormochromic Normochromic\nWBC Manual Within Normal Limits Within Normal Limits\nPlatelet Manual Adequate Adequate\nChecked By Dr. Sonam Joshi\nRakhce Balrajsingh Chau Consultant Pathologist\nae Partial Reproduction of Report not permitted, This report relates to sample received by the Inboratory.\n: Printed By: AUTOMATED | a | ee | |\nJupiter Hospital -\nNear Prathamesh Park, Baner, Pimple Nilkh\nRoad, Pune, Maharashtra 411045 :\nWebsite : www jupiterhospital.com\n\"A division of Jupiter Lifeline Hospitals Ltd.”\n; Round the clock",
+  "raw_text_preview": "saline Jupiter Hospital\n; Patient First\nHAEMATOLOGY Ce a, a |\n| om | a=) = eg ee ee |\na eI | |———\nC_] : Whole Blood Received On Cd | 01:16:51 PM\nReferred By: Dr. Dushyant Wamanrao Khedikar - Reg No. Reported On Cy / 01:21:55 PM\n| ee | MR No. 3289551\n: Bill No. : O8B-2025-000348\nInvestigations Methods Result Unit Biological Ref, Interval\nComplete Blood Count .\nHemoglobin Colorimetric 14.1 g/dl 13.00 - 18.00\nRed Cell Count Light Scattering 4,95 1046/ul 4,50 - 6.50\nHematocrit . Light Scattering 44.7 % 40.00 - 54.00 “\n. MCV Calculated 90.3 f 76.00 - 96.00\nMCH Calculated 28.6 pg 27.00 - 32.00\nMCHC Calculated 31.6 g/dl 30,00 - 35.00\nRDW - Calculated 13.9 ” 11.50 - 14.50\nWBC Count Light Scattering 9.44 1043/ul 4.00 - 11.00\n; Platelet Count Light Scattering 183 10*3/ul 150.00 - 450.00\nDiff. WBC Co...",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "C_] : Whole Blood Received On Cd | 01:16:51 PM"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Investigations Methods Result Unit Biological Ref, Interval"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Complete Blood Count ."
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "ae Partial Reproduction of Report not permitted, This report relates to sample received by the Inboratory."
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "C_] : Whole Blood Received On Cd | 01:16:51 PM"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Investigations Methods Result Unit Biological Ref, Interval"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Complete Blood Count ."
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "ae Partial Reproduction of Report not permitted, This report relates to sample received by the Inboratory."
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "4 medication or dosage-related line(s) were detected."
+}

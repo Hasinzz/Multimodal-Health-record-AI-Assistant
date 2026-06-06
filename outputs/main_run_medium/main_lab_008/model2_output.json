@@ -1,0 +1,48 @@
+{
+  "case_id": "main_lab_008",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\IND-0425-PA-0032901_E-H2658992802126194907ilovepdfmerged15compressed_250427_1710@E.pdf_page_90.png",
+  "raw_text": "Mark of Excellence\nBOMBAY HOSPITAL - INDORE [gN\nCEOS Ring Road,|Indore-452 010,Ph.:4771111,Extension:2156, 5] ‘4\ney Website : www.bombayhospitalindore.com\nrs RNABHA\nEe’\nDEPARTMENT OF PATHOLOGY\nSS np =| L| cee |\nam | =| | om | =|\nCossypy : Dr.Ravi Rathi Vch No. : 300537\nOrdered Loc : 02nd Floor - Recovery / Bed No : 215 Sample Collected On : | a | 7:22:24\nSample Type : EDTA Sample Reported On : | a | 10:34:09\nSample No : 25051442\nBLOOD COUNT WITHOUT INDICES\nHemoglobin : 11.80 gms/dl 13.0 - 17.0\nErythrocytes : 3.84 mill/emm 3.8-4.8\nHaemotocrit : 35.90 % 40 - 50\nLeucocytes : 7300 /cu.mm 4000 - 10000\nDIFFERENTIAL LEUCOCYTE\nCOUNT (%)\nNeutrophils : 83.00 % 40-75\nLymphocytes > 11.20 % 20 - 40\nMonocytes : §.00 % 2-10\nEosinophils : 0.70 % 1-6\nBasophils : 0.10 % 1-2\nDIFFERENTIAL LEUCOCYTE\nCOUNT (ABSOLUTE)\nNeutrophils # : 6.06 x1000/cumm 2-7\nLymphocytes # : 0.82 x1000/cumm 1-3\nMonocytes # : 0.37 x1000/cumm 0.2-1\nEosinophils # : 0.05 x1000/cumm 0.02 - 0.5\nBasophils # : 0.01 x1000/cumm 0.02 - 0.1\nPlatelets >: 0.85 lacs/cumm 15-45\nMean Platelet Volume > 11.30 fL 7.5-12.0\nComments : Anisocytosis\nPlatelet count has been verified/Corrected manually.\nMethod : CBC-Spectrophotometric / Electronic / Impedance Calculation / Microscopic Examination. Reference range from Dacies Lewis Practical Haematology 11th edition.\nSlide Review Criteria followed as per International Society for Laboratory Hematology (ISLH)\n* END OF REPORT **\nwe\nDr. Neelam Bharihoke\nM.D. (Pathology)\nPathologist\nAUTHORISED a | ——— a",
+  "raw_text_preview": "Mark of Excellence\nBOMBAY HOSPITAL - INDORE [gN\nCEOS Ring Road,|Indore-452 010,Ph.:4771111,Extension:2156, 5] ‘4\ney Website : www.bombayhospitalindore.com\nrs RNABHA\nEe’\nDEPARTMENT OF PATHOLOGY\nSS np =| L| cee |\nam | =| | om | =|\nCossypy : Dr.Ravi Rathi Vch No. : 300537\nOrdered Loc : 02nd Floor - Recovery / Bed No : 215 Sample Collected On : | a | 7:22:24\nSample Type : EDTA Sample Reported On : | a | 10:34:09\nSample No : 25051442\nBLOOD COUNT WITHOUT INDICES\nHemoglobin : 11.80 gms/dl 13.0 - 17.0\nErythrocytes : 3.84 mill/emm 3.8-4.8\nHaemotocrit : 35.90 % 40 - 50\nLeucocytes : 7300 /cu.mm 4000 - 10000\nDIFFERENTIAL LEUCOCYTE\nCOUNT (%)\nNeutrophils : 83.00 % 40-75\nLymphocytes > 11.20 % 20 - 40\nMonocytes : §.00 % 2-10\nEosinophils : 0.70 % 1-6\nBasophils : 0.10 % 1-2\nDIFFERENTIAL LEUCOCYTE\nCOUNT (ABS...",
+  "entities": [
+    {
+      "type": "LAB_VALUE",
+      "name": "Hemoglobin",
+      "value": "11.80",
+      "unit": "gms/dl",
+      "text": "Hemoglobin : 11.80 gms/dl"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "BLOOD COUNT WITHOUT INDICES"
+    },
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "Method : CBC-Spectrophotometric / Electronic / Impedance Calculation / Microscopic Examination. Reference range from Dacies Lewis Practical Haematology 11th edition."
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [
+      {
+        "type": "LAB_VALUE",
+        "name": "Hemoglobin",
+        "value": "11.80",
+        "unit": "gms/dl",
+        "text": "Hemoglobin : 11.80 gms/dl"
+      }
+    ],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "BLOOD COUNT WITHOUT INDICES"
+      },
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "Method : CBC-Spectrophotometric / Electronic / Impedance Calculation / Microscopic Examination. Reference range from Dacies Lewis Practical Haematology 11th edition."
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 lab value(s) were detected from the document. 2 medication or dosage-related line(s) were detected."
+}

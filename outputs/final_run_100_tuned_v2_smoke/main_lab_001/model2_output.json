@@ -1,0 +1,25 @@
+{
+  "case_id": "main_lab_001",
+  "file": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\documents\\lab_reports\\lbmaske\\HYD-0425-PA-0006452_D ADINARAYANA PREAUTH DOCUMENTS_27-04-2025_1212-53_PM@E.pdf_page_14.png",
+  "raw_text": "ep\n\\sJ\nPANACEA MERIDIAN\nHOSPITALS\n8 Une 06 She pet Ves tert Cpe boven}\nOS oypane\nES 0 ee C—_—<yJ | |\nrs es | —S\n[_] ox suresh REDDY. ReferredDy : [\nC REACTIVE PROTEINS (CRP) *\n_ — ~ a ——\nTest Besutt Units Biologica!Ref Range\nCRP(CREACTIVEPROTEIN) | 34.4 mg/L 0-8\na\n— EndofReport—=\nDr.P.TejaswiReddy,\nMBBS,MD-Pathology\nDOR! A YEARS ae",
+  "raw_text_preview": "ep\n\\sJ\nPANACEA MERIDIAN\nHOSPITALS\n8 Une 06 She pet Ves tert Cpe boven}\nOS oypane\nES 0 ee C—_—<yJ | |\nrs es | —S\n[_] ox suresh REDDY. ReferredDy : [\nC REACTIVE PROTEINS (CRP) *\n_ — ~ a ——\nTest Besutt Units Biologica!Ref Range\nCRP(CREACTIVEPROTEIN) | 34.4 mg/L 0-8\na\n— EndofReport—=\nDr.P.TejaswiReddy,\nMBBS,MD-Pathology\nDOR! A YEARS ae",
+  "entities": [
+    {
+      "type": "MEDICATION_OR_DOSAGE_LINE",
+      "text": "CRP(CREACTIVEPROTEIN) | 34.4 mg/L 0-8"
+    }
+  ],
+  "structured_json": {
+    "patient_info": {},
+    "dates": [],
+    "lab_values": [],
+    "medications_or_dosage_lines": [
+      {
+        "type": "MEDICATION_OR_DOSAGE_LINE",
+        "text": "CRP(CREACTIVEPROTEIN) | 34.4 mg/L 0-8"
+      }
+    ],
+    "clinical_keywords": []
+  },
+  "patient_summary": "1 medication or dosage-related line(s) were detected."
+}

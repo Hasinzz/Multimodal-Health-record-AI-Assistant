@@ -1,0 +1,112 @@
+{
+  "case_id": "main_xray_001",
+  "modality": "xray",
+  "image_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\data\\images\\xray\\images_004\\images\\00007957_000.png",
+  "top_predictions": [
+    {
+      "label": "Nodule",
+      "probability": 0.61273193359375
+    },
+    {
+      "label": "Infiltration",
+      "probability": 0.34464919567108154
+    },
+    {
+      "label": "Mass",
+      "probability": 0.30896344780921936
+    },
+    {
+      "label": "Effusion",
+      "probability": 0.29200148582458496
+    },
+    {
+      "label": "Pneumothorax",
+      "probability": 0.2861994206905365
+    }
+  ],
+  "probabilities": {
+    "Atelectasis": 0.2788240611553192,
+    "Cardiomegaly": 0.0018131324322894216,
+    "Effusion": 0.29200148582458496,
+    "Infiltration": 0.34464919567108154,
+    "Mass": 0.30896344780921936,
+    "Nodule": 0.61273193359375,
+    "Pneumonia": 0.23398078978061676,
+    "Pneumothorax": 0.2861994206905365,
+    "Consolidation": 0.14581410586833954,
+    "Edema": 0.017037561163306236,
+    "Emphysema": 0.007365138735622168,
+    "Fibrosis": 0.11011693626642227,
+    "Pleural_Thickening": 0.21864543855190277,
+    "Hernia": 0.0015354561619460583
+  },
+  "embedding_path": "C:\\Users\\T2520824\\thesis_multimodal_ai\\outputs\\final_run_100_tuned_v2\\main_xray_001\\main_xray_001_xray_embedding.npy",
+  "patient_summary_text": "No X-ray disease label exceeded the tuned decision threshold.",
+  "predicted_labels": [],
+  "thresholds_used": {
+    "Atelectasis": 0.6399999856948853,
+    "Cardiomegaly": 0.9399999976158142,
+    "Effusion": 0.6600000262260437,
+    "Infiltration": 0.5099999904632568,
+    "Mass": 0.7300000190734863,
+    "Nodule": 0.6800000071525574,
+    "Pneumonia": 0.7699999809265137,
+    "Pneumothorax": 0.8100000023841858,
+    "Consolidation": 0.699999988079071,
+    "Edema": 0.8999999761581421,
+    "Emphysema": 0.9200000166893005,
+    "Fibrosis": 0.8299999833106995,
+    "Pleural_Thickening": 0.7699999809265137,
+    "Hernia": 0.8999999761581421
+  },
+  "xray_threshold_mode": "tuned",
+  "xray_thresholds_used": {
+    "Atelectasis": 0.6399999856948853,
+    "Cardiomegaly": 0.9399999976158142,
+    "Effusion": 0.6600000262260437,
+    "Infiltration": 0.5099999904632568,
+    "Mass": 0.7300000190734863,
+    "Nodule": 0.6800000071525574,
+    "Pneumonia": 0.7699999809265137,
+    "Pneumothorax": 0.8100000023841858,
+    "Consolidation": 0.699999988079071,
+    "Edema": 0.8999999761581421,
+    "Emphysema": 0.9200000166893005,
+    "Fibrosis": 0.8299999833106995,
+    "Pleural_Thickening": 0.7699999809265137,
+    "Hernia": 0.8999999761581421
+  },
+  "xray_positive_labels": [],
+  "xray_probabilities": {
+    "Atelectasis": 0.2788240611553192,
+    "Cardiomegaly": 0.0018131324322894216,
+    "Effusion": 0.29200148582458496,
+    "Infiltration": 0.34464919567108154,
+    "Mass": 0.30896344780921936,
+    "Nodule": 0.61273193359375,
+    "Pneumonia": 0.23398078978061676,
+    "Pneumothorax": 0.2861994206905365,
+    "Consolidation": 0.14581410586833954,
+    "Edema": 0.017037561163306236,
+    "Emphysema": 0.007365138735622168,
+    "Fibrosis": 0.11011693626642227,
+    "Pleural_Thickening": 0.21864543855190277,
+    "Hernia": 0.0015354561619460583
+  },
+  "xray_binary_predictions": {
+    "Atelectasis": 0,
+    "Cardiomegaly": 0,
+    "Effusion": 0,
+    "Infiltration": 0,
+    "Mass": 0,
+    "Nodule": 0,
+    "Pneumonia": 0,
+    "Pneumothorax": 0,
+    "Consolidation": 0,
+    "Edema": 0,
+    "Emphysema": 0,
+    "Fibrosis": 0,
+    "Pleural_Thickening": 0,
+    "Hernia": 0
+  }
+}
