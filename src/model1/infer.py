@@ -1,4 +1,6 @@
 import json
+import importlib
+import warnings
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -10,6 +12,9 @@ import torch.nn as nn
 from PIL import Image
 
 from src.config import BRAIN_CLASSES, XRAY_CLASSES
+
+
+_N4_WARNING_EMITTED = False
 
 
 class TimmWithFeatures(nn.Module):
@@ -193,13 +198,60 @@ def apply_clahe_rgb(image: Image.Image) -> Image.Image:
     return Image.fromarray(enhanced_rgb)
 
 
-def preprocess_image(image_path: str, modality: str) -> torch.Tensor:
+def apply_n4_bias_correction_rgb(image: Image.Image) -> Image.Image:
+    global _N4_WARNING_EMITTED
+
+    try:
+        sitk = importlib.import_module("SimpleITK")
+    except Exception:
+        if not _N4_WARNING_EMITTED:
+            warnings.warn(
+                "SimpleITK is not installed; skipping N4 bias correction.",
+                RuntimeWarning,
+            )
+            _N4_WARNING_EMITTED = True
+        return image
+
+    image_np = np.array(image.convert("RGB"))
+    gray = cv2.cvtColor(image_np, cv2.COLOR_RGB2GRAY)
+    sitk_image = sitk.GetImageFromArray(gray.astype(np.float32))
+    mask = sitk.OtsuThreshold(sitk_image, 0, 1, 200)
+    corrector = sitk.N4BiasFieldCorrectionImageFilter()
+
+    try:
+        corrected = corrector.Execute(sitk_image, mask)
+    except Exception:
+        if not _N4_WARNING_EMITTED:
+            warnings.warn(
+                "N4 bias correction failed; continuing without correction.",
+                RuntimeWarning,
+            )
+            _N4_WARNING_EMITTED = True
+        return image
+
+    corrected_np = sitk.GetArrayFromImage(corrected)
+    corrected_np = cv2.normalize(corrected_np, None, 0, 255, cv2.NORM_MINMAX)
+    corrected_np = corrected_np.astype(np.uint8)
+    corrected_rgb = cv2.cvtColor(corrected_np, cv2.COLOR_GRAY2RGB)
+    return Image.fromarray(corrected_rgb)
+
+
+def preprocess_image(
+    image_path: str,
+    modality: str,
+    use_clahe: bool = False,
+    use_n4: bool = False,
+    image_size: int = 224,
+) -> torch.Tensor:
     image = Image.open(image_path).convert("RGB")
 
-    if modality == "xray":
+    if modality == "xray" and use_clahe:
         image = apply_clahe_rgb(image)
 
-    image = image.resize((224, 224))
+    if modality == "brain_mri" and use_n4:
+        image = apply_n4_bias_correction_rgb(image)
+
+    image = image.resize((image_size, image_size))
 
     image_np = np.array(image).astype(np.float32) / 255.0
 
@@ -255,6 +307,9 @@ def predict_image(
     case_id: str = "case_001",
     embedding_output_path: Optional[str] = None,
     thresholds_path: Optional[str] = None,
+    use_clahe: bool = False,
+    use_n4: bool = False,
+    image_size: int = 224,
 ) -> Dict:
     model, device = load_image_model(
         checkpoint_path=checkpoint_path,
@@ -262,7 +317,13 @@ def predict_image(
         backbone_name=backbone_name,
     )
 
-    tensor = preprocess_image(image_path=image_path, modality=modality)
+    tensor = preprocess_image(
+        image_path=image_path,
+        modality=modality,
+        use_clahe=use_clahe,
+        use_n4=use_n4,
+        image_size=image_size,
+    )
     tensor = tensor.to(device)
 
     with torch.no_grad():
@@ -349,4 +410,6 @@ def predict_image(
         "xray_positive_labels": xray_positive_labels if modality == "xray" else None,
         "xray_probabilities": xray_probabilities if modality == "xray" else None,
         "xray_binary_predictions": xray_binary_predictions if modality == "xray" else None,
+        "use_clahe": use_clahe,
+        "use_n4": use_n4,
     }

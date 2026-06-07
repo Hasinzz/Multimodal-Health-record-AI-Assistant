@@ -28,7 +28,7 @@ if __package__ is None or __package__ == "":
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.config import PROJECT_ROOT, XRAY_CLASSES  # noqa: E402
-from src.model1.infer import TimmWithFeatures, clean_state_dict_keys, extract_state_dict  # noqa: E402
+from src.model1.infer import TimmWithFeatures, apply_clahe_rgb, clean_state_dict_keys, extract_state_dict  # noqa: E402
 
 
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg"}
@@ -165,6 +165,11 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Optional cap on the number of valid samples to use before splitting.",
     )
+    parser.add_argument(
+        "--use-clahe",
+        action="store_true",
+        help="Apply CLAHE before resize/normalization. Default is disabled.",
+    )
     return parser.parse_args()
 
 
@@ -203,9 +208,17 @@ def make_output_dir(output_dir: str | Path) -> Path:
     return output_path
 
 
-def build_transforms(image_size: int) -> Tuple[transforms.Compose, transforms.Compose]:
+def build_transforms(image_size: int, use_clahe: bool = False) -> Tuple[transforms.Compose, transforms.Compose]:
+    train_steps = []
+    val_steps = []
+
+    if use_clahe:
+        train_steps.append(transforms.Lambda(lambda image: apply_clahe_rgb(image)))
+        val_steps.append(transforms.Lambda(lambda image: apply_clahe_rgb(image)))
+
     train_transform = transforms.Compose(
-        [
+        train_steps
+        + [
             transforms.Resize((image_size, image_size)),
             transforms.RandomHorizontalFlip(p=0.5),
             transforms.RandomRotation(degrees=7),
@@ -218,7 +231,8 @@ def build_transforms(image_size: int) -> Tuple[transforms.Compose, transforms.Co
     )
 
     val_transform = transforms.Compose(
-        [
+        val_steps
+        + [
             transforms.Resize((image_size, image_size)),
             transforms.ToTensor(),
             transforms.Normalize(
@@ -871,7 +885,7 @@ def main() -> None:
         log(f"[Data] Validation samples: {len(val_samples)}")
         log(f"[Data] Class names: {', '.join(XRAY_CLASSES)}")
 
-        train_transform, val_transform = build_transforms(args.image_size)
+        train_transform, val_transform = build_transforms(args.image_size, use_clahe=args.use_clahe)
         train_dataset = XrayDataset(train_samples, train_transform)
         val_dataset = XrayDataset(val_samples, val_transform)
 

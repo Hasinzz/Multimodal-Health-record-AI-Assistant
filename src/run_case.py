@@ -12,6 +12,7 @@ from src.config import (
     create_required_folders,
 )
 from src.model1.infer import predict_image
+from src.model3.advanced_fusion import run_advanced_fusion_pipeline
 from src.model2.pipeline import run_document_pipeline
 from src.model3.pipeline import run_fusion_pipeline
 
@@ -62,6 +63,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--brain_checkpoint", type=str, default=str(DEFAULT_BRAIN_CHECKPOINT), help="Path to Brain MRI checkpoint.")
     parser.add_argument("--backbone", type=str, default="densenet121", help="Backbone name used during training, for example densenet121 or resnet50.")
     parser.add_argument("--kb_dir", type=str, default=str(KB_DIR), help="Path to knowledge-base folder.")
+    parser.add_argument("--fusion-mode", type=str, choices=["stable", "advanced"], default="stable", help="Fusion mode used for Model-3. Stable preserves the current baseline.")
+    parser.add_argument("--fusion-weights", type=str, default=None, help="Optional path to advanced fusion weights.")
     return parser.parse_args()
 
 
@@ -106,12 +109,22 @@ def main() -> None:
         save_json(model2_output, case_output_dir / "model2_output.json")
         print("[Saved] Model-2 output")
 
-    model3_output = run_fusion_pipeline(
-        case_id=args.case_id,
-        model1_output=model1_output,
-        model2_output=model2_output,
-        kb_dir=args.kb_dir,
-    )
+    if args.fusion_mode == "advanced":
+        model3_output = run_advanced_fusion_pipeline(
+            case_id=args.case_id,
+            model1_output=model1_output,
+            model2_output=model2_output,
+            kb_dir=args.kb_dir,
+            fusion_mode="advanced",
+            fusion_weights=args.fusion_weights,
+        )
+    else:
+        model3_output = run_fusion_pipeline(
+            case_id=args.case_id,
+            model1_output=model1_output,
+            model2_output=model2_output,
+            kb_dir=args.kb_dir,
+        )
 
     save_json(model3_output, case_output_dir / "model3_output.json")
 

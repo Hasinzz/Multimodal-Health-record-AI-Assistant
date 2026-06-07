@@ -15,8 +15,8 @@ MODEL1_CHECKPOINT_DIR = CHECKPOINT_DIR / "model1"
 
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
 
-DEFAULT_XRAY_CHECKPOINT = MODEL1_CHECKPOINT_DIR / "xray_best_model.pt"
-DEFAULT_BRAIN_CHECKPOINT = MODEL1_CHECKPOINT_DIR / "brain_best_model.pt"
+DEFAULT_XRAY_CHECKPOINT = MODEL1_CHECKPOINT_DIR / "xray_best_model_gpu_large_v2.pt"
+DEFAULT_BRAIN_CHECKPOINT = MODEL1_CHECKPOINT_DIR / "brain_best_model_gpu_final_v2.pt"
 DEFAULT_XRAY_THRESHOLDS = OUTPUT_DIR / "training" / "xray_gpu_large_v2_threshold_tuning" / "xray_tuned_thresholds.json"
 
 XRAY_CLASSES = [

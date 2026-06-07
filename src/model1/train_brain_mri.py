@@ -30,7 +30,7 @@ if __package__ is None or __package__ == "":
     sys.path.append(str(Path(__file__).resolve().parents[2]))
 
 from src.config import BRAIN_CLASSES, PROJECT_ROOT  # noqa: E402
-from src.model1.infer import TimmWithFeatures  # noqa: E402
+from src.model1.infer import TimmWithFeatures, apply_n4_bias_correction_rgb  # noqa: E402
 
 
 CLASS_FOLDER_TO_LABEL = {
@@ -118,6 +118,11 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Optional file path for duplicating important training logs.",
     )
+    parser.add_argument(
+        "--use-n4",
+        action="store_true",
+        help="Apply N4 bias correction before resize/normalization. Default is disabled.",
+    )
     return parser.parse_args()
 
 
@@ -156,9 +161,17 @@ def make_output_dir(output_dir: str | Path) -> Path:
     return output_path
 
 
-def build_transforms(image_size: int) -> Tuple[transforms.Compose, transforms.Compose]:
+def build_transforms(image_size: int, use_n4: bool = False) -> Tuple[transforms.Compose, transforms.Compose]:
+    train_steps = []
+    val_steps = []
+
+    if use_n4:
+        train_steps.append(transforms.Lambda(lambda image: apply_n4_bias_correction_rgb(image)))
+        val_steps.append(transforms.Lambda(lambda image: apply_n4_bias_correction_rgb(image)))
+
     train_transform = transforms.Compose(
-        [
+        train_steps
+        + [
             transforms.Resize((image_size, image_size)),
             transforms.RandomHorizontalFlip(p=0.5),
             transforms.RandomRotation(degrees=10),
@@ -171,7 +184,8 @@ def build_transforms(image_size: int) -> Tuple[transforms.Compose, transforms.Co
     )
 
     val_transform = transforms.Compose(
-        [
+        val_steps
+        + [
             transforms.Resize((image_size, image_size)),
             transforms.ToTensor(),
             transforms.Normalize(
@@ -555,7 +569,7 @@ def main() -> None:
         if not data_dir.exists():
             raise FileNotFoundError(f"Dataset directory not found: {data_dir}")
 
-        train_transform, val_transform = build_transforms(args.image_size)
+        train_transform, val_transform = build_transforms(args.image_size, use_n4=args.use_n4)
         train_dataset, val_dataset, class_names = build_datasets(
             data_dir=data_dir,
             train_transform=train_transform,
