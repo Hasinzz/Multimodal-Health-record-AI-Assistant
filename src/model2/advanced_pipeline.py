@@ -9,6 +9,16 @@ from src.model2.advanced_ner import extract_entities
 from src.model2.clean_text import clean_ocr_text, make_preview
 from src.model2.ocr_engines import extract_text_with_engine
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+V4_YOLO_CHECKPOINT = (
+    PROJECT_ROOT
+    / "checkpoints"
+    / "model2"
+    / "yolo_roi_v4"
+    / "yolov8n_roi_v4_pseudolabel_best.pt"
+)
+V4_BERT_NER_CHECKPOINT = PROJECT_ROOT / "checkpoints" / "model2" / "biobert_ner_v4"
+
 
 def build_structured_json(entities: list[dict]) -> dict:
     structured = {
@@ -81,9 +91,20 @@ def run_advanced_document_pipeline(
     ner_engine: str = "rule",
     roi_mode: str = "opencv",
     yolo_weights: Optional[str] = None,
+    biobert_checkpoint_path: Optional[str] = None,
+    mode_used: str = "advanced",
     max_pages: int = 5,
     log: Optional[Callable[[str], None]] = None,
 ) -> Dict:
+    yolo_checkpoint_requested = yolo_weights
+    bert_checkpoint_requested = biobert_checkpoint_path
+
+    if (roi_mode or "").lower() == "yolo" and not yolo_weights and V4_YOLO_CHECKPOINT.exists():
+        yolo_weights = str(V4_YOLO_CHECKPOINT)
+
+    if (ner_engine or "").lower() == "biobert" and not biobert_checkpoint_path and V4_BERT_NER_CHECKPOINT.exists():
+        biobert_checkpoint_path = str(V4_BERT_NER_CHECKPOINT)
+
     ocr_result = extract_text_with_engine(
         document_path=document_path,
         engine=ocr_engine,
@@ -93,7 +114,12 @@ def run_advanced_document_pipeline(
         log=log,
     )
     cleaned_text = clean_ocr_text(ocr_result["text"])
-    ner_result = extract_entities(cleaned_text, ner_engine=ner_engine, log=log)
+    ner_result = extract_entities(
+        cleaned_text,
+        ner_engine=ner_engine,
+        biobert_checkpoint_path=biobert_checkpoint_path,
+        log=log,
+    )
     entities = ner_result["entities"]
     structured_json = build_structured_json(entities)
     patient_summary = generate_document_summary(structured_json)
@@ -103,17 +129,27 @@ def run_advanced_document_pipeline(
     return {
         "case_id": case_id,
         "file": str(document_path),
+        "mode_used": mode_used,
         "raw_text": cleaned_text,
         "raw_text_preview": make_preview(cleaned_text),
         "entities": entities,
+        "extracted_entities": entities,
         "structured_json": structured_json,
         "patient_summary": patient_summary,
         "ocr_engine_requested": ocr_engine,
         "ocr_engine_used": ocr_result.get("engine_used", ocr_engine),
         "roi_mode_requested": roi_mode,
         "roi_mode_used": ocr_result.get("roi_mode_used", roi_mode),
+        "yolo_weights_used": ocr_result.get("yolo_weights_used"),
+        "yolo_checkpoint_requested": yolo_checkpoint_requested,
+        "yolo_checkpoint_used": ocr_result.get("yolo_weights_used"),
         "ner_engine_requested": ner_engine,
         "ner_engine_used": ner_result.get("ner_engine_used", ner_engine),
+        "biobert_checkpoint_used": ner_result.get("biobert_checkpoint_used"),
+        "bert_checkpoint_requested": bert_checkpoint_requested,
+        "bert_checkpoint_used": ner_result.get("biobert_checkpoint_used"),
+        "ocr_fallback_used": bool(ocr_result.get("fallback_used")),
+        "ner_fallback_used": bool(ner_result.get("fallback_used")),
         "fallback_used": fallback_used,
     }
 
@@ -126,6 +162,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ner-engine", type=str, choices=["rule", "biobert"], default="rule")
     parser.add_argument("--roi-mode", type=str, choices=["none", "opencv", "yolo"], default="opencv")
     parser.add_argument("--yolo-weights", type=str, default=None, help="Optional path to YOLO weights for ROI detection.")
+    parser.add_argument(
+        "--biobert-checkpoint",
+        type=str,
+        default=None,
+        help="Optional local BioBERT token-classification checkpoint.",
+    )
     parser.add_argument("--max-pages", type=int, default=5, help="Maximum PDF pages to OCR.")
     parser.add_argument("--output-json", type=str, default=None, help="Optional output path for the resulting JSON.")
     return parser.parse_args()
@@ -144,6 +186,8 @@ def main() -> None:
         ner_engine=args.ner_engine,
         roi_mode=args.roi_mode,
         yolo_weights=args.yolo_weights,
+        biobert_checkpoint_path=args.biobert_checkpoint,
+        mode_used="advanced_cli",
         max_pages=args.max_pages,
     )
 

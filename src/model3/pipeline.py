@@ -32,5 +32,6 @@ def run_fusion_pipeline(
     )
 
     output["fused_query"] = fused_query
+    output["kb_used"] = str(kb_dir)
 
     return output

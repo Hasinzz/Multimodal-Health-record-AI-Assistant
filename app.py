@@ -18,6 +18,11 @@ except Exception:  # pragma: no cover - optional dependency
     st = None
 
 
+V4_YOLO_CHECKPOINT = PROJECT_ROOT / "checkpoints" / "model2" / "yolo_roi_v4" / "yolov8n_roi_v4_pseudolabel_best.pt"
+V4_BERT_NER_CHECKPOINT = PROJECT_ROOT / "checkpoints" / "model2" / "biobert_ner_v4"
+V4_RAG_KB_DIR = PROJECT_ROOT / "data" / "rag_kb_v4"
+
+
 def _save_upload(uploaded_file, prefix: str) -> Path:
     upload_dir = PROJECT_ROOT / "outputs" / "streamlit_uploads"
     upload_dir.mkdir(parents=True, exist_ok=True)
@@ -52,9 +57,13 @@ def _run_document_analysis(
     ner_engine: str,
     roi_mode: str,
     yolo_weights: Optional[str],
+    biobert_checkpoint_path: Optional[str] = None,
+    mode_used: str = "advanced",
 ) -> Dict[str, Any]:
     if ocr_engine == "tesseract" and ner_engine == "rule" and roi_mode == "none":
-        return run_document_pipeline(document_path=str(document_path), case_id=case_id)
+        result = run_document_pipeline(document_path=str(document_path), case_id=case_id)
+        result["mode_used"] = "stable"
+        return result
 
     return run_advanced_document_pipeline(
         document_path=str(document_path),
@@ -63,6 +72,8 @@ def _run_document_analysis(
         ner_engine=ner_engine,
         roi_mode=roi_mode,
         yolo_weights=yolo_weights,
+        biobert_checkpoint_path=biobert_checkpoint_path,
+        mode_used=mode_used,
     )
 
 
@@ -78,14 +89,29 @@ def main() -> None:
 
     with st.sidebar:
         st.header("Analysis Options")
+        app_mode = st.selectbox("Mode", ["Stable mode", "V4 advanced mode"], index=0)
         case_id = st.text_input("Case ID", value="case_001")
         image_modality = st.selectbox("Image modality", ["brain_mri", "xray"])
         document_kind = st.selectbox("Document type", ["optional", "prescription", "lab_report"])
-        ocr_engine = st.selectbox("OCR engine", ["tesseract", "trocr", "paddle"], index=0)
-        ner_engine = st.selectbox("NER engine", ["rule", "biobert"], index=0)
-        roi_mode = st.selectbox("ROI mode", ["none", "opencv", "yolo"], index=1)
-        fusion_mode = st.selectbox("Fusion mode", ["stable", "advanced"], index=0)
-        yolo_weights = st.text_input("YOLO weights path (optional)", value="")
+        if app_mode == "Stable mode":
+            ocr_engine = st.selectbox("OCR engine", ["tesseract", "trocr", "paddle"], index=0)
+            ner_engine = st.selectbox("NER engine", ["rule", "biobert"], index=0)
+            roi_mode = st.selectbox("ROI mode", ["none", "opencv", "yolo"], index=1)
+            fusion_mode = st.selectbox("Fusion mode", ["stable", "advanced"], index=0)
+            yolo_weights = st.text_input("YOLO weights path (optional)", value="")
+        else:
+            ocr_engine = "tesseract"
+            ner_engine = "biobert" if V4_BERT_NER_CHECKPOINT.exists() else "rule"
+            roi_mode = "yolo" if V4_YOLO_CHECKPOINT.exists() else "opencv"
+            fusion_mode = "advanced"
+            yolo_weights = str(V4_YOLO_CHECKPOINT) if V4_YOLO_CHECKPOINT.exists() else ""
+            st.caption("V4 uses stable image models with optional YOLO ROI, BERT NER, and RAG KB V4.")
+            if not V4_YOLO_CHECKPOINT.exists():
+                st.warning("V4 YOLO checkpoint is missing. Document ROI will fall back to OpenCV.")
+            if not V4_BERT_NER_CHECKPOINT.exists():
+                st.warning("V4 BERT NER checkpoint is missing. Document NER will fall back to rules.")
+            if not V4_RAG_KB_DIR.exists():
+                st.warning("V4 RAG KB is missing. Fusion will use the stable KB.")
         use_clahe = st.checkbox("Use CLAHE for X-ray", value=False)
         use_n4 = st.checkbox("Use N4 for brain MRI", value=False)
 
@@ -127,6 +153,7 @@ def main() -> None:
     if document_file is not None:
         document_path = _save_upload(document_file, f"{case_id}_document")
         yolo_weights_path = yolo_weights.strip() or None
+        bert_checkpoint_path = str(V4_BERT_NER_CHECKPOINT) if app_mode == "V4 advanced mode" and V4_BERT_NER_CHECKPOINT.exists() else None
         model2_output = _run_document_analysis(
             document_path=document_path,
             case_id=case_id,
@@ -135,18 +162,28 @@ def main() -> None:
             ner_engine=ner_engine,
             roi_mode=roi_mode,
             yolo_weights=yolo_weights_path,
+            biobert_checkpoint_path=bert_checkpoint_path,
+            mode_used="v4_advanced" if app_mode == "V4 advanced mode" else "advanced",
         )
+        _render_value("Mode used", model2_output.get("mode_used"))
+        _render_value("ROI result", {
+            "roi_mode_used": model2_output.get("roi_mode_used"),
+            "yolo_checkpoint_used": model2_output.get("yolo_checkpoint_used"),
+            "fallback_used": model2_output.get("ocr_fallback_used"),
+        })
         _render_value("OCR extracted text", model2_output.get("raw_text_preview"))
-        _render_value("Extracted entities", model2_output.get("entities"))
+        _render_value("Extracted entities", model2_output.get("extracted_entities", model2_output.get("entities")))
         _render_value("Patient summary", model2_output.get("patient_summary"))
         _render_value("Model-2 output", model2_output)
+
+    kb_dir_for_run = str(V4_RAG_KB_DIR) if app_mode == "V4 advanced mode" and V4_RAG_KB_DIR.exists() else str(KB_DIR)
 
     if fusion_mode == "advanced":
         fusion_output = run_advanced_fusion_pipeline(
             case_id=case_id,
             model1_output=model1_output,
             model2_output=model2_output,
-            kb_dir=str(KB_DIR),
+            kb_dir=kb_dir_for_run,
             fusion_mode="advanced",
         )
     else:
@@ -154,11 +191,13 @@ def main() -> None:
             case_id=case_id,
             model1_output=model1_output,
             model2_output=model2_output,
-            kb_dir=str(KB_DIR),
+            kb_dir=kb_dir_for_run,
         )
 
+    _render_value("KB used", fusion_output.get("kb_used"))
     _render_value("Doctor feedback", fusion_output.get("doctor_feedback"))
     _render_value("Retrieved evidence", fusion_output.get("retrieved_evidence"))
+    _render_value("Final summary", fusion_output.get("final_summary"))
     _render_value("Fusion output", fusion_output)
 
     download_payload = json.dumps(

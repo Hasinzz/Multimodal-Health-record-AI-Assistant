@@ -6,6 +6,8 @@ import fitz
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+from src.config import KB_DIR
+
 
 SUPPORTED_KB_EXTENSIONS = {
     ".txt",
@@ -57,8 +59,8 @@ def chunk_text(text: str, chunk_size: int = 800, overlap: int = 120) -> List[str
 
 
 class LocalTfidfRetriever:
-    def __init__(self, kb_dir: str):
-        self.kb_dir = Path(kb_dir)
+    def __init__(self, kb_dir: str | Path | None = None):
+        self.kb_dir = Path(kb_dir) if kb_dir is not None else KB_DIR
         self.documents = []
         self.vectorizer = TfidfVectorizer(stop_words="english")
         self.matrix = None

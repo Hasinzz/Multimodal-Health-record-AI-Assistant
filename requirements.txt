@@ -12,3 +12,13 @@ pymupdf==1.27.2.3
 pytesseract==0.3.13
 pydantic==2.13.4
 streamlit==1.49.0
+
+# Optional V4 advanced modules
+ultralytics
+transformers
+datasets
+evaluate
+seqeval
+accelerate
+sentence-transformers
+openpyxl

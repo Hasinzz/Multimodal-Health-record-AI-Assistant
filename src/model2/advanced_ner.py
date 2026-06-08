@@ -2,9 +2,13 @@ from __future__ import annotations
 
 import os
 import re
+from pathlib import Path
 from typing import Callable, Optional
 
 from src.model2.ner import extract_entities as extract_rule_entities
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_BIOBERT_V4_CHECKPOINT = PROJECT_ROOT / "checkpoints" / "model2" / "biobert_ner_v4"
 
 
 def _log(log: Optional[Callable[[str], None]], message: str) -> None:
@@ -13,9 +17,11 @@ def _log(log: Optional[Callable[[str], None]], message: str) -> None:
 
 
 def _normalize_biobert_entity(entity: dict) -> dict:
-    text = str(entity.get("text", "")).strip()
+    text = str(entity.get("text") or entity.get("word") or "").strip()
     label = str(entity.get("label", entity.get("entity_group", entity.get("entity", "ENTITY")))).upper()
     score = entity.get("score")
+    if hasattr(score, "item"):
+        score = score.item()
 
     if not text:
         return {}
@@ -36,26 +42,45 @@ def _normalize_biobert_entity(entity: dict) -> dict:
     return {"type": "BIOBERT_ENTITY", "label": label, "text": text, "score": score}
 
 
-def _run_biobert_ner(text: str) -> list[dict]:
+def _is_usable_transformers_checkpoint(path: Path) -> bool:
+    return path.exists() and path.is_dir() and (path / "config.json").exists()
+
+
+def _run_biobert_ner(text: str, biobert_checkpoint_path: Optional[str] = None) -> tuple[list[dict], Optional[str]]:
     try:
         from transformers import pipeline
     except Exception as exc:
         raise RuntimeError(f"transformers unavailable: {exc}") from exc
 
-    model_candidates = []
+    model_candidates: list[tuple[str, Optional[str]]] = []
+
+    explicit_checkpoint = Path(biobert_checkpoint_path) if biobert_checkpoint_path else None
+    if explicit_checkpoint and _is_usable_transformers_checkpoint(explicit_checkpoint):
+        model_candidates.append((str(explicit_checkpoint), str(explicit_checkpoint)))
+
+    env_local = os.environ.get("BIOBERT_NER_MODEL_PATH")
+    if env_local and _is_usable_transformers_checkpoint(Path(env_local)):
+        model_candidates.append((env_local, env_local))
+
+    if not explicit_checkpoint:
+        if _is_usable_transformers_checkpoint(DEFAULT_BIOBERT_V4_CHECKPOINT):
+            model_candidates.append(
+                (str(DEFAULT_BIOBERT_V4_CHECKPOINT), str(DEFAULT_BIOBERT_V4_CHECKPOINT))
+            )
+
     env_model = os.environ.get("BIOBERT_NER_MODEL")
     if env_model:
-        model_candidates.append(env_model)
-    env_local = os.environ.get("BIOBERT_NER_MODEL_PATH")
-    if env_local:
-        model_candidates.append(env_local)
-    model_candidates.extend([
-        "d4data/biomedical-ner-all",
-        "Clinical-AI-Apollo/Medical-NER",
-    ])
+        model_candidates.append((env_model, None))
+
+    model_candidates.extend(
+        [
+            ("d4data/biomedical-ner-all", None),
+            ("Clinical-AI-Apollo/Medical-NER", None),
+        ]
+    )
 
     last_error: Optional[Exception] = None
-    for model_name in model_candidates:
+    for model_name, checkpoint_used in model_candidates:
         try:
             ner_pipeline = pipeline(
                 task="token-classification",
@@ -69,7 +94,7 @@ def _run_biobert_ner(text: str) -> list[dict]:
                 normalized_entity = _normalize_biobert_entity(entity)
                 if normalized_entity:
                     normalized.append(normalized_entity)
-            return normalized
+            return normalized, checkpoint_used
         except Exception as exc:
             last_error = exc
             continue
@@ -77,21 +102,32 @@ def _run_biobert_ner(text: str) -> list[dict]:
     raise RuntimeError(f"No biomedical NER model could be loaded: {last_error}")
 
 
-def extract_entities(text: str, ner_engine: str = "rule", log: Optional[Callable[[str], None]] = None) -> dict:
+def extract_entities(
+    text: str,
+    ner_engine: str = "rule",
+    biobert_checkpoint_path: Optional[str] = None,
+    log: Optional[Callable[[str], None]] = None,
+) -> dict:
     ner_engine = (ner_engine or "rule").lower()
 
     if ner_engine == "rule":
         return {
             "entities": extract_rule_entities(text),
             "ner_engine_used": "rule",
+            "biobert_checkpoint_used": None,
             "fallback_used": False,
         }
 
     if ner_engine == "biobert":
         try:
+            entities, checkpoint_used = _run_biobert_ner(
+                text,
+                biobert_checkpoint_path=biobert_checkpoint_path,
+            )
             return {
-                "entities": _run_biobert_ner(text),
+                "entities": entities,
                 "ner_engine_used": "biobert",
+                "biobert_checkpoint_used": checkpoint_used,
                 "fallback_used": False,
             }
         except Exception as exc:
@@ -99,6 +135,7 @@ def extract_entities(text: str, ner_engine: str = "rule", log: Optional[Callable
             return {
                 "entities": extract_rule_entities(text),
                 "ner_engine_used": "rule",
+                "biobert_checkpoint_used": None,
                 "fallback_used": True,
             }
 
@@ -106,5 +143,6 @@ def extract_entities(text: str, ner_engine: str = "rule", log: Optional[Callable
     return {
         "entities": extract_rule_entities(text),
         "ner_engine_used": "rule",
+        "biobert_checkpoint_used": None,
         "fallback_used": True,
     }

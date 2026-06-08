@@ -138,6 +138,7 @@ def extract_text_with_engine(
     page_texts: list[str] = []
     used_engine = (engine or "tesseract").lower()
     used_roi_mode = (roi_mode or "none").lower()
+    yolo_weights_used = None
 
     if suffix == ".txt":
         raw_text = _extract_text_from_txt(document_path)
@@ -145,6 +146,7 @@ def extract_text_with_engine(
             "text": raw_text,
             "engine_used": "text",
             "roi_mode_used": "none",
+            "yolo_weights_used": None,
             "fallback_used": False,
         }
 
@@ -157,7 +159,9 @@ def extract_text_with_engine(
 
     for image in images:
         roi_result = detect_roi(image, mode=used_roi_mode, yolo_weights=yolo_weights, log=log)
-        used_roi_mode = roi_result.mode_used if roi_result.mode_used else used_roi_mode
+        used_roi_mode = roi_result.roi_mode_used if roi_result.roi_mode_used else used_roi_mode
+        if roi_result.yolo_weights_used:
+            yolo_weights_used = roi_result.yolo_weights_used
         fallback_used = fallback_used or roi_result.fallback_used
         text, engine_used, engine_fallback = _run_engine_on_image(roi_result.image, used_engine)
         used_engine = engine_used
@@ -172,6 +176,7 @@ def extract_text_with_engine(
         "text": "\n".join(combined_text).strip(),
         "engine_used": used_engine,
         "roi_mode_used": used_roi_mode,
+        "yolo_weights_used": yolo_weights_used,
         "fallback_used": fallback_used,
     }
 

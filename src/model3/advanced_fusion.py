@@ -88,6 +88,7 @@ def run_advanced_fusion_pipeline(
         base_output["fusion_mode_used"] = "stable"
         base_output["fusion_status"] = "stable_template_fusion"
         base_output["fused_query"] = fused_query
+        base_output["kb_used"] = str(kb_dir)
         return base_output
 
     image_embedding = _load_embedding_from_output(model1_output)
@@ -110,6 +111,7 @@ def run_advanced_fusion_pipeline(
     base_output["fusion_status"] = fusion_result.status
     base_output["advanced_attention_embedding"] = fusion_result.fused_embedding.detach().cpu().tolist()
     base_output["fused_query"] = fused_query
+    base_output["kb_used"] = str(kb_dir)
     return base_output
 
 

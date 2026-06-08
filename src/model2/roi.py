@@ -15,6 +15,12 @@ class ROIResult:
     mode_used: str
     fallback_used: bool
     message: str
+    roi_mode_used: str = ""
+    yolo_weights_used: Optional[str] = None
+
+    def __post_init__(self) -> None:
+        if not self.roi_mode_used:
+            self.roi_mode_used = self.mode_used
 
 
 def _log(log: Optional[Callable[[str], None]], message: str) -> None:
@@ -70,24 +76,28 @@ def _opencv_roi(image: Image.Image) -> Tuple[Image.Image, str]:
     return image.crop((x1, y1, x2, y2)), f"opencv_crop_{x1}_{y1}_{x2}_{y2}"
 
 
-def _yolo_roi(image: Image.Image, yolo_weights: Optional[str], log: Optional[Callable[[str], None]]) -> Tuple[Image.Image, str, bool]:
+def _yolo_roi(
+    image: Image.Image,
+    yolo_weights: Optional[str],
+    log: Optional[Callable[[str], None]],
+) -> Tuple[Image.Image, str, bool, Optional[str]]:
     if not yolo_weights:
         _log(log, "[ROI] YOLO weights were not provided; falling back to OpenCV ROI.")
         cropped, detail = _opencv_roi(image)
-        return cropped, f"opencv_fallback_{detail}", True
+        return cropped, f"opencv_fallback_{detail}", True, None
 
     weights_path = Path(yolo_weights)
     if not weights_path.exists():
         _log(log, f"[ROI] YOLO weights not found at {weights_path}; falling back to OpenCV ROI.")
         cropped, detail = _opencv_roi(image)
-        return cropped, f"opencv_fallback_{detail}", True
+        return cropped, f"opencv_fallback_{detail}", True, None
 
     try:
         from ultralytics import YOLO
     except Exception as exc:
         _log(log, f"[ROI] ultralytics is unavailable ({exc}); falling back to OpenCV ROI.")
         cropped, detail = _opencv_roi(image)
-        return cropped, f"opencv_fallback_{detail}", True
+        return cropped, f"opencv_fallback_{detail}", True, None
 
     try:
         model = YOLO(str(weights_path))
@@ -95,18 +105,20 @@ def _yolo_roi(image: Image.Image, yolo_weights: Optional[str], log: Optional[Cal
     except Exception as exc:
         _log(log, f"[ROI] YOLO inference failed ({exc}); falling back to OpenCV ROI.")
         cropped, detail = _opencv_roi(image)
-        return cropped, f"opencv_fallback_{detail}", True
+        return cropped, f"opencv_fallback_{detail}", True, None
+
+    weights_used = str(weights_path)
 
     if not result:
         _log(log, "[ROI] YOLO returned no detections; falling back to OpenCV ROI.")
         cropped, detail = _opencv_roi(image)
-        return cropped, f"opencv_fallback_{detail}", True
+        return cropped, f"opencv_fallback_{detail}", True, weights_used
 
     boxes = result[0].boxes
     if boxes is None or len(boxes) == 0:
         _log(log, "[ROI] YOLO returned empty boxes; falling back to OpenCV ROI.")
         cropped, detail = _opencv_roi(image)
-        return cropped, f"opencv_fallback_{detail}", True
+        return cropped, f"opencv_fallback_{detail}", True, weights_used
 
     xyxy = boxes.xyxy.cpu().numpy()
     width, height = image.size
@@ -118,9 +130,9 @@ def _yolo_roi(image: Image.Image, yolo_weights: Optional[str], log: Optional[Cal
     if x2 <= x1 or y2 <= y1:
         _log(log, "[ROI] YOLO produced an invalid crop; falling back to OpenCV ROI.")
         cropped, detail = _opencv_roi(image)
-        return cropped, f"opencv_fallback_{detail}", True
+        return cropped, f"opencv_fallback_{detail}", True, weights_used
 
-    return image.crop((x1, y1, x2, y2)), f"yolo_crop_{x1}_{y1}_{x2}_{y2}", False
+    return image.crop((x1, y1, x2, y2)), f"yolo_crop_{x1}_{y1}_{x2}_{y2}", False, weights_used
 
 
 def detect_roi(
@@ -151,12 +163,15 @@ def detect_roi(
         )
 
     if mode == "yolo":
-        cropped, detail, fallback_used = _yolo_roi(pil_image, yolo_weights, log)
+        cropped, detail, fallback_used, yolo_weights_used = _yolo_roi(pil_image, yolo_weights, log)
+        roi_mode_used = "yolo" if not fallback_used else "opencv"
         return ROIResult(
             image=cropped,
-            mode_used="yolo" if not fallback_used else "opencv",
+            mode_used=roi_mode_used,
             fallback_used=fallback_used,
             message=detail,
+            roi_mode_used=roi_mode_used,
+            yolo_weights_used=yolo_weights_used,
         )
 
     _log(log, f"[ROI] Unknown ROI mode '{mode}'. Falling back to full image.")
